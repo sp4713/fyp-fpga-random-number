@@ -1,0 +1,7 @@
+- return 4
+- RANDU https://en.wikipedia.org/wiki/RANDU
+    V_{j+1} = 65539*V_jmod2^31
+http://crypto.stackexchange.com/questions/32620/how-to-design-a-deliberately-weak-prng-for-experimentation
+https://www.phy.duke.edu/~rgb/General/dieharder/dieharder.html#list
+https://en.m.wikipedia.org/wiki/Mersenne_Twister
+https://en.wikipedia.org/wiki/Diehard_tests
