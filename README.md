@@ -6,6 +6,7 @@ Motivation
     -  testing RNGs designed for hardware
 
 Milestones
+===
 - Skills/knowledge                 (3 weeks)
     - what is meant by RNG
         - have there been any crises because of bad RNG? why do we care?
