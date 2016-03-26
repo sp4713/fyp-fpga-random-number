@@ -11,7 +11,7 @@ Milestones
     - what is meant by RNG
         - have there been any crises because of bad RNG? why do we care?
         - explain non-trivial problems, why was it hard?
-    - What can Vivado HLS do? (c)
+    - What can Vivado HLS do? (✓)
         - Main idea of Vivado HLS is to accelerate the process of transforming algorithm in C or C++ to Xilinx FPGAs
         - Code written in C/C++ or SystemC -> Vivado HLS -> VHDL/Verilog IP + Testbenches
         - Extract data path and control unit based on the code
