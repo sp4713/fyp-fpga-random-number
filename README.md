@@ -15,6 +15,8 @@ Milestones
         - Main idea of Vivado HLS is to accelerate the process of transforming algorithm in C or C++ to Xilinx FPGAs
         - Code written in C/C++ or SystemC -> Vivado HLS -> VHDL/Verilog IP + Testbenches
         - Extract data path and control unit based on the code
+        - Specify modularity through #PRAGMA preprocessor commands
+            - e.g. #PRAGMA HLS INTERFACE AP_FIFO, AP_FIFO, AXIS, S_AXILITE, M_AXI, BRAM
     - What can Vivado HLS not do? (✓)
             - C/C++ LIMITATIONS
                 - no dynamic memory allocation
