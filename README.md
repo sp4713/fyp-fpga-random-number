@@ -1,4 +1,8 @@
 # fyp-fpga-random-number
+Focus
+=====
+Throughout project, explain non-trivial difficulties encountered - why was it hard?
+
 Motivation
 ==========
 - make use of fast generation of numbers on FPGA
@@ -8,17 +12,18 @@ Motivation
 Milestones
 ==========
 - Skills/knowledge                 (3 weeks)
-    - what is meant by RNG
+    - What is meant by RNG?
         - have there been any crises because of bad RNG? why do we care?
-        - explain non-trivial problems, why was it hard?
-    - What can Vivado HLS do? (✓)
+    - Why Vivado HLS? (✓)
         - Main idea of Vivado HLS is to accelerate the process of transforming algorithm in C or C++ to Xilinx FPGAs
         - Code written in C/C++ or SystemC -> Vivado HLS -> VHDL/Verilog IP + Testbenches
         - Extract data path and control unit based on the code
-        - Specify modularity through #PRAGMA preprocessor commands
-            - e.g. #PRAGMA HLS INTERFACE AP_FIFO, AP_FIFO, AXIS, S_AXILITE, M_AXI, BRAM
-        - Custom size data types using system header file <ap_int.h>
-            - e.g.ap_uint<17> //need to convert back to C language e.g. unsigned int(abc)
+    - What can Vivado HLS do? (✓)
+        - Specify component modularity through #PRAGMA preprocessor commands
+            - e.g. #PRAGMA HLS INTERFACE AP_FIFO, AP_MEMORY, AXIS, S_AXILITE, M_AXI, BRAM
+        - Custom size data types using system header file <ap_int.h> or #ap_fixed.h (can save hardware resources)
+            - e.g. ap_uint<17> //need to convert back to C language e.g. unsigned int(abc)
+            - e.g. ap_fixed<16,5> where 5 is number of integer bits
     - What can Vivado HLS not do? (✓)
             - C/C++ LIMITATIONS
                 - no dynamic memory allocation
@@ -27,6 +32,9 @@ Milestones
                 - Generated code is not the most readable
                 - Sometimes you want something smaller than CTRL_UNIT + DATAPATH
                 - Sometimes you want more control on the generated code
+    - How to save resources?
+        - Reduce data type bits required, e.g. double<64> -> float<32>
+        - Fixed_point data types
     - How to run Vivado HLS programs on FPGA? (how does interfacing work)
     - some top-level design (block design, how connect with each other, interface with outside world) -> to be included in interim report
 
