@@ -6,7 +6,7 @@ Motivation
     -  testing RNGs designed for hardware
 
 Milestones
-===
+==========
 - Skills/knowledge                 (3 weeks)
     - what is meant by RNG
         - have there been any crises because of bad RNG? why do we care?
@@ -17,6 +17,8 @@ Milestones
         - Extract data path and control unit based on the code
         - Specify modularity through #PRAGMA preprocessor commands
             - e.g. #PRAGMA HLS INTERFACE AP_FIFO, AP_FIFO, AXIS, S_AXILITE, M_AXI, BRAM
+        - Custom size data types using system header file <ap_int.h>
+            - e.g.ap_uint<17> //need to convert back to C language e.g. unsigned int(abc)
     - What can Vivado HLS not do? (✓)
             - C/C++ LIMITATIONS
                 - no dynamic memory allocation
