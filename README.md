@@ -23,7 +23,7 @@ Milestones
             - e.g. #PRAGMA HLS INTERFACE AP_FIFO, AP_MEMORY, AXIS, S_AXILITE, M_AXI, BRAM
         - Custom size data types using system header file <ap_int.h> or #ap_fixed.h (can save hardware resources)
             - e.g. ap_uint<17> //need to convert back to C language e.g. unsigned int(abc)
-            - e.g. ap_fixed<16,5> where 5 is number of integer bits
+            - e.g. typedef ap_fixed<16,5> fix_t; where 5 is number of integer bits
     - What can Vivado HLS not do? (✓)
             - C/C++ LIMITATIONS
                 - no dynamic memory allocation
