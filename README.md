@@ -1,57 +1,37 @@
 # fyp-fpga-random-number
-Focus
-=====
-Throughout project, explain non-trivial difficulties encountered - why was it hard?
+The aim of this project is to develop an FPGA accelerated system for
+testing random number generators, which is able to test for statistical
+defects over trillions of random samples. It will require some understanding
+of basic stats, but is mainly about building the hardware and software
+to actually do the job.
 
-Motivation
-==========
-- make use of fast generation of numbers on FPGA
-- no way of testing these fast streams in software
-    -  testing RNGs designed for hardware
+Random numbers are at the heart of many types of Monte-Carlo simulations,
+such as financial modelling and physics simulations. In practise we
+use deterministic random number generators which algorithmically
+emulate randomness using software or digital logic, and we care about two
+main quality metrics:
+- distribution: does the random number generator follow the
+  distribution (uniform, Gaussian, exponential, ...) it is supposed to?
+- independence: is each sample statistically independent of all previous samples?
+These questions become particularly important when using clusters
+containing modern hardware such as GPUs or FPGAs, as we need to
+ensure the distrubution and independence hold over quadrillions of samples.
 
-Milestones
-==========
-- Skills/knowledge                 (3 weeks)
-    - What is meant by RNG?
-        - have there been any crises because of bad RNG? why do we care?
-    - Why Vivado HLS? (✓)
-        - Main idea of Vivado HLS is to accelerate the process of transforming algorithm in C or C++ to Xilinx FPGAs
-        - Code written in C/C++ or SystemC -> Vivado HLS -> VHDL/Verilog IP + Testbenches
-        - Extract data path and control unit based on the code
-    - What can Vivado HLS do? (✓)
-        - Specify component modularity through #PRAGMA preprocessor commands
-            - e.g. #PRAGMA HLS INTERFACE AP_FIFO, AP_MEMORY, AXIS, S_AXILITE, M_AXI, BRAM
-        - Custom size data types using system header file <ap_int.h> or #ap_fixed.h (can save hardware resources)
-            - e.g. ap_uint<17> //need to convert back to C language e.g. unsigned int(abc)
-            - e.g. typedef ap_fixed<16,5> fix_t; where 5 is number of integer bits
-    - What can Vivado HLS not do? (✓)
-        - C/C++ LIMITATIONS
-            - no dynamic memory allocation
-            - no STD; FILE-I/O, not system calls
-            - no recursive functions
-            - Generated code is not the most readable
-            - Sometimes you want something smaller than CTRL_UNIT + DATAPATH
-            - Sometimes you want more control on the generated code
-    - How to save resources?
-        - Reduce data type bits required, e.g. double<64> -> float<32>
-        - Fixed_point data types
-    - How to run Vivado HLS programs on FPGA? (how does interfacing work)
-    - some top-level design (block design, how connect with each other, interface with outside world) -> to be included in interim report
+There are a number of software tools for testing distribution and independence,
+but these are too slow, so the aim of this project is to move much of the
+calculation into an FPGA. The types of statistical tests used are comparatively
+simple (e.g. histograms and auto-correlation), but the difficult part is processing
+one random sample per cycle at a high clock rate. Expected outcomes are:
 
-- Planning                (X weeks)
-    - which statistical tests to implement
-    - performance metrics to be hit
-    - evaluating criteria to be met
-    - some top-level design (block design, how connect with each other, interface with outside world) -> to be included in interim report
-    
-- Implementation minimum                (X weeks)
-    - Low risk, critical (minimum) parts first
-      - Evaluate minimum parts against above metrics
+- A system (both software and hardware) for performing basic statistical tests at very high speeds.
+- The ability to configure the random number generator and distribution being tested.
+- Demonstration of useful tests performed on 10^12 or more samples.
 
-- Implementation advanced                (2 weeks)
-    - To be determined/revisted
-      - Evaluate minimum parts against above metrics
-    
-- Full evaluation                (2 weeks)
+More advanced students will be expect to increase parallelism and performance, and
+to add more sophisticated tests. RNG quality for massively parallel
+systems is of research importance, so a good project could result
+in a research paper.
 
-- Report writing                (2 weeks)
+Skills needed are a good understanding of digital logic, some knowledge of
+Verilog/VHDL is useful, though it can also be performance in HLS (C-like
+code). No particular mathematical knowledge is needed beyond basic stats.
