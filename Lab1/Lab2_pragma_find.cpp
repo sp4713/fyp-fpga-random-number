@@ -9,12 +9,11 @@
 //		IN_VEC_Q (output of RAM)	OUT_VEC_WE
 //									OUT_VEC_D (output D)
 
-//#pragma HLS INTERFACE ap_memory port=in_vec
-//#pragma HLS INTERFACE ap_memory port=out_vec
-
 void find (char val, char in_vec[10], char out_vec[10]){
 	#pragma HLS INTERFACE ap_fifo port=in_vec
 	#pragma HLS INTERFACE ap_fifo port=out_vec
+//#pragma HLS INTERFACE ap_memory port=in_vec
+//#pragma HLS INTERFACE ap_memory port=out_vec
 
 	for(int idx=0; idx<10; idx++){
 		if(in_vec[idx]==val)	out_vec[idx]=1;
@@ -31,7 +30,3 @@ void find (char val, char in_vec[10], char out_vec[10]){
 //	S_AXILITE (AXI4-Lite)
 //	M_AXI (AXI4_Full Master)
 //	BRAM (Block RAM)
-
-//	In Vivado HLS:
-//	Lab_2_HLS
-//	Top function: find
