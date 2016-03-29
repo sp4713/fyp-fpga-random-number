@@ -25,13 +25,13 @@ Milestones
             - e.g. ap_uint<17> //need to convert back to C language e.g. unsigned int(abc)
             - e.g. typedef ap_fixed<16,5> fix_t; where 5 is number of integer bits
     - What can Vivado HLS not do? (✓)
-            - C/C++ LIMITATIONS
-                - no dynamic memory allocation
-                - no STD; FILE-I/O, not system calls
-                - no recursive functions
-                - Generated code is not the most readable
-                - Sometimes you want something smaller than CTRL_UNIT + DATAPATH
-                - Sometimes you want more control on the generated code
+        - C/C++ LIMITATIONS
+            - no dynamic memory allocation
+            - no STD; FILE-I/O, not system calls
+            - no recursive functions
+            - Generated code is not the most readable
+            - Sometimes you want something smaller than CTRL_UNIT + DATAPATH
+            - Sometimes you want more control on the generated code
     - How to save resources?
         - Reduce data type bits required, e.g. double<64> -> float<32>
         - Fixed_point data types
