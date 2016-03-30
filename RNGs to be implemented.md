@@ -8,7 +8,11 @@ https://en.wikipedia.org/wiki/Diehard_tests
 
 #Statistical Tests
     1. General Test Procedures for Studying Random Data
-        A. 
+        A. Chi-Square test
+        B. K-S tests
+            - If the K-S test usually passes, there is strong evidence that the transformation from uniform to nonuniform random values was implemented correctly.
+            - If the K-S test fails, examining the values of x that determines K+ and K- can help developers locate the bug in the RNG
+            
     2. Empirical Tests
     3. Theoretical Tests
     4. Spectral Test
