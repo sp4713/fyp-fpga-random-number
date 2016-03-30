@@ -5,3 +5,9 @@ http://crypto.stackexchange.com/questions/32620/how-to-design-a-deliberately-wea
 https://www.phy.duke.edu/~rgb/General/dieharder/dieharder.html#list
 https://en.m.wikipedia.org/wiki/Mersenne_Twister
 https://en.wikipedia.org/wiki/Diehard_tests
+
+#Statistical Tests
+    1. General Test Procedures for Studying Random Data
+    2. Empirical Tests
+    3. Theoretical Tests
+    4. Spectral Test
