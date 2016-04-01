@@ -53,6 +53,6 @@ Milestones
     - To be determined/revisted
       - Evaluate minimum parts against above metrics
     
-###Full evaluation                (Week 9-10, 2nd half May)
+###Full evaluation                (Week 9-11, 2nd half May)
 
 ###Report writing                (Week 11-13, all of June)
