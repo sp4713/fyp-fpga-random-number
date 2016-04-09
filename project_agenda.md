@@ -1,6 +1,6 @@
 Focus
 =====
-Throughout project, explain non-trivial difficulties encountered - why was it hard?
+Throughout 13-week project, explain non-trivial difficulties encountered - why was it hard?
 
 Motivation
 ==========
@@ -10,7 +10,7 @@ Motivation
 
 Milestones
 ==========
-- Skills/knowledge                 (3 weeks)
+###Skills/knowledge                 (Week 1-2, 1st half April)
     - What is meant by RNG?
         - have there been any crises because of bad RNG? why do we care?
     - Why Vivado HLS? (✓)
@@ -37,20 +37,22 @@ Milestones
     - How to run Vivado HLS programs on FPGA? (how does interfacing work)
     - some top-level design (block design, how connect with each other, interface with outside world) -> to be included in interim report
 
-- Planning                (X weeks)
+###Planning                              (Week 3, mid-April)
     - which statistical tests to implement
     - performance metrics to be hit
     - evaluating criteria to be met
     - some top-level design (block design, how connect with each other, interface with outside world) -> to be included in interim report
     
-- Implementation minimum                (X weeks)
+###Implementation minimum                (Week 4-5, 2nd half April)
     - Low risk, critical (minimum) parts first
       - Evaluate minimum parts against above metrics
 
-- Implementation advanced                (2 weeks)
+###Interim report writing                (Week 6, end of April)
+
+###Implementation advanced               (Week 7-8, 1st half May)
     - To be determined/revisted
       - Evaluate minimum parts against above metrics
     
-- Full evaluation                (2 weeks)
+###Full evaluation                (Week 9-10, 2nd half May)
 
-- Report writing                (2 weeks)
+###Report writing                (Week 11-12, all of June)
