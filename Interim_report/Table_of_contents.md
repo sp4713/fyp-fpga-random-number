@@ -52,6 +52,6 @@ Description of basic counters and what features will make them fail certain anti
 ####Advanced RNGs under consideration
 - to be revisited
 
-###Appendix
+##Appendix
 - Derivation of maths (of RNG? of methodology?)
 - Gantt Chart
