@@ -38,6 +38,7 @@
 
 ###Empirical Tests under consideration
 - Explain bottleneck issue, slowest test will slow down entire design
+
 ####Methodology used - Statistical Hypothesis Testing
 - Chi-Squared Test
   - Explanation of how it works, mathematical background (state equation and derivation in appendix?)
