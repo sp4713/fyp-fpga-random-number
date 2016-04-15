@@ -38,9 +38,22 @@
 
 ###Empirical Tests under consideration
 ####Methodology used - Statistical Hypothesis Testing
-####Frequency Test
 - Chi-Squared Test
   - Explanation of how it works, mathematical background, (state equation and derive in appendix?)
+####Frequency Test (Basic)
+- Create 32 bit-buckets and check whether each is equiprobably 1 or 0 (i.e. 32 buckets counting occurrences of 1)
+####Serial Test (Advanced)
+- Each bucket is 00, 01, 10, or 11 - Check equiprobability for each of the 4x32=128 cases (i.e. 4x32=128 buckets counting occurrences of 1 or devise smarter way)
+####Gap Test (Advanced)
+- 
+####Poker Test (Advanced)
+- All different: abcde
+- One pair: aabcd
+- Two pairs: aabbc
+- Three of a kind: aaabc
+- Full house: aaabb
+- Four of a kind: aaaab
+- Poker: aaaaa
 
 ####Minimum RNGs under consideration
 - Explain why existing RNG algorithms will be borrowed
