@@ -1,4 +1,4 @@
-###Introduction
+##Introduction
 - Explain what RNG is, application areas, statistical quality criteria
 
 ####Analysing Random Number Generators (Background)
@@ -21,7 +21,7 @@
 - Explain that software RNG test throughput limitations motivate FPGA implementation
   - RNG output fed into FPGA MC simulations
 
-###Project Specification
+##Project Specification
 - State that in simulations, fast, resource-efficient generation is desired
 - State the client's need for RNGs' output fed into MC simulation
 
@@ -41,7 +41,6 @@
 ####Frequency Test
 - Chi-Squared Test
   - Explanation of how it works, mathematical background, (state equation and derive in appendix?)
-###
 
 ####Minimum RNGs under consideration
 - Explain why existing RNG algorithms will be borrowed
