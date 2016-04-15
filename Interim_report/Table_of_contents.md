@@ -1,7 +1,7 @@
 ##Introduction
 - Explain what RNG is, application areas, statistical quality criteria
 
-###Analysing Random Number Generators (Background)
+####Analysing Random Number Generators (Background)
 - Explain empirical methodology
   - More tests passed indicates higher confidence in randomness
 
