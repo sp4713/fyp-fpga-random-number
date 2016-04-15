@@ -44,6 +44,8 @@
   - Explanation of how it works, mathematical background (state equation and derivation in appendix?)
 - Frequency Test (Basic)
   - Create 32 bit-buckets and check whether each is equiprobably 1 or 0 (i.e. 32 buckets counting occurrences of 1)
+- Count the 1s (Intermediate)
+  - Count the 1 bits in each of either successive bytes. Convert the counts to "letters", and count the occurrences of five-letter "words"
 - Serial Test (Advanced)
   - Each bucket is 00, 01, 10, or 11 - Check equiprobability for each of the 4x32=128 cases (i.e. 4x32=128 buckets counting occurrences of 1 or devise some smarter way)
   - Note that needs to be non-overlapping, otherwise number of points in the cells are not independent, chi-square can't be used
