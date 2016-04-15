@@ -37,23 +37,26 @@
       - Processing system can be used to implement parts of the algorithm which are less suitable or not necessary for hardware acceleration
 
 ###Empirical Tests under consideration
+- Explain bottleneck issue, slowest test will slow down entire design
 ####Methodology used - Statistical Hypothesis Testing
 - Chi-Squared Test
-  - Explanation of how it works, mathematical background, (state equation and derive in appendix?)
-####Frequency Test (Basic)
-- Create 32 bit-buckets and check whether each is equiprobably 1 or 0 (i.e. 32 buckets counting occurrences of 1)
-####Serial Test (Advanced)
-- Each bucket is 00, 01, 10, or 11 - Check equiprobability for each of the 4x32=128 cases (i.e. 4x32=128 buckets counting occurrences of 1 or devise smarter way)
-####Gap Test (Advanced)
-- 
-####Poker Test (Advanced)
-- All different: abcde
-- One pair: aabcd
-- Two pairs: aabbc
-- Three of a kind: aaabc
-- Full house: aaabb
-- Four of a kind: aaaab
-- Poker: aaaaa
+  - Explanation of how it works, mathematical background (state equation and derivation in appendix?)
+- Frequency Test (Basic)
+  - Create 32 bit-buckets and check whether each is equiprobably 1 or 0 (i.e. 32 buckets counting occurrences of 1)
+- Serial Test (Advanced)
+  - Each bucket is 00, 01, 10, or 11 - Check equiprobability for each of the 4x32=128 cases (i.e. 4x32=128 buckets counting occurrences of 1 or devise some smarter way)
+  - Note that needs to be non-overlapping, otherwise number of points in the cells are not independent, chi-square can't be used
+  - Discuss possibility to expand to triple, quadruples, in some efficient way
+- Gap Test (Advanced)
+  - Count range between two consecutive 1s or 0s in all 32 bits
+- Poker Test (Advanced)
+  - All different: abcde
+  - One pair: aabcd
+  - Two pairs: aabbc
+  - Three of a kind: aaabc
+  - Full house: aaabb
+  - Four of a kind: aaaab
+  - Poker: aaaaa
 
 ####Minimum RNGs under consideration
 - Explain why existing RNG algorithms will be borrowed
@@ -65,6 +68,19 @@ Description of basic counters and what features will make them fail certain anti
 ####Advanced RNGs under consideration
 - to be revisited
 
+##Implementation plan
+- Discussion of progress so far, uncertainties at this point in project
+- Discussion on antipicated risks (running out of FPGA resources, time, etc.)
+
+##Planning and Evaluation
+- State existence of Gantt chart in appendix
+- Discussion that RNGs will fall in either almost all pass, almost all fail, or greyzone
+- Aim for minimum throughput 2^38 just as TestU01 throughput
+  - Then aim higher for 2^44 or 2^48 depending on how much progress has been made at this point (ideally one sample per clock cycle)
+  - 10 million samples, 100 million samples/second
+- minimum design: frequency test
+- advanced design: all 4 mentioned tests in parallel
+- describe how evaluation is done through running chunks of data over hours and hours of simulation on FPGA
 ##Appendix
 - Derivation of maths (of RNG? of methodology?)
-- Gantt Chart
+- Gantt Chart (?)
