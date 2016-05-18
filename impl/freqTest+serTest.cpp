@@ -163,3 +163,49 @@ void freqTest(ap_uint<32> freqStream[32], ap_uint<32> serialStream[32],
 	freqStream[30] = freqCount_30;
 	freqStream[31] = freqCount_31;
 }
+
+
+//testbench
+
+ #include <hls_stream.h>
+#include <ap_int.h>
+
+void freqTest(ap_uint<32> pokerStream[5], ap_uint<32> seed, ap_uint<44> n);
+
+int main() {
+	//ap_uint<32> outputFreq[32];
+	//ap_uint<32> outputSerial[128];
+	ap_uint<32> outputPoker[5];
+	ap_uint<32> inputSeed = 0;
+	ap_uint<44> sampleSize = 1000000;
+	//ap_uint<43> freqExpected = sampleSize / 2;
+	//ap_uint<43> serialExpected = sampleSize / 8;
+
+	/*
+	for (int i = 0; i < 32; i++) {
+		outputFreq[i] = 0;
+	}
+	for (int i = 0; i < 128; i++) {
+		outputSerial[i] = 0;
+	}
+	*/
+	for (int i = 0; i < 5; i++) {
+		outputPoker[i] = 0;
+	}
+
+	freqTest(outputPoker, inputSeed, sampleSize);
+
+	/*
+	for (int j = 0; j < 32; j++) {
+		printf("Bit %d: Observed: %d. Expected: %d   ", j, (int) outputFreq[j],
+				(int) freqExpected);
+	}
+	for (int j = 0; j < 128; j++) {
+		printf("Bit %d, tuple %d: Observed: %d. Expected: %d\n", j / 4, j % 4,
+				(int) outputSerial[j], (int) serialExpected);
+	}
+	*/
+	for (int j = 0; j < 5; j++) {
+			printf("Hand %d: Observed: %d. Expected: dunno\n",j,(int)outputPoker[j]);
+	}
+}
