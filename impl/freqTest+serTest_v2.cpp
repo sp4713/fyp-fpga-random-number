@@ -24,7 +24,6 @@ void freqTest(ap_uint<32> freqStream[32], ap_uint<32> serialStream[128], ap_uint
 	for (int i = 0; i < 32; i++) {
 	#pragma HLS PIPELINE
 		freqCount[i] = 0;
-		gapSize[i] = 0;
 	}
 	for (int i=0; i<128; i++) {
 	#pragma HLS PIPELINE
