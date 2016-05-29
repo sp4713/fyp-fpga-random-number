@@ -52,13 +52,17 @@
 #include "xparameters.h" // Parameter definitions for processor peripherals
 #include "xscugic.h" // Processor interrupt controller device driver
 #include "xfreq_serial.h" // Device driver for HLS HW block
+#include "xtime_l.h" // Time-measuring functions for performance evaluation
 
 // Test parameters
-int n_input = 10000000;
+u64 n_input = 4294967295;
 int seed_input = 0;
 
 // Freq Serial HW instance
 XFreq_serial FreqSerial;
+
+// Time-measuring variables
+XTime tStart, tEnd;
 
 // Address Pointers for test outputs
 char *serialcharDataAddress;
@@ -263,14 +267,19 @@ int main() {
 			sw_serial_bit_width_hw, sw_serial_depth_hw;
 */
 
+
 	//int i;
 	int status;
-//Setup the matrix mult
+
+	//Setup the matrix mult
 	status = XFreq_serial_init(&FreqSerial);
 	if (status != XST_SUCCESS) {
-		print("HLS peripheral setup failed\n\r");
+		print("Freq Serial peripheral setup failed\n\r");
 		exit(-1);
 	}
+
+	print("Freq Serial peripheral setup successful\n\r");
+
 /*
 //Setup the interrupt
 //	status = setup_interrupt();
@@ -290,6 +299,10 @@ int main() {
 	}
 	// Simple non-interrupt driven test
 	XFreq_serial_Start(&FreqSerial);
+
+	//start time measurement
+	XTime_GetTime(&tStart);
+
 	do {
 		//get freq test hardware specification information
 		freq_base_address_hw = XFreq_serial_Get_freqStream_V_BaseAddress(
@@ -321,12 +334,17 @@ int main() {
 
 
 	} while (!XFreq_serial_IsReady(&FreqSerial));
+	//get time measurement
+		XTime_GetTime(&tEnd);
 
-	//test feedback to user
-	printf("Sample Size: %d\n\r", n_input);
+	//output the test parameters and results
+	printf("Sample Size: %llu \n\r", n_input);
 	printf("Seed: %d\n\r", seed_input);
 
-/*
+	printf("Output took %llu clock cycles.\n", 2*(tEnd - tStart));
+	printf("That's %llu clock cycles per sample.\n", (2*(tEnd - tStart))/n_input);
+	printf("Output took %.2f us.\n", 1.0 * (tEnd - tStart) / (COUNTS_PER_SECOND/1000000));
+
 	//number of chi-squared categories
 	printf("Serial Char Debug Value: %d\n\r", serialchardebug_value);
 	printf("Freq Char Debug Value: %d\n\r", freqchardebug_value);
@@ -342,8 +360,6 @@ int main() {
 	printf("Serial Total Bytes: %d\n\r", serial_total_bytes_hw);
 	printf("Serial Bit Width: %d\n\r", serial_bit_width_hw);
 	printf("Serial Depth: %d\n\r", serial_depth_hw);
-
-*/
 
 	//output serial test values
 	printf("Serial Histogram: \n");
