@@ -55,7 +55,7 @@
 #include "xtime_l.h" // Time-measuring functions for performance evaluation
 
 // Test parameters
-u64 n_input = 4294967295;
+u64 n_input = 34359738368;
 int seed_input = 0;
 
 // Freq Serial HW instance
@@ -74,8 +74,6 @@ int serialintdebug_value;
 
 int freqchardebug_value;
 int freqintdebug_value;
-
-int someValue = 0;
 
 //Interrupt Controller Instance
 XScuGic ScuGic;
@@ -106,7 +104,8 @@ void freq_serial_start(void *InstancePtr) {
 	XFreq_serial_Start(pAccelerator);
 }
 
-void freq_serial_isr(void *InstancePtr) {
+/*
+	void freq_serial_isr(void *InstancePtr) {
 	XFreq_serial *pAccelerator = (XFreq_serial *) InstancePtr;
 //Disable the global interrupt
 	XFreq_serial_InterruptGlobalDisable(pAccelerator);
@@ -120,7 +119,6 @@ void freq_serial_isr(void *InstancePtr) {
 		freq_serial_start(pAccelerator);
 	}
 }
-/*
 int setup_interrupt() {
 //This functions sets up the interrupt on the ARM
 	int result;
@@ -254,31 +252,19 @@ void sw_serial_freq(unsigned int freqCount[32], unsigned int *accum, bool accum_
 int main() {
 	print("Begin test of communication with Serial Freq peripheral in PL\n\r");
 
+	//Setup the freq serial hw platform
+	int status = XFreq_serial_init(&FreqSerial);
+	if (status != XST_SUCCESS) {
+		print("Freq Serial peripheral setup failed\n\r");
+		exit(-1);
+	}
+	print("Freq Serial peripheral setup success.\n\r");
+
 	//hw variables
 	int freq_base_address_hw, freq_high_address_hw, freq_total_bytes_hw,
 			freq_bit_width_hw, freq_depth_hw;
 	int serial_base_address_hw, serial_high_address_hw, serial_total_bytes_hw,
 			serial_bit_width_hw, serial_depth_hw;
-
-/*	//sw variables
-	int sw_freq_base_address_hw, sw_freq_high_address_hw, sw_freq_total_bytes_hw,
-			sw_freq_bit_width_hw, sw_freq_depth_hw;
-	int sw_serial_base_address_hw, sw_serial_high_address_hw, sw_serial_total_bytes_hw,
-			sw_serial_bit_width_hw, sw_serial_depth_hw;
-*/
-
-
-	//int i;
-	int status;
-
-	//Setup the matrix mult
-	status = XFreq_serial_init(&FreqSerial);
-	if (status != XST_SUCCESS) {
-		print("Freq Serial peripheral setup failed\n\r");
-		exit(-1);
-	}
-
-	print("Freq Serial peripheral setup successful\n\r");
 
 /*
 //Setup the interrupt
@@ -334,16 +320,18 @@ int main() {
 
 
 	} while (!XFreq_serial_IsReady(&FreqSerial));
+
 	//get time measurement
-		XTime_GetTime(&tEnd);
+	XTime_GetTime(&tEnd);
 
 	//output the test parameters and results
 	printf("Sample Size: %llu \n\r", n_input);
 	printf("Seed: %d\n\r", seed_input);
 
-	printf("Output took %llu clock cycles.\n", 2*(tEnd - tStart));
-	printf("That's %llu clock cycles per sample.\n", (2*(tEnd - tStart))/n_input);
-	printf("Output took %.2f us.\n", 1.0 * (tEnd - tStart) / (COUNTS_PER_SECOND/1000000));
+	//output time measurements
+	printf("%llu samples were analysed in %.2f us.\n", (long long unsigned int) n_input, 1.0 * (tEnd - tStart) / (COUNTS_PER_SECOND/1000000));
+	//time functions measure time in PS clock cycles, so conversion to PL clock rate is required
+	printf("PL clock cycles per sample: %.2f \n", (1.0)*((2*(tEnd - tStart))/((n_input*6.66666687))));
 
 	//number of chi-squared categories
 	printf("Serial Char Debug Value: %d\n\r", serialchardebug_value);
