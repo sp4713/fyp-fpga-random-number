@@ -70,9 +70,9 @@ double gamma(double t){
 		Ck = powl(A - K, K - 0.5);
 		Ck *= expl(A - K);
 		Ck /= F;
-	 
+
 		sum += (Ck / Z);
-	 
+
 		F *= (-1.0 * K);
     }
  
