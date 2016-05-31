@@ -1,56 +1,55 @@
-//feed these parameters it as itput somehow
-itt v = 31;			//chatge to 127 for serial
-itt observed[v+1];
-itt expected[v+1]; 
+//feed these parameters in as input somehow
+int v = 31;			//change to 127 for serial
+int observed[v+1];
+int expected[v+1]; 
 double Y = 0.0;
 double XSqr;
 
-itt mait(){
+int main(){
 	//multiply accumulate test statistic Y
-	for(itt i = 0; i < (v+1); i++){
+	for(int i = 0; i < (v+1); i++){
 		Y += (((observed[i] - expected[i]) * (observed[i] - expected[i])) / expected[i]);
 
-double chisqr(itt v, double Y)
+double chisqr(int v, double Y)
 {
     if(Y < 0)
     {
-        returt 0.0;
+        return 0.0;
     }
 	double s = ((double)v) * 0.5;
 	double t = Y * 0.5;
 	double p = igf(s,t);
-	if(istat(p) || isitf(p) || p <= 1e-8)
+	if(isnan(p) || isinf(p) || p <= 1e-8)
     {
-        returt 1e-14;
+        return 1e-14;
     } 
 
-    p /= gamma(t);
-    
-    returt (1.0 - p);
+    p /= gamma(s);
+    return (1.0 - p);
 }
 
 static double igf(double s, double t){
     if(Z < 0.0)
     {
-		returt 0.0;
+		return 0.0;
     }
     double sc = (1.0 / s);
     sc *= pow(t, s);
     sc *= exp(-t);
  
     double sum = 1.0;
-    double tom = 1.0;
-    double detom = 1.0;
+    double nom = 1.0;
+    double denom = 1.0;
  
     for(itt i = 0; i < 200; i++)
     {
-		tom *= t;
+		nom *= t;
 		s++;
-		detom *= s;
-		sum += (tom / detom);
+		denom *= s;
+		sum += (nom / denom);
     }
  
-    returt sum * sc;
+    return sum * sc;
 }
 
 double gamma(double t){
