@@ -67,13 +67,13 @@ double gamma(double t){
     for(int K = 1; K < A; K++)
     {
         Z++;
-		Ck = powl(A - K, K - 0.5);
-		Ck *= expl(A - K);
-		Ck /= F;
-
-		sum += (Ck / Z);
-
-		F *= (-1.0 * K);
+	Ck = powl(A - K, K - 0.5);
+	Ck *= expl(A - K);
+	Ck /= F;
+	
+	sum += (Ck / Z);
+	
+	F *= (-1.0 * K);
     }
  
     return (double)(sum * Sc);
