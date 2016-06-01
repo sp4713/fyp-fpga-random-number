@@ -1,10 +1,21 @@
 ##Introduction
-  - What are RNGs, state that they're tested in batteries of tests
+  - What are RNGs, state that they're empirically tested using batteries of tests
   - Currently, test suites are software, problems with hardware RNG testing
   - State problem: Analysis of FPGA-accelerated custom RNGs for use in computer simulations
 - Project Scope
   - Goal: User-specified RNGs tested up to 2^44 samples at one sample/clock cycle
-  - Easy to set up, thought-out hw/sw split, 
+  
+  - For maximum efficiency, HW/SW split should be well-reasoned
+  - System should be useful
+  - Questions addressed in project:
+    - How to communicate test success/failure to the user?
+    - How to optimise system throughput to one sample per clock cycle?
+    - How to parallelise multiple RNG tests under consideration?
+    - How to facilitate the processing of trillions of samples?
+    - How to split up the embedded design in hardware and software portions?
+    - How to interact with the test suite?
+
+
 
 ##Background
 
