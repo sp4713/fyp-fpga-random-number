@@ -39,11 +39,6 @@
 - outline of expected use and a brief more detailed than the specification is constructed
 
 ##Top Level Abstract Design
-- Vivado HLS
-- Vivado IP Integrator
-- Xilinx SDK
-
-##Top Level Abstract Design
 - Outline Design Flow Diagram
 - The different stages of compilation required by the user (and 
 - Keep section a lot more brief than low level abstract design
