@@ -1,6 +1,13 @@
 ##Introduction
+  - What are RNGs, state that they're tested in batteries of tests
+  - Currently, test suites are software, problems with hardware RNG testing
+  - State problem: Analysis of FPGA-accelerated custom RNGs for use in computer simulations
+- Project Scope
+  - Goal: User-specified RNGs tested up to 2^44 samples at one sample/clock cycle
+  - Easy to set up, thought-out hw/sw split, 
 
 ##Background
+
 
 ##Design Specification (aka Requirements Capture)
 - investigation of expected use and a brief more detailed than the specification is constructed
