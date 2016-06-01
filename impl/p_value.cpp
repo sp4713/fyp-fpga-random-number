@@ -1,5 +1,4 @@
 //feed these parameters in as input somehow
-int v = 31;			//change to 127 for serial
 int observed[v+1];
 int expected[v+1]; 
 double Y = 0.0;
@@ -9,7 +8,12 @@ int main(){
 	//multiply accumulate test statistic Y
 	for(int i = 0; i < (v+1); i++){
 		Y += (((observed[i] - expected[i]) * (observed[i] - expected[i])) / expected[i]);
-
+	}
+	p_val = chisqr(31, Y);	//change to 127 for serial
+	return 0;
+}
+	
+	
 double chisqr(int v, double Y)
 {
     if(Y < 0)
@@ -67,13 +71,13 @@ double gamma(double t){
     for(int K = 1; K < A; K++)
     {
         Z++;
-	Ck = powl(A - K, K - 0.5);
-	Ck *= expl(A - K);
-	Ck /= F;
-	
-	sum += (Ck / Z);
-	
-	F *= (-1.0 * K);
+		Ck = powl(A - K, K - 0.5);
+		Ck *= expl(A - K);
+		Ck /= F;
+
+		sum += (Ck / Z);
+
+		F *= (-1.0 * K);
     }
  
     return (double)(sum * Sc);
