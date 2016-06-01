@@ -1,10 +1,14 @@
 //feed these parameters in as input somehow
 int observed[v+1];
-int expected[v+1]; 
+int expected; 
+double n_input = 10000000	//this value is provided through the n_input specified in Xilinx SDK
 double Y = 0.0;
 double XSqr;
 
 int main(){
+	//initialisation
+	expected=n_input/v;
+	
 	//multiply accumulate test statistic Y
 	for(int i = 0; i < (v+1); i++){
 		Y += (((observed[i] - expected[i]) * (observed[i] - expected[i])) / expected[i]);
