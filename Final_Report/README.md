@@ -18,6 +18,7 @@
 - Target Platform
   - Overview of PS/PL split of board, software suite, why not Verilog/VHDL
 - Report Structure
+
 ##Background
 - Related Work (restate existence of current test suites and theory books)
 - Project Motivation
