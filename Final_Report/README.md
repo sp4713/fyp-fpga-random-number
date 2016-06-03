@@ -74,7 +74,6 @@
 
 ##Low Level Abstract Design (longest section?)
 - Step-by-step bottom-up description of implementation in Vivado HLS, then Vivado IP Integrator, then Xilinx SDK
-- 
 
 ##Simulation and Testing (TBD)
 - Describe toolchain used (mainly Vivado HLS custom testbenches and testbenches in Xilinx SDK)
