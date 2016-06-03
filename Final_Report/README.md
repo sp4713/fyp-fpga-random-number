@@ -49,12 +49,12 @@
   - Explanation of AXI4 and 32-bit truncation
 - Section for workflow diagram?
 
-##(TBD) Design Specification (aka Requirements Capture) TBD
+##(TBD) Design Specification (aka Requirements Capture)
 - investigation of expected use and a brief more detailed than the specification is constructed
 - outlining project objectives
 - Produce set of strict technical specifications that the final product must follow
 
-- (TBD) Top Level Specifications
+- (TBD) Top Level Specifications (what to put here?)
   - Types of RNGs under consideration
   - Input parameters user should supply
   - Output information system should supply
