@@ -1,3 +1,9 @@
+//RNG Code
+ap_uint<32> seedNext(ap_uint<32> seed){
+  return ((65539*seed)%(2147483648));
+}
+
+//Test Results
 Frequency Test
 Bit 0: Observed: 256. Expected: 128
 Bit 1: Observed: 128. Expected: 128
