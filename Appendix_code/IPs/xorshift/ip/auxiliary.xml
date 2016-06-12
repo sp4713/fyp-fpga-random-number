@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="freq_serial" xd:componentRef="freq_serial" xd:initiationInterval="10245" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_FREQ_PERIPH_BUS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="freqStream[]" xd:originalName="freqStream" xd:direction="out" xd:interfaceRef="s_axi_FREQ_PERIPH_BUS" xd:busTypeRef="axilite" xd:offset="0x80" xd:arraySize="32" xd:dataWidth="32"/>
+  <xd:arg xd:name="serialTwoStream[]" xd:originalName="serialTwoStream" xd:direction="out" xd:interfaceRef="s_axi_FREQ_PERIPH_BUS" xd:busTypeRef="axilite" xd:offset="0x200" xd:arraySize="96" xd:dataWidth="32"/>
+  <xd:arg xd:name="serialThreeStream[]" xd:originalName="serialThreeStream" xd:direction="out" xd:interfaceRef="s_axi_FREQ_PERIPH_BUS" xd:busTypeRef="axilite" xd:offset="0x400" xd:arraySize="112" xd:dataWidth="32"/>
+  <xd:arg xd:name="seed" xd:originalName="seed" xd:direction="in" xd:interfaceRef="s_axi_FREQ_PERIPH_BUS" xd:busTypeRef="axilite" xd:offset="0x600" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="n" xd:originalName="n" xd:direction="in" xd:interfaceRef="s_axi_FREQ_PERIPH_BUS" xd:busTypeRef="axilite" xd:offset="0x608" xd:handshakeRef="ap_none" xd:dataWidth="44"/>
+  <xd:arg xd:name="offset" xd:originalName="offset" xd:direction="in" xd:interfaceRef="s_axi_FREQ_PERIPH_BUS" xd:busTypeRef="axilite" xd:offset="0x614" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="344" xd:worst-case="10244" xd:average-case="5294"/>
+  <xd:resourceEstimates xd:LUT="19596" xd:FF="11046" xd:BRAM="6" xd:DSP="0"/>
+</xd:acceleratorMap>
