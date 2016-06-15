@@ -1,0 +1,446 @@
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+          Starting Alphabit:   nb = 1073741824
+          Version: TestU01 1.2.3
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+***********************************************************
+HOST = 
+
+ulcg_CreateLCG2e31:   a = 16807,   c = 0,   s = 12345
+
+
+smultin_MultinomialBitsOver test:
+-----------------------------------------------
+   N =  2,  n = 536870912,  r =  0,   s = 32,   L =    2,
+       Sparse =  FALSE
+
+       Number of bits = n = 536870912
+       Number of cells = 2^L =                  4
+       Expected number per cell =  1.3421773e+008
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu = 9.3132258e-010,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.000
+p-value of test                       : 1 - eps1    *****
+
+Kolmogorov-Smirnov- statistic = D-    :    1.00
+p-value of test                       :   eps      *****
+
+Anderson-Darling statistic = A2       :   71.47
+p-value of test                       : 1.1e-32    *****
+
+For the sum of the N observations, we use
+      the Normal approximation:
+Standardized empirical mean           : 3.71e+05
+p-value of test                       :   eps      *****
+
+Standardized empirical correlation    : 9.73e+10
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:01.71
+
+Generator state:
+ s = 1879060537
+
+
+
+
+***********************************************************
+HOST = 
+
+ulcg_CreateLCG2e31:   a = 16807,   c = 0,   s = 12345
+
+
+smultin_MultinomialBitsOver test:
+-----------------------------------------------
+   N =  2,  n = 536870912,  r =  0,   s = 32,   L =    4,
+       Sparse =  FALSE
+
+       Number of bits = n = 536870912
+       Number of cells = 2^L =                 16
+       Expected number per cell =    33554432
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =  6.519258e-009,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.000
+p-value of test                       : 1 - eps1    *****
+
+Kolmogorov-Smirnov- statistic = D-    :    1.00
+p-value of test                       :   eps      *****
+
+Anderson-Darling statistic = A2       :   71.47
+p-value of test                       : 1.1e-32    *****
+
+For the sum of the N observations, we use
+      the Normal approximation:
+Standardized empirical mean           : 1.30e+06
+p-value of test                       :   eps      *****
+
+Standardized empirical correlation    : 1.19e+12
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:01.70
+
+Generator state:
+ s = 1610625081
+
+
+
+
+***********************************************************
+HOST = 
+
+ulcg_CreateLCG2e31:   a = 16807,   c = 0,   s = 12345
+
+
+smultin_MultinomialBitsOver test:
+-----------------------------------------------
+   N =  2,  n = 536870912,  r =  0,   s = 32,   L =    8,
+       Sparse =  FALSE
+
+       Number of bits = n = 536870912
+       Number of cells = 2^L =                256
+       Expected number per cell =     2097152
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu = 1.1827797e-007,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.000
+p-value of test                       : 1 - eps1    *****
+
+Kolmogorov-Smirnov- statistic = D-    :    1.00
+p-value of test                       :   eps      *****
+
+Anderson-Darling statistic = A2       :   71.47
+p-value of test                       : 1.1e-32    *****
+
+For the sum of the N observations, we use
+      the Normal approximation:
+Standardized empirical mean           : 5.09e+05
+p-value of test                       :   eps      *****
+
+Standardized empirical correlation    : 1.84e+11
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:01.65
+
+Generator state:
+ s = 1342189625
+
+
+
+
+***********************************************************
+HOST = 
+
+ulcg_CreateLCG2e31:   a = 16807,   c = 0,   s = 12345
+
+
+smultin_MultinomialBitsOver test:
+-----------------------------------------------
+   N =  2,  n = 536870912,  r =  0,   s = 32,   L =   16,
+       Sparse =  FALSE
+
+       Number of bits = n = 536870912
+       Number of cells = 2^L =              65536
+       Expected number per cell =        8192
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu = 3.0516647e-005,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.000
+p-value of test                       : 1 - eps1    *****
+
+Kolmogorov-Smirnov- statistic = D-    :    1.00
+p-value of test                       :   eps      *****
+
+Anderson-Darling statistic = A2       :   71.47
+p-value of test                       : 1.1e-32    *****
+
+For the sum of the N observations, we use
+      the Normal approximation:
+Standardized empirical mean           :31772.75
+p-value of test                       :   eps      *****
+
+Standardized empirical correlation    : 7.14e+08
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:03.63
+
+Generator state:
+ s = 1073754169
+
+
+
+
+***********************************************************
+HOST = 
+
+ulcg_CreateLCG2e31:   a = 16807,   c = 0,   s = 12345
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 33554432,  r =  0,   s = 32,   L = 16,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          :  257
+Chi-square statistic                  : 2.12e+06
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:01.06
+
+Generator state:
+ s = 805318713
+
+
+
+
+***********************************************************
+HOST = 
+
+ulcg_CreateLCG2e31:   a = 16807,   c = 0,   s = 12345
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 16777216,  r =  0,   s = 32,   L = 32,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          :  501
+Chi-square statistic                  : 5.66e+06
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:00.84
+
+Generator state:
+ s = 536883257
+
+
+
+
+***********************************************************
+HOST = 
+
+ulcg_CreateLCG2e31:   a = 16807,   c = 0,   s = 12345
+
+
+sstring_HammingCorr test:
+-----------------------------------------------
+   N =  1,  n = 33554432,  r =  0,   s = 32,   L = 32
+
+
+
+-----------------------------------------------
+Normal statistic                      : -425.02
+p-value of test                       : 1 - eps1    *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:00.84
+
+Generator state:
+ s = 268447801
+
+
+
+
+***********************************************************
+HOST = 
+
+ulcg_CreateLCG2e31:   a = 16807,   c = 0,   s = 12345
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 16777216,  r =  0,   s = 32,   L0 =   64,   L1 =   64
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :   38
+ChiSquare statistic                   : 1.08e+06
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :   38
+ChiSquare statistic                   : 2.53e+06
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :   32
+ChiSquare statistic                   : 1.51e+06
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :   28
+ChiSquare statistic                   :41643.89
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   19
+ChiSquare statistic                   :17124.85
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:06.24
+
+Generator state:
+ s = 12345
+
+
+
+
+***********************************************************
+HOST = 
+
+ulcg_CreateLCG2e31:   a = 16807,   c = 0,   s = 12345
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 3355443,  r =  0,   s = 32,   L0 =  320,   L1 =  320
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :   80
+ChiSquare statistic                   : 1.09e+06
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :   80
+ChiSquare statistic                   : 9.88e+05
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :  160
+ChiSquare statistic                   : 8.74e+05
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :   71
+ChiSquare statistic                   :16754.78
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   40
+ChiSquare statistic                   : 9690.20
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:05.07
+
+Generator state:
+ s = 1961916873
+
+
+
+
+
+========= Summary results of Alphabit =========
+
+ Version:          TestU01 1.2.3
+ Generator:        ulcg_CreateLCG2e31
+ Number of bits:   1073741824
+ Number of statistics:  17
+ Total CPU time:   00:00:22.76
+ The following tests gave p-values outside [0.001, 0.9990]:
+ (eps  means a value < 1.0e-300):
+ (eps1 means a value < 1.0e-015):
+
+       Test                          p-value
+ ----------------------------------------------
+  1  MultinomialBitsOver, L = 2     1.1e-32
+  2  MultinomialBitsOver, L = 4     1.1e-32
+  3  MultinomialBitsOver, L = 8     1.1e-32
+  4  MultinomialBitsOver, L = 16    1.1e-32
+  5  HammingIndep, L = 16             eps  
+  6  HammingIndep, L = 32             eps  
+  7  HammingCorr, L = 32            1 - eps1
+  8  RandomWalk1 H (L = 64)           eps  
+  8  RandomWalk1 M (L = 64)           eps  
+  8  RandomWalk1 J (L = 64)           eps  
+  8  RandomWalk1 R (L = 64)           eps  
+  8  RandomWalk1 C (L = 64)           eps  
+  9  RandomWalk1 H (L = 320)          eps  
+  9  RandomWalk1 M (L = 320)          eps  
+  9  RandomWalk1 J (L = 320)          eps  
+  9  RandomWalk1 R (L = 320)          eps  
+  9  RandomWalk1 C (L = 320)          eps  
+ ----------------------------------------------
+
+
+
