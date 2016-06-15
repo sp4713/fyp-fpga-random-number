@@ -1,3 +1,4 @@
 - Tested RNG: RANDU
 - Battery of Tests: TestU01's Alphabit test suite
 - CPU: Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
+- Note that the number behind the file name indicates the total number of bits analysed. I.e., the amount of 32-bit numbers analysed is the pow2 exponent minus 5
