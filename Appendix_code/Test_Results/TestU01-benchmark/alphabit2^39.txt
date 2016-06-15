@@ -1,0 +1,592 @@
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+          Starting Alphabit:   nb = 549755813888
+          Version: TestU01 1.2.3
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+***********************************************************
+HOST = 
+
+ulcg_CreateLCG2e31:   a = 16807,   c = 0,   s = 12345
+
+
+smultin_MultinomialBitsOver test:
+-----------------------------------------------
+   N = 550,  n = 999556000,  r =  0,   s = 32,   L =    2,
+       Sparse =  FALSE
+
+       Number of bits = n = 999556000
+       Number of cells = 2^L =                  4
+       Expected number per cell =  2.49889e+008
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =  5.002221e-010,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.000
+p-value of test                       : 1 - eps1    *****
+
+Kolmogorov-Smirnov- statistic = D-    :    1.00
+p-value of test                       :   eps      *****
+
+Anderson-Darling statistic = A2       :19655.24
+p-value of test                       :   eps      *****
+
+For the sum of the N observations, we use
+      the Normal approximation:
+Standardized empirical mean           : 1.14e+07
+p-value of test                       :   eps      *****
+
+Standardized empirical correlation    : 5.59e+12
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:16:01.27
+
+Generator state:
+ s = 1390114633
+
+
+
+
+***********************************************************
+HOST = 
+
+ulcg_CreateLCG2e31:   a = 16807,   c = 0,   s = 12345
+
+
+smultin_MultinomialBitsOver test:
+-----------------------------------------------
+   N = 550,  n = 999556000,  r =  0,   s = 32,   L =    4,
+       Sparse =  FALSE
+
+       Number of bits = n = 999556000
+       Number of cells = 2^L =                 16
+       Expected number per cell =    62472250
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu = 3.5015547e-009,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.000
+p-value of test                       : 1 - eps1    *****
+
+Kolmogorov-Smirnov- statistic = D-    :    1.00
+p-value of test                       :   eps      *****
+
+Anderson-Darling statistic = A2       :19655.24
+p-value of test                       :   eps      *****
+
+For the sum of the N observations, we use
+      the Normal approximation:
+Standardized empirical mean           : 4.01e+07
+p-value of test                       :   eps      *****
+
+Standardized empirical correlation    : 6.84e+13
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:16:06.00
+
+Generator state:
+ s = 1620944729
+
+
+
+
+***********************************************************
+HOST = 
+
+ulcg_CreateLCG2e31:   a = 16807,   c = 0,   s = 12345
+
+
+smultin_MultinomialBitsOver test:
+-----------------------------------------------
+   N = 550,  n = 999556000,  r =  0,   s = 32,   L =    8,
+       Sparse =  FALSE
+
+       Number of bits = n = 999556000
+       Number of cells = 2^L =                256
+       Expected number per cell =   3904515.6
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu = 6.3528207e-008,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.000
+p-value of test                       : 1 - eps1    *****
+
+Kolmogorov-Smirnov- statistic = D-    :    1.00
+p-value of test                       :   eps      *****
+
+Anderson-Darling statistic = A2       :19655.24
+p-value of test                       :   eps      *****
+
+For the sum of the N observations, we use
+      the Normal approximation:
+Standardized empirical mean           : 1.57e+07
+p-value of test                       :   eps      *****
+
+Standardized empirical correlation    : 1.06e+13
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:14:52.35
+
+Generator state:
+ s = 1721815145
+
+
+
+
+***********************************************************
+HOST = 
+
+ulcg_CreateLCG2e31:   a = 16807,   c = 0,   s = 12345
+
+
+smultin_MultinomialBitsOver test:
+-----------------------------------------------
+   N = 550,  n = 999556000,  r =  0,   s = 32,   L =   16,
+       Sparse =  FALSE
+
+       Number of bits = n = 999556000
+       Number of cells = 2^L =              65536
+       Expected number per cell =   15252.014
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu = 1.6390778e-005,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.000
+p-value of test                       : 1 - eps1    *****
+
+Kolmogorov-Smirnov- statistic = D-    :    1.00
+p-value of test                       :   eps      *****
+
+Anderson-Darling statistic = A2       :19655.24
+p-value of test                       :   eps      *****
+
+For the sum of the N observations, we use
+      the Normal approximation:
+Standardized empirical mean           : 9.82e+05
+p-value of test                       :   eps      *****
+
+Standardized empirical correlation    : 4.11e+10
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:31:48.53
+
+Generator state:
+ s = 1087898233
+
+
+
+
+***********************************************************
+HOST = 
+
+ulcg_CreateLCG2e31:   a = 16807,   c = 0,   s = 12345
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N = 18,  n = 954437176,  r =  0,   s = 32,   L = 16,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.000
+p-value of test                       : 1 - eps1    *****
+
+Kolmogorov-Smirnov- statistic = D-    :    1.00
+p-value of test                       :   eps      *****
+
+Anderson-Darling statistic = A2       :  643.26
+p-value of test                       :1.7e-281    *****
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 4986
+Chi-square statistic                  : 1.09e+09
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:09:22.02
+
+Generator state:
+ s = 52898553
+
+
+
+
+***********************************************************
+HOST = 
+
+ulcg_CreateLCG2e31:   a = 16807,   c = 0,   s = 12345
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N = 18,  n = 477218588,  r =  0,   s = 32,   L = 32,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.000
+p-value of test                       : 1 - eps1    *****
+
+Kolmogorov-Smirnov- statistic = D-    :    1.00
+p-value of test                       :   eps      *****
+
+Anderson-Darling statistic = A2       :  643.26
+p-value of test                       :1.7e-281    *****
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 11178
+Chi-square statistic                  : 2.90e+09
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:07:20.00
+
+Generator state:
+ s = 235967353
+
+
+
+
+***********************************************************
+HOST = 
+
+ulcg_CreateLCG2e31:   a = 16807,   c = 0,   s = 12345
+
+
+sstring_HammingCorr test:
+-----------------------------------------------
+   N = 18,  n = 954437176,  r =  0,   s = 32,   L = 32
+
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    1.00
+p-value of test                       :   eps      *****
+
+Kolmogorov-Smirnov- statistic = D-    :   0.000
+p-value of test                       : 1 - eps1    *****
+
+Anderson-Darling statistic = A2       :  643.26
+p-value of test                       :1.7e-281    *****
+
+Tests on the sum of all N observations
+Standardized normal statistic         :-9592.40
+p-value of test                       : 1 - eps1    *****
+
+Sample variance                       :   0.048
+p-value of test                       : 1 -  2.7e-09    *****
+
+-----------------------------------------------
+CPU time used                    :  00:07:09.89
+
+Generator state:
+ s = 2041854969
+
+
+
+
+***********************************************************
+HOST = 
+
+ulcg_CreateLCG2e31:   a = 16807,   c = 0,   s = 12345
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  9,  n = 954437176,  r =  0,   s = 32,   L0 =   64,   L1 =   64
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.000
+p-value of test                       : 1 - eps1    *****
+
+Kolmogorov-Smirnov- statistic = D-    :    1.00
+p-value of test                       :   eps      *****
+
+Anderson-Darling statistic = A2       :  321.63
+p-value of test                       :1.1e-141    *****
+
+Test on the sum of all N observations
+Number of degrees of freedom          :  378
+Chi-square statistic                  : 5.53e+08
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.000
+p-value of test                       : 1 - eps1    *****
+
+Kolmogorov-Smirnov- statistic = D-    :    1.00
+p-value of test                       :   eps      *****
+
+Anderson-Darling statistic = A2       :  321.63
+p-value of test                       :1.1e-141    *****
+
+Test on the sum of all N observations
+Number of degrees of freedom          :  387
+Chi-square statistic                  : 1.30e+09
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.000
+p-value of test                       : 1 - eps1    *****
+
+Kolmogorov-Smirnov- statistic = D-    :    1.00
+p-value of test                       :   eps      *****
+
+Anderson-Darling statistic = A2       :  321.63
+p-value of test                       :1.1e-141    *****
+
+Test on the sum of all N observations
+Number of degrees of freedom          :  288
+Chi-square statistic                  : 7.72e+08
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.000
+p-value of test                       : 1 - eps1    *****
+
+Kolmogorov-Smirnov- statistic = D-    :    1.00
+p-value of test                       :   eps      *****
+
+Anderson-Darling statistic = A2       :  321.63
+p-value of test                       :1.1e-141    *****
+
+Test on the sum of all N observations
+Number of degrees of freedom          :  270
+Chi-square statistic                  : 2.12e+07
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.000
+p-value of test                       : 1 - eps1    *****
+
+Kolmogorov-Smirnov- statistic = D-    :    1.00
+p-value of test                       :   eps      *****
+
+Anderson-Darling statistic = A2       :  321.63
+p-value of test                       :1.1e-141    *****
+
+Test on the sum of all N observations
+Number of degrees of freedom          :  189
+Chi-square statistic                  : 8.77e+06
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:53:02.57
+
+Generator state:
+ s = 1848779897
+
+
+
+
+***********************************************************
+HOST = 
+
+ulcg_CreateLCG2e31:   a = 16807,   c = 0,   s = 12345
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  2,  n = 858993459,  r =  0,   s = 32,   L0 =  320,   L1 =  320
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.000
+p-value of test                       : 1 - eps1    *****
+
+Kolmogorov-Smirnov- statistic = D-    :    1.00
+p-value of test                       :   eps      *****
+
+Anderson-Darling statistic = A2       :   71.47
+p-value of test                       : 1.1e-32    *****
+
+Test on the sum of all N observations
+Number of degrees of freedom          :  196
+Chi-square statistic                  : 5.59e+08
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.000
+p-value of test                       : 1 - eps1    *****
+
+Kolmogorov-Smirnov- statistic = D-    :    1.00
+p-value of test                       :   eps      *****
+
+Anderson-Darling statistic = A2       :   71.47
+p-value of test                       : 1.1e-32    *****
+
+Test on the sum of all N observations
+Number of degrees of freedom          :  198
+Chi-square statistic                  : 5.06e+08
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.000
+p-value of test                       : 1 - eps1    *****
+
+Kolmogorov-Smirnov- statistic = D-    :    1.00
+p-value of test                       :   eps      *****
+
+Anderson-Darling statistic = A2       :   71.47
+p-value of test                       : 1.1e-32    *****
+
+Test on the sum of all N observations
+Number of degrees of freedom          :  320
+Chi-square statistic                  : 4.47e+08
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.000
+p-value of test                       : 1 - eps1    *****
+
+Kolmogorov-Smirnov- statistic = D-    :    1.00
+p-value of test                       :   eps      *****
+
+Anderson-Darling statistic = A2       :   71.47
+p-value of test                       : 1.1e-32    *****
+
+Test on the sum of all N observations
+Number of degrees of freedom          :  170
+Chi-square statistic                  : 8.53e+06
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.000
+p-value of test                       : 1 - eps1    *****
+
+Kolmogorov-Smirnov- statistic = D-    :    1.00
+p-value of test                       :   eps      *****
+
+Anderson-Darling statistic = A2       :   71.47
+p-value of test                       : 1.1e-32    *****
+
+Test on the sum of all N observations
+Number of degrees of freedom          :  100
+Chi-square statistic                  : 4.94e+06
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:43:29.70
+
+Generator state:
+ s = 750614681
+
+
+
+
+
+========= Summary results of Alphabit =========
+
+ Version:          TestU01 1.2.3
+ Generator:        ulcg_CreateLCG2e31
+ Number of bits:   549755813888
+ Number of statistics:  17
+ Total CPU time:   03:19:12.37
+ The following tests gave p-values outside [0.001, 0.9990]:
+ (eps  means a value < 1.0e-300):
+ (eps1 means a value < 1.0e-015):
+
+       Test                          p-value
+ ----------------------------------------------
+  1  MultinomialBitsOver, L = 2       eps  
+  2  MultinomialBitsOver, L = 4       eps  
+  3  MultinomialBitsOver, L = 8       eps  
+  4  MultinomialBitsOver, L = 16      eps  
+  5  HammingIndep, L = 16             eps  
+  6  HammingIndep, L = 32             eps  
+  7  HammingCorr, L = 32            1 - eps1
+  8  RandomWalk1 H (L = 64)           eps  
+  8  RandomWalk1 M (L = 64)           eps  
+  8  RandomWalk1 J (L = 64)           eps  
+  8  RandomWalk1 R (L = 64)           eps  
+  8  RandomWalk1 C (L = 64)           eps  
+  9  RandomWalk1 H (L = 320)          eps  
+  9  RandomWalk1 M (L = 320)          eps  
+  9  RandomWalk1 J (L = 320)          eps  
+  9  RandomWalk1 R (L = 320)          eps  
+  9  RandomWalk1 C (L = 320)          eps  
+ ----------------------------------------------
+
+
+
