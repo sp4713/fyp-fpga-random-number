@@ -1,2 +1,3 @@
 - Tested RNG: RANDU
+- Battery of Tests: TestU01's Alphabit test suite
 - CPU: Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
