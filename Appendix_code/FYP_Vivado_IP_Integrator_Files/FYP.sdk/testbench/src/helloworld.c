@@ -24,7 +24,7 @@
 #include "xfreq_serial.h" // Device driver for HLS HW block
 #include "xtime_l.h" // Time-measuring functions for performance evaluation
 #define A 15 // precision parameter for
-bool debugValid = true; //toggle on to printf values to assist in debugging
+bool debugValid = false; //toggle on to printf values to assist in debugging
 
 static long double KM(long double S, long double Z);
 static long double log_igf(long double S, long double Z);
