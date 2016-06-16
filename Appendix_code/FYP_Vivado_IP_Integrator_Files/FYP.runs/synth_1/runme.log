@@ -1,0 +1,2296 @@
+
+*** Running vivado
+    with args -log block_design1_wrapper.vds -m64 -mode batch -messageDb vivado.pb -notrace -source block_design1_wrapper.tcl
+
+
+****** Vivado v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source block_design1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/s02so/Desktop/Code Generations/IP Folders/xorshift'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.1/data/ip'.
+Command: synth_design -top block_design1_wrapper -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16532 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 360.629 ; gain = 154.219
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'block_design1_wrapper' [C:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/hdl/block_design1_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'block_design1' [C:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/hdl/block_design1.v:13]
+INFO: [Synth 8-638] synthesizing module 'block_design1_freq_serial_0_0' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ip/block_design1_freq_serial_0_0/synth/block_design1_freq_serial_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'freq_serial' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial.v:12]
+	Parameter ap_ST_st1_fsm_0 bound to: 5'b00001 
+	Parameter ap_ST_st2_fsm_1 bound to: 5'b00010 
+	Parameter ap_ST_st3_fsm_2 bound to: 5'b00100 
+	Parameter ap_ST_st4_fsm_3 bound to: 5'b01000 
+	Parameter ap_ST_st5_fsm_4 bound to: 5'b10000 
+	Parameter ap_const_lv32_0 bound to: 0 - type: integer 
+	Parameter ap_const_lv44_0 bound to: 44'b00000000000000000000000000000000000000000000 
+	Parameter C_S_AXI_FREQ_PERIPH_BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ap_const_int64_8 bound to: 8 - type: integer 
+	Parameter C_S_AXI_FREQ_PERIPH_BUS_ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ap_const_lv32_1 bound to: 1 - type: integer 
+	Parameter ap_const_lv32_2 bound to: 2 - type: integer 
+	Parameter ap_const_lv32_3 bound to: 3 - type: integer 
+	Parameter ap_const_lv32_4 bound to: 4 - type: integer 
+	Parameter ap_const_lv6_0 bound to: 6'b000000 
+	Parameter ap_const_lv7_0 bound to: 7'b0000000 
+	Parameter ap_const_lv2_1 bound to: 2'b01 
+	Parameter ap_const_lv2_2 bound to: 2'b10 
+	Parameter ap_const_lv2_3 bound to: 2'b11 
+	Parameter ap_const_lv3_4 bound to: 3'b100 
+	Parameter ap_const_lv3_5 bound to: 3'b101 
+	Parameter ap_const_lv3_6 bound to: 3'b110 
+	Parameter ap_const_lv3_7 bound to: 3'b111 
+	Parameter ap_const_lv4_8 bound to: 4'b1000 
+	Parameter ap_const_lv4_9 bound to: 4'b1001 
+	Parameter ap_const_lv4_A bound to: 4'b1010 
+	Parameter ap_const_lv4_B bound to: 4'b1011 
+	Parameter ap_const_lv4_C bound to: 4'b1100 
+	Parameter ap_const_lv4_D bound to: 4'b1101 
+	Parameter ap_const_lv4_E bound to: 4'b1110 
+	Parameter ap_const_lv4_F bound to: 4'b1111 
+	Parameter ap_const_lv44_1 bound to: 44'b00000000000000000000000000000000000000000001 
+	Parameter ap_const_lv32_5 bound to: 5 - type: integer 
+	Parameter ap_const_lv32_6 bound to: 6 - type: integer 
+	Parameter ap_const_lv32_7 bound to: 7 - type: integer 
+	Parameter ap_const_lv32_8 bound to: 8 - type: integer 
+	Parameter ap_const_lv32_9 bound to: 9 - type: integer 
+	Parameter ap_const_lv32_A bound to: 10 - type: integer 
+	Parameter ap_const_lv32_B bound to: 11 - type: integer 
+	Parameter ap_const_lv32_C bound to: 12 - type: integer 
+	Parameter ap_const_lv32_D bound to: 13 - type: integer 
+	Parameter ap_const_lv32_E bound to: 14 - type: integer 
+	Parameter ap_const_lv32_F bound to: 15 - type: integer 
+	Parameter ap_const_lv32_10 bound to: 16 - type: integer 
+	Parameter ap_const_lv32_11 bound to: 17 - type: integer 
+	Parameter ap_const_lv32_12 bound to: 18 - type: integer 
+	Parameter ap_const_lv32_13 bound to: 19 - type: integer 
+	Parameter ap_const_lv32_14 bound to: 20 - type: integer 
+	Parameter ap_const_lv32_15 bound to: 21 - type: integer 
+	Parameter ap_const_lv32_16 bound to: 22 - type: integer 
+	Parameter ap_const_lv32_17 bound to: 23 - type: integer 
+	Parameter ap_const_lv32_18 bound to: 24 - type: integer 
+	Parameter ap_const_lv32_19 bound to: 25 - type: integer 
+	Parameter ap_const_lv32_1A bound to: 26 - type: integer 
+	Parameter ap_const_lv32_1B bound to: 27 - type: integer 
+	Parameter ap_const_lv32_1C bound to: 28 - type: integer 
+	Parameter ap_const_lv32_1D bound to: 29 - type: integer 
+	Parameter ap_const_lv32_1E bound to: 30 - type: integer 
+	Parameter ap_const_lv32_1F bound to: 31 - type: integer 
+	Parameter ap_const_lv43_1 bound to: 43'b0000000000000000000000000000000000000000001 
+	Parameter ap_const_lv2_0 bound to: 2'b00 
+	Parameter ap_const_lv6_20 bound to: 6'b100000 
+	Parameter ap_const_lv6_1 bound to: 6'b000001 
+	Parameter ap_const_lv32_2B bound to: 43 - type: integer 
+	Parameter ap_const_lv7_60 bound to: 7'b1100000 
+	Parameter ap_const_lv7_1 bound to: 7'b0000001 
+	Parameter ap_const_lv32_2A bound to: 42 - type: integer 
+	Parameter ap_const_lv7_70 bound to: 7'b1110000 
+	Parameter C_S_AXI_FREQ_PERIPH_BUS_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial.v:133]
+INFO: [Synth 8-638] synthesizing module 'freq_serial_FREQ_PERIPH_BUS_s_axi' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial_FREQ_PERIPH_BUS_s_axi.v:9]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 11'b00000000000 
+	Parameter ADDR_GIE bound to: 11'b00000000100 
+	Parameter ADDR_IER bound to: 11'b00000001000 
+	Parameter ADDR_ISR bound to: 11'b00000001100 
+	Parameter ADDR_SEED_V_DATA_0 bound to: 11'b11000000000 
+	Parameter ADDR_SEED_V_CTRL bound to: 11'b11000000100 
+	Parameter ADDR_N_V_DATA_0 bound to: 11'b11000001000 
+	Parameter ADDR_N_V_DATA_1 bound to: 11'b11000001100 
+	Parameter ADDR_N_V_CTRL bound to: 11'b11000010000 
+	Parameter ADDR_OFFSET_V_DATA_0 bound to: 11'b11000010100 
+	Parameter ADDR_OFFSET_V_CTRL bound to: 11'b11000011000 
+	Parameter ADDR_FREQSTREAM_V_BASE bound to: 11'b00010000000 
+	Parameter ADDR_FREQSTREAM_V_HIGH bound to: 11'b00011111111 
+	Parameter ADDR_SERIALTWOSTREAM_V_BASE bound to: 11'b01000000000 
+	Parameter ADDR_SERIALTWOSTREAM_V_HIGH bound to: 11'b01111111111 
+	Parameter ADDR_SERIALTHREESTREAM_V_BASE bound to: 11'b10000000000 
+	Parameter ADDR_SERIALTHREESTREAM_V_HIGH bound to: 11'b10111111111 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter ADDR_BITS bound to: 11 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'freq_serial_FREQ_PERIPH_BUS_s_axi_ram' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial_FREQ_PERIPH_BUS_s_axi.v:626]
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'freq_serial_FREQ_PERIPH_BUS_s_axi_ram' (1#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial_FREQ_PERIPH_BUS_s_axi.v:626]
+INFO: [Synth 8-638] synthesizing module 'freq_serial_FREQ_PERIPH_BUS_s_axi_ram__parameterized0' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial_FREQ_PERIPH_BUS_s_axi.v:626]
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 96 - type: integer 
+	Parameter AWIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'freq_serial_FREQ_PERIPH_BUS_s_axi_ram__parameterized0' (1#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial_FREQ_PERIPH_BUS_s_axi.v:626]
+INFO: [Synth 8-638] synthesizing module 'freq_serial_FREQ_PERIPH_BUS_s_axi_ram__parameterized1' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial_FREQ_PERIPH_BUS_s_axi.v:626]
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 112 - type: integer 
+	Parameter AWIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'freq_serial_FREQ_PERIPH_BUS_s_axi_ram__parameterized1' (1#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial_FREQ_PERIPH_BUS_s_axi.v:626]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial_FREQ_PERIPH_BUS_s_axi.v:343]
+INFO: [Synth 8-256] done synthesizing module 'freq_serial_FREQ_PERIPH_BUS_s_axi' (2#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial_FREQ_PERIPH_BUS_s_axi.v:9]
+INFO: [Synth 8-638] synthesizing module 'freq_serial_mux_32to1_sel5_44_1' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial_mux_32to1_sel5_44_1.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din1_WIDTH bound to: 44 - type: integer 
+	Parameter din2_WIDTH bound to: 44 - type: integer 
+	Parameter din3_WIDTH bound to: 44 - type: integer 
+	Parameter din4_WIDTH bound to: 44 - type: integer 
+	Parameter din5_WIDTH bound to: 44 - type: integer 
+	Parameter din6_WIDTH bound to: 44 - type: integer 
+	Parameter din7_WIDTH bound to: 44 - type: integer 
+	Parameter din8_WIDTH bound to: 44 - type: integer 
+	Parameter din9_WIDTH bound to: 44 - type: integer 
+	Parameter din10_WIDTH bound to: 44 - type: integer 
+	Parameter din11_WIDTH bound to: 44 - type: integer 
+	Parameter din12_WIDTH bound to: 44 - type: integer 
+	Parameter din13_WIDTH bound to: 44 - type: integer 
+	Parameter din14_WIDTH bound to: 44 - type: integer 
+	Parameter din15_WIDTH bound to: 44 - type: integer 
+	Parameter din16_WIDTH bound to: 44 - type: integer 
+	Parameter din17_WIDTH bound to: 44 - type: integer 
+	Parameter din18_WIDTH bound to: 44 - type: integer 
+	Parameter din19_WIDTH bound to: 44 - type: integer 
+	Parameter din20_WIDTH bound to: 44 - type: integer 
+	Parameter din21_WIDTH bound to: 44 - type: integer 
+	Parameter din22_WIDTH bound to: 44 - type: integer 
+	Parameter din23_WIDTH bound to: 44 - type: integer 
+	Parameter din24_WIDTH bound to: 44 - type: integer 
+	Parameter din25_WIDTH bound to: 44 - type: integer 
+	Parameter din26_WIDTH bound to: 44 - type: integer 
+	Parameter din27_WIDTH bound to: 44 - type: integer 
+	Parameter din28_WIDTH bound to: 44 - type: integer 
+	Parameter din29_WIDTH bound to: 44 - type: integer 
+	Parameter din30_WIDTH bound to: 44 - type: integer 
+	Parameter din31_WIDTH bound to: 44 - type: integer 
+	Parameter din32_WIDTH bound to: 44 - type: integer 
+	Parameter din33_WIDTH bound to: 5 - type: integer 
+	Parameter dout_WIDTH bound to: 44 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'freq_serial_mux_32to1_sel5_44_1' (3#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial_mux_32to1_sel5_44_1.v:11]
+INFO: [Synth 8-638] synthesizing module 'freq_serial_mux_96to1_sel7_43_1' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial_mux_96to1_sel7_43_1.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din1_WIDTH bound to: 43 - type: integer 
+	Parameter din2_WIDTH bound to: 43 - type: integer 
+	Parameter din3_WIDTH bound to: 43 - type: integer 
+	Parameter din4_WIDTH bound to: 43 - type: integer 
+	Parameter din5_WIDTH bound to: 43 - type: integer 
+	Parameter din6_WIDTH bound to: 43 - type: integer 
+	Parameter din7_WIDTH bound to: 43 - type: integer 
+	Parameter din8_WIDTH bound to: 43 - type: integer 
+	Parameter din9_WIDTH bound to: 43 - type: integer 
+	Parameter din10_WIDTH bound to: 43 - type: integer 
+	Parameter din11_WIDTH bound to: 43 - type: integer 
+	Parameter din12_WIDTH bound to: 43 - type: integer 
+	Parameter din13_WIDTH bound to: 43 - type: integer 
+	Parameter din14_WIDTH bound to: 43 - type: integer 
+	Parameter din15_WIDTH bound to: 43 - type: integer 
+	Parameter din16_WIDTH bound to: 43 - type: integer 
+	Parameter din17_WIDTH bound to: 43 - type: integer 
+	Parameter din18_WIDTH bound to: 43 - type: integer 
+	Parameter din19_WIDTH bound to: 43 - type: integer 
+	Parameter din20_WIDTH bound to: 43 - type: integer 
+	Parameter din21_WIDTH bound to: 43 - type: integer 
+	Parameter din22_WIDTH bound to: 43 - type: integer 
+	Parameter din23_WIDTH bound to: 43 - type: integer 
+	Parameter din24_WIDTH bound to: 43 - type: integer 
+	Parameter din25_WIDTH bound to: 43 - type: integer 
+	Parameter din26_WIDTH bound to: 43 - type: integer 
+	Parameter din27_WIDTH bound to: 43 - type: integer 
+	Parameter din28_WIDTH bound to: 43 - type: integer 
+	Parameter din29_WIDTH bound to: 43 - type: integer 
+	Parameter din30_WIDTH bound to: 43 - type: integer 
+	Parameter din31_WIDTH bound to: 43 - type: integer 
+	Parameter din32_WIDTH bound to: 43 - type: integer 
+	Parameter din33_WIDTH bound to: 43 - type: integer 
+	Parameter din34_WIDTH bound to: 43 - type: integer 
+	Parameter din35_WIDTH bound to: 43 - type: integer 
+	Parameter din36_WIDTH bound to: 43 - type: integer 
+	Parameter din37_WIDTH bound to: 43 - type: integer 
+	Parameter din38_WIDTH bound to: 43 - type: integer 
+	Parameter din39_WIDTH bound to: 43 - type: integer 
+	Parameter din40_WIDTH bound to: 43 - type: integer 
+	Parameter din41_WIDTH bound to: 43 - type: integer 
+	Parameter din42_WIDTH bound to: 43 - type: integer 
+	Parameter din43_WIDTH bound to: 43 - type: integer 
+	Parameter din44_WIDTH bound to: 43 - type: integer 
+	Parameter din45_WIDTH bound to: 43 - type: integer 
+	Parameter din46_WIDTH bound to: 43 - type: integer 
+	Parameter din47_WIDTH bound to: 43 - type: integer 
+	Parameter din48_WIDTH bound to: 43 - type: integer 
+	Parameter din49_WIDTH bound to: 43 - type: integer 
+	Parameter din50_WIDTH bound to: 43 - type: integer 
+	Parameter din51_WIDTH bound to: 43 - type: integer 
+	Parameter din52_WIDTH bound to: 43 - type: integer 
+	Parameter din53_WIDTH bound to: 43 - type: integer 
+	Parameter din54_WIDTH bound to: 43 - type: integer 
+	Parameter din55_WIDTH bound to: 43 - type: integer 
+	Parameter din56_WIDTH bound to: 43 - type: integer 
+	Parameter din57_WIDTH bound to: 43 - type: integer 
+	Parameter din58_WIDTH bound to: 43 - type: integer 
+	Parameter din59_WIDTH bound to: 43 - type: integer 
+	Parameter din60_WIDTH bound to: 43 - type: integer 
+	Parameter din61_WIDTH bound to: 43 - type: integer 
+	Parameter din62_WIDTH bound to: 43 - type: integer 
+	Parameter din63_WIDTH bound to: 43 - type: integer 
+	Parameter din64_WIDTH bound to: 43 - type: integer 
+	Parameter din65_WIDTH bound to: 43 - type: integer 
+	Parameter din66_WIDTH bound to: 43 - type: integer 
+	Parameter din67_WIDTH bound to: 43 - type: integer 
+	Parameter din68_WIDTH bound to: 43 - type: integer 
+	Parameter din69_WIDTH bound to: 43 - type: integer 
+	Parameter din70_WIDTH bound to: 43 - type: integer 
+	Parameter din71_WIDTH bound to: 43 - type: integer 
+	Parameter din72_WIDTH bound to: 43 - type: integer 
+	Parameter din73_WIDTH bound to: 43 - type: integer 
+	Parameter din74_WIDTH bound to: 43 - type: integer 
+	Parameter din75_WIDTH bound to: 43 - type: integer 
+	Parameter din76_WIDTH bound to: 43 - type: integer 
+	Parameter din77_WIDTH bound to: 43 - type: integer 
+	Parameter din78_WIDTH bound to: 43 - type: integer 
+	Parameter din79_WIDTH bound to: 43 - type: integer 
+	Parameter din80_WIDTH bound to: 43 - type: integer 
+	Parameter din81_WIDTH bound to: 43 - type: integer 
+	Parameter din82_WIDTH bound to: 43 - type: integer 
+	Parameter din83_WIDTH bound to: 43 - type: integer 
+	Parameter din84_WIDTH bound to: 43 - type: integer 
+	Parameter din85_WIDTH bound to: 43 - type: integer 
+	Parameter din86_WIDTH bound to: 43 - type: integer 
+	Parameter din87_WIDTH bound to: 43 - type: integer 
+	Parameter din88_WIDTH bound to: 43 - type: integer 
+	Parameter din89_WIDTH bound to: 43 - type: integer 
+	Parameter din90_WIDTH bound to: 43 - type: integer 
+	Parameter din91_WIDTH bound to: 43 - type: integer 
+	Parameter din92_WIDTH bound to: 43 - type: integer 
+	Parameter din93_WIDTH bound to: 43 - type: integer 
+	Parameter din94_WIDTH bound to: 43 - type: integer 
+	Parameter din95_WIDTH bound to: 43 - type: integer 
+	Parameter din96_WIDTH bound to: 43 - type: integer 
+	Parameter din97_WIDTH bound to: 7 - type: integer 
+	Parameter dout_WIDTH bound to: 43 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'freq_serial_mux_96to1_sel7_43_1' (4#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial_mux_96to1_sel7_43_1.v:11]
+INFO: [Synth 8-638] synthesizing module 'freq_serial_mux_112to1_sel7_43_1' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial_mux_112to1_sel7_43_1.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din1_WIDTH bound to: 43 - type: integer 
+	Parameter din2_WIDTH bound to: 43 - type: integer 
+	Parameter din3_WIDTH bound to: 43 - type: integer 
+	Parameter din4_WIDTH bound to: 43 - type: integer 
+	Parameter din5_WIDTH bound to: 43 - type: integer 
+	Parameter din6_WIDTH bound to: 43 - type: integer 
+	Parameter din7_WIDTH bound to: 43 - type: integer 
+	Parameter din8_WIDTH bound to: 43 - type: integer 
+	Parameter din9_WIDTH bound to: 43 - type: integer 
+	Parameter din10_WIDTH bound to: 43 - type: integer 
+	Parameter din11_WIDTH bound to: 43 - type: integer 
+	Parameter din12_WIDTH bound to: 43 - type: integer 
+	Parameter din13_WIDTH bound to: 43 - type: integer 
+	Parameter din14_WIDTH bound to: 43 - type: integer 
+	Parameter din15_WIDTH bound to: 43 - type: integer 
+	Parameter din16_WIDTH bound to: 43 - type: integer 
+	Parameter din17_WIDTH bound to: 43 - type: integer 
+	Parameter din18_WIDTH bound to: 43 - type: integer 
+	Parameter din19_WIDTH bound to: 43 - type: integer 
+	Parameter din20_WIDTH bound to: 43 - type: integer 
+	Parameter din21_WIDTH bound to: 43 - type: integer 
+	Parameter din22_WIDTH bound to: 43 - type: integer 
+	Parameter din23_WIDTH bound to: 43 - type: integer 
+	Parameter din24_WIDTH bound to: 43 - type: integer 
+	Parameter din25_WIDTH bound to: 43 - type: integer 
+	Parameter din26_WIDTH bound to: 43 - type: integer 
+	Parameter din27_WIDTH bound to: 43 - type: integer 
+	Parameter din28_WIDTH bound to: 43 - type: integer 
+	Parameter din29_WIDTH bound to: 43 - type: integer 
+	Parameter din30_WIDTH bound to: 43 - type: integer 
+	Parameter din31_WIDTH bound to: 43 - type: integer 
+	Parameter din32_WIDTH bound to: 43 - type: integer 
+	Parameter din33_WIDTH bound to: 43 - type: integer 
+	Parameter din34_WIDTH bound to: 43 - type: integer 
+	Parameter din35_WIDTH bound to: 43 - type: integer 
+	Parameter din36_WIDTH bound to: 43 - type: integer 
+	Parameter din37_WIDTH bound to: 43 - type: integer 
+	Parameter din38_WIDTH bound to: 43 - type: integer 
+	Parameter din39_WIDTH bound to: 43 - type: integer 
+	Parameter din40_WIDTH bound to: 43 - type: integer 
+	Parameter din41_WIDTH bound to: 43 - type: integer 
+	Parameter din42_WIDTH bound to: 43 - type: integer 
+	Parameter din43_WIDTH bound to: 43 - type: integer 
+	Parameter din44_WIDTH bound to: 43 - type: integer 
+	Parameter din45_WIDTH bound to: 43 - type: integer 
+	Parameter din46_WIDTH bound to: 43 - type: integer 
+	Parameter din47_WIDTH bound to: 43 - type: integer 
+	Parameter din48_WIDTH bound to: 43 - type: integer 
+	Parameter din49_WIDTH bound to: 43 - type: integer 
+	Parameter din50_WIDTH bound to: 43 - type: integer 
+	Parameter din51_WIDTH bound to: 43 - type: integer 
+	Parameter din52_WIDTH bound to: 43 - type: integer 
+	Parameter din53_WIDTH bound to: 43 - type: integer 
+	Parameter din54_WIDTH bound to: 43 - type: integer 
+	Parameter din55_WIDTH bound to: 43 - type: integer 
+	Parameter din56_WIDTH bound to: 43 - type: integer 
+	Parameter din57_WIDTH bound to: 43 - type: integer 
+	Parameter din58_WIDTH bound to: 43 - type: integer 
+	Parameter din59_WIDTH bound to: 43 - type: integer 
+	Parameter din60_WIDTH bound to: 43 - type: integer 
+	Parameter din61_WIDTH bound to: 43 - type: integer 
+	Parameter din62_WIDTH bound to: 43 - type: integer 
+	Parameter din63_WIDTH bound to: 43 - type: integer 
+	Parameter din64_WIDTH bound to: 43 - type: integer 
+	Parameter din65_WIDTH bound to: 43 - type: integer 
+	Parameter din66_WIDTH bound to: 43 - type: integer 
+	Parameter din67_WIDTH bound to: 43 - type: integer 
+	Parameter din68_WIDTH bound to: 43 - type: integer 
+	Parameter din69_WIDTH bound to: 43 - type: integer 
+	Parameter din70_WIDTH bound to: 43 - type: integer 
+	Parameter din71_WIDTH bound to: 43 - type: integer 
+	Parameter din72_WIDTH bound to: 43 - type: integer 
+	Parameter din73_WIDTH bound to: 43 - type: integer 
+	Parameter din74_WIDTH bound to: 43 - type: integer 
+	Parameter din75_WIDTH bound to: 43 - type: integer 
+	Parameter din76_WIDTH bound to: 43 - type: integer 
+	Parameter din77_WIDTH bound to: 43 - type: integer 
+	Parameter din78_WIDTH bound to: 43 - type: integer 
+	Parameter din79_WIDTH bound to: 43 - type: integer 
+	Parameter din80_WIDTH bound to: 43 - type: integer 
+	Parameter din81_WIDTH bound to: 43 - type: integer 
+	Parameter din82_WIDTH bound to: 43 - type: integer 
+	Parameter din83_WIDTH bound to: 43 - type: integer 
+	Parameter din84_WIDTH bound to: 43 - type: integer 
+	Parameter din85_WIDTH bound to: 43 - type: integer 
+	Parameter din86_WIDTH bound to: 43 - type: integer 
+	Parameter din87_WIDTH bound to: 43 - type: integer 
+	Parameter din88_WIDTH bound to: 43 - type: integer 
+	Parameter din89_WIDTH bound to: 43 - type: integer 
+	Parameter din90_WIDTH bound to: 43 - type: integer 
+	Parameter din91_WIDTH bound to: 43 - type: integer 
+	Parameter din92_WIDTH bound to: 43 - type: integer 
+	Parameter din93_WIDTH bound to: 43 - type: integer 
+	Parameter din94_WIDTH bound to: 43 - type: integer 
+	Parameter din95_WIDTH bound to: 43 - type: integer 
+	Parameter din96_WIDTH bound to: 43 - type: integer 
+	Parameter din97_WIDTH bound to: 43 - type: integer 
+	Parameter din98_WIDTH bound to: 43 - type: integer 
+	Parameter din99_WIDTH bound to: 43 - type: integer 
+	Parameter din100_WIDTH bound to: 43 - type: integer 
+	Parameter din101_WIDTH bound to: 43 - type: integer 
+	Parameter din102_WIDTH bound to: 43 - type: integer 
+	Parameter din103_WIDTH bound to: 43 - type: integer 
+	Parameter din104_WIDTH bound to: 43 - type: integer 
+	Parameter din105_WIDTH bound to: 43 - type: integer 
+	Parameter din106_WIDTH bound to: 43 - type: integer 
+	Parameter din107_WIDTH bound to: 43 - type: integer 
+	Parameter din108_WIDTH bound to: 43 - type: integer 
+	Parameter din109_WIDTH bound to: 43 - type: integer 
+	Parameter din110_WIDTH bound to: 43 - type: integer 
+	Parameter din111_WIDTH bound to: 43 - type: integer 
+	Parameter din112_WIDTH bound to: 43 - type: integer 
+	Parameter din113_WIDTH bound to: 7 - type: integer 
+	Parameter dout_WIDTH bound to: 43 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'freq_serial_mux_112to1_sel7_43_1' (5#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial_mux_112to1_sel7_43_1.v:11]
+INFO: [Synth 8-256] done synthesizing module 'freq_serial' (6#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial.v:12]
+INFO: [Synth 8-256] done synthesizing module 'block_design1_freq_serial_0_0' (7#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ip/block_design1_freq_serial_0_0/synth/block_design1_freq_serial_0_0.v:57]
+WARNING: [Synth 8-350] instance 'freq_serial_0' of module 'block_design1_freq_serial_0_0' requires 20 connections, but only 19 given [C:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/hdl/block_design1.v:138]
+INFO: [Synth 8-638] synthesizing module 'block_design1_processing_system7_0_0' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ip/block_design1_processing_system7_0_0/synth/block_design1_processing_system7_0_0.v:59]
+INFO: [Synth 8-638] synthesizing module 'processing_system7_v5_5_processing_system7' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ip/block_design1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:156]
+	Parameter C_USE_DEFAULT_ACP_USER_VAL bound to: 0 - type: integer 
+	Parameter C_S_AXI_ACP_ARUSER_VAL bound to: 31 - type: integer 
+	Parameter C_S_AXI_ACP_AWUSER_VAL bound to: 31 - type: integer 
+	Parameter C_M_AXI_GP0_THREAD_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_M_AXI_GP1_THREAD_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_M_AXI_GP0_ENABLE_STATIC_REMAP bound to: 0 - type: integer 
+	Parameter C_M_AXI_GP1_ENABLE_STATIC_REMAP bound to: 0 - type: integer 
+	Parameter C_M_AXI_GP0_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_M_AXI_GP1_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_GP0_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_GP1_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_HP0_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_HP1_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_HP2_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_HP3_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_ACP_ID_WIDTH bound to: 3 - type: integer 
+	Parameter C_S_AXI_HP0_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S_AXI_HP1_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S_AXI_HP2_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S_AXI_HP3_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_INCLUDE_ACP_TRANS_CHECK bound to: 0 - type: integer 
+	Parameter C_NUM_F2P_INTR_INPUTS bound to: 1 - type: integer 
+	Parameter C_FCLK_CLK0_BUF bound to: true - type: string 
+	Parameter C_FCLK_CLK1_BUF bound to: false - type: string 
+	Parameter C_FCLK_CLK2_BUF bound to: false - type: string 
+	Parameter C_FCLK_CLK3_BUF bound to: false - type: string 
+	Parameter C_EMIO_GPIO_WIDTH bound to: 64 - type: integer 
+	Parameter C_INCLUDE_TRACE_BUFFER bound to: 0 - type: integer 
+	Parameter C_TRACE_BUFFER_FIFO_SIZE bound to: 128 - type: integer 
+	Parameter C_TRACE_BUFFER_CLOCK_DELAY bound to: 12 - type: integer 
+	Parameter USE_TRACE_DATA_EDGE_DETECTOR bound to: 0 - type: integer 
+	Parameter C_TRACE_PIPELINE_WIDTH bound to: 8 - type: integer 
+	Parameter C_PS7_SI_REV bound to: PRODUCTION - type: string 
+	Parameter C_EN_EMIO_ENET0 bound to: 0 - type: integer 
+	Parameter C_EN_EMIO_ENET1 bound to: 0 - type: integer 
+	Parameter C_EN_EMIO_TRACE bound to: 0 - type: integer 
+	Parameter C_DQ_WIDTH bound to: 32 - type: integer 
+	Parameter C_DQS_WIDTH bound to: 4 - type: integer 
+	Parameter C_DM_WIDTH bound to: 4 - type: integer 
+	Parameter C_MIO_PRIMITIVE bound to: 54 - type: integer 
+	Parameter C_PACKAGE_NAME bound to: clg484 - type: string 
+	Parameter C_IRQ_F2P_MODE bound to: DIRECT - type: string 
+	Parameter C_TRACE_INTERNAL_WIDTH bound to: 2 - type: integer 
+	Parameter C_EN_EMIO_PJTAG bound to: 0 - type: integer 
+	Parameter C_USE_AXI_NONSECURE bound to: 0 - type: integer 
+	Parameter C_USE_S_AXI_HP0 bound to: 0 - type: integer 
+	Parameter C_USE_S_AXI_HP1 bound to: 0 - type: integer 
+	Parameter C_USE_S_AXI_HP2 bound to: 0 - type: integer 
+	Parameter C_USE_S_AXI_HP3 bound to: 0 - type: integer 
+	Parameter C_USE_M_AXI_GP0 bound to: 1 - type: integer 
+	Parameter C_USE_M_AXI_GP1 bound to: 0 - type: integer 
+	Parameter C_USE_S_AXI_GP0 bound to: 0 - type: integer 
+	Parameter C_USE_S_AXI_GP1 bound to: 0 - type: integer 
+	Parameter C_USE_S_AXI_ACP bound to: 0 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ip/block_design1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1338]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ip/block_design1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1339]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2016.1/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (8#1) [C:/Xilinx/Vivado/2016.1/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-638] synthesizing module 'BIBUF' [C:/Xilinx/Vivado/2016.1/scripts/rt/data/unisim_comp.v:268]
+INFO: [Synth 8-256] done synthesizing module 'BIBUF' (9#1) [C:/Xilinx/Vivado/2016.1/scripts/rt/data/unisim_comp.v:268]
+INFO: [Synth 8-638] synthesizing module 'PS7' [C:/Xilinx/Vivado/2016.1/scripts/rt/data/unisim_comp.v:33164]
+INFO: [Synth 8-256] done synthesizing module 'PS7' (10#1) [C:/Xilinx/Vivado/2016.1/scripts/rt/data/unisim_comp.v:33164]
+INFO: [Synth 8-256] done synthesizing module 'processing_system7_v5_5_processing_system7' (11#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ip/block_design1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:156]
+WARNING: [Synth 8-350] instance 'inst' of module 'processing_system7_v5_5_processing_system7' requires 685 connections, but only 672 given [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ip/block_design1_processing_system7_0_0/synth/block_design1_processing_system7_0_0.v:318]
+INFO: [Synth 8-256] done synthesizing module 'block_design1_processing_system7_0_0' (12#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ip/block_design1_processing_system7_0_0/synth/block_design1_processing_system7_0_0.v:59]
+WARNING: [Synth 8-350] instance 'processing_system7_0' of module 'block_design1_processing_system7_0_0' requires 68 connections, but only 63 given [C:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/hdl/block_design1.v:158]
+INFO: [Synth 8-638] synthesizing module 'block_design1_processing_system7_0_axi_periph_0' [C:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/hdl/block_design1.v:294]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_11LMRE3' [C:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/hdl/block_design1.v:599]
+INFO: [Synth 8-638] synthesizing module 'block_design1_auto_pc_0' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ip/block_design1_auto_pc_0/synth/block_design1_auto_pc_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_8_axi_protocol_converter' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v:62]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_M_AXI_PROTOCOL bound to: 2 - type: integer 
+	Parameter C_S_AXI_PROTOCOL bound to: 1 - type: integer 
+	Parameter C_IGNORE_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_SUPPORTS_WRITE bound to: 1 - type: integer 
+	Parameter C_AXI_SUPPORTS_READ bound to: 1 - type: integer 
+	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_TRANSLATION_MODE bound to: 2 - type: integer 
+	Parameter P_AXI4 bound to: 0 - type: integer 
+	Parameter P_AXI3 bound to: 1 - type: integer 
+	Parameter P_AXILITE bound to: 2 - type: integer 
+	Parameter P_AXILITE_SIZE bound to: 3'b010 
+	Parameter P_INCR bound to: 2'b01 
+	Parameter P_DECERR bound to: 2'b11 
+	Parameter P_SLVERR bound to: 2'b10 
+	Parameter P_PROTECTION bound to: 1 - type: integer 
+	Parameter P_CONVERSION bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_8_b2s' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s.v:39]
+	Parameter C_S_AXI_PROTOCOL bound to: 1 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_SUPPORTS_WRITE bound to: 1 - type: integer 
+	Parameter C_AXI_SUPPORTS_READ bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_8_b2s_aw_channel' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_aw_channel.v:5]
+	Parameter C_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_8_b2s_cmd_translator' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_cmd_translator.v:17]
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter P_AXBURST_FIXED bound to: 2'b00 
+	Parameter P_AXBURST_INCR bound to: 2'b01 
+	Parameter P_AXBURST_WRAP bound to: 2'b10 
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_8_b2s_incr_cmd' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_incr_cmd.v:11]
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter L_AXI_ADDR_LOW_BIT bound to: 12 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_8_b2s_incr_cmd' (13#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_incr_cmd.v:11]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_8_b2s_wrap_cmd' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wrap_cmd.v:11]
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter L_AXI_ADDR_LOW_BIT bound to: 12 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_8_b2s_wrap_cmd' (14#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wrap_cmd.v:11]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_8_b2s_cmd_translator' (15#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_cmd_translator.v:17]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_8_b2s_wr_cmd_fsm' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v:10]
+	Parameter SM_IDLE bound to: 2'b00 
+	Parameter SM_CMD_EN bound to: 2'b01 
+	Parameter SM_CMD_ACCEPTED bound to: 2'b10 
+	Parameter SM_DONE_WAIT bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v:64]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_8_b2s_wr_cmd_fsm' (16#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v:10]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_8_b2s_aw_channel' (17#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_aw_channel.v:5]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_8_b2s_b_channel' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_b_channel.v:10]
+	Parameter C_ID_WIDTH bound to: 12 - type: integer 
+	Parameter LP_RESP_OKAY bound to: 2'b00 
+	Parameter LP_RESP_EXOKAY bound to: 2'b01 
+	Parameter LP_RESP_SLVERROR bound to: 2'b10 
+	Parameter LP_RESP_DECERR bound to: 2'b11 
+	Parameter P_WIDTH bound to: 20 - type: integer 
+	Parameter P_DEPTH bound to: 4 - type: integer 
+	Parameter P_AWIDTH bound to: 2 - type: integer 
+	Parameter P_RWIDTH bound to: 2 - type: integer 
+	Parameter P_RDEPTH bound to: 4 - type: integer 
+	Parameter P_RAWIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_8_b2s_simple_fifo' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
+	Parameter C_WIDTH bound to: 20 - type: integer 
+	Parameter C_AWIDTH bound to: 2 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_EMPTY bound to: 2'b11 
+	Parameter C_EMPTY_PRE bound to: 2'b00 
+	Parameter C_FULL bound to: 2'b10 
+	Parameter C_FULL_PRE bound to: 2'b01 
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_8_b2s_simple_fifo' (18#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_8_b2s_simple_fifo__parameterized0' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
+	Parameter C_WIDTH bound to: 2 - type: integer 
+	Parameter C_AWIDTH bound to: 2 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_EMPTY bound to: 2'b11 
+	Parameter C_EMPTY_PRE bound to: 2'b00 
+	Parameter C_FULL bound to: 2'b10 
+	Parameter C_FULL_PRE bound to: 2'b01 
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_8_b2s_simple_fifo__parameterized0' (18#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_8_b2s_b_channel' (19#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_b_channel.v:10]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_8_b2s_ar_channel' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_ar_channel.v:5]
+	Parameter C_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_8_b2s_rd_cmd_fsm' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v:10]
+	Parameter SM_IDLE bound to: 2'b00 
+	Parameter SM_CMD_EN bound to: 2'b01 
+	Parameter SM_CMD_ACCEPTED bound to: 2'b10 
+	Parameter SM_DONE bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v:72]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_8_b2s_rd_cmd_fsm' (20#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v:10]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_8_b2s_ar_channel' (21#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_ar_channel.v:5]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_8_b2s_r_channel' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_r_channel.v:21]
+	Parameter C_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter P_WIDTH bound to: 13 - type: integer 
+	Parameter P_DEPTH bound to: 32 - type: integer 
+	Parameter P_AWIDTH bound to: 5 - type: integer 
+	Parameter P_D_WIDTH bound to: 34 - type: integer 
+	Parameter P_D_DEPTH bound to: 32 - type: integer 
+	Parameter P_D_AWIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_8_b2s_simple_fifo__parameterized1' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
+	Parameter C_WIDTH bound to: 34 - type: integer 
+	Parameter C_AWIDTH bound to: 5 - type: integer 
+	Parameter C_DEPTH bound to: 32 - type: integer 
+	Parameter C_EMPTY bound to: 5'b11111 
+	Parameter C_EMPTY_PRE bound to: 5'b00000 
+	Parameter C_FULL bound to: 5'b11110 
+	Parameter C_FULL_PRE bound to: 5'b11010 
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_8_b2s_simple_fifo__parameterized1' (21#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
+INFO: [Synth 8-638] synthesizing module 'axi_protocol_converter_v2_1_8_b2s_simple_fifo__parameterized2' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
+	Parameter C_WIDTH bound to: 13 - type: integer 
+	Parameter C_AWIDTH bound to: 5 - type: integer 
+	Parameter C_DEPTH bound to: 32 - type: integer 
+	Parameter C_EMPTY bound to: 5'b11111 
+	Parameter C_EMPTY_PRE bound to: 5'b00000 
+	Parameter C_FULL bound to: 5'b11110 
+	Parameter C_FULL_PRE bound to: 5'b11010 
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_8_b2s_simple_fifo__parameterized2' (21#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v:9]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_8_b2s_r_channel' (22#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_r_channel.v:21]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_8_axi_register_slice' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v:64]
+	Parameter C_FAMILY bound to: virtex6 - type: string 
+	Parameter C_AXI_PROTOCOL bound to: 1 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_REG_CONFIG_AW bound to: 1 - type: integer 
+	Parameter C_REG_CONFIG_W bound to: 0 - type: integer 
+	Parameter C_REG_CONFIG_B bound to: 1 - type: integer 
+	Parameter C_REG_CONFIG_AR bound to: 1 - type: integer 
+	Parameter C_REG_CONFIG_R bound to: 1 - type: integer 
+	Parameter C_AXI_SUPPORTS_REGION_SIGNALS bound to: 0 - type: integer 
+	Parameter G_AXI_AWADDR_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_AWADDR_WIDTH bound to: 32 - type: integer 
+	Parameter G_AXI_AWPROT_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_AWPROT_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_AWSIZE_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_AWSIZE_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_AWBURST_INDEX bound to: 38 - type: integer 
+	Parameter G_AXI_AWBURST_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_AWCACHE_INDEX bound to: 40 - type: integer 
+	Parameter G_AXI_AWCACHE_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_AWLEN_INDEX bound to: 44 - type: integer 
+	Parameter G_AXI_AWLEN_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_AWLOCK_INDEX bound to: 48 - type: integer 
+	Parameter G_AXI_AWLOCK_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_AWID_INDEX bound to: 50 - type: integer 
+	Parameter G_AXI_AWID_WIDTH bound to: 12 - type: integer 
+	Parameter G_AXI_AWQOS_INDEX bound to: 62 - type: integer 
+	Parameter G_AXI_AWQOS_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_AWREGION_INDEX bound to: 66 - type: integer 
+	Parameter G_AXI_AWREGION_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWUSER_INDEX bound to: 66 - type: integer 
+	Parameter G_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWPAYLOAD_WIDTH bound to: 66 - type: integer 
+	Parameter G_AXI_ARADDR_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_ARADDR_WIDTH bound to: 32 - type: integer 
+	Parameter G_AXI_ARPROT_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_ARPROT_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_ARSIZE_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_ARSIZE_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_ARBURST_INDEX bound to: 38 - type: integer 
+	Parameter G_AXI_ARBURST_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_ARCACHE_INDEX bound to: 40 - type: integer 
+	Parameter G_AXI_ARCACHE_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_ARLEN_INDEX bound to: 44 - type: integer 
+	Parameter G_AXI_ARLEN_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_ARLOCK_INDEX bound to: 48 - type: integer 
+	Parameter G_AXI_ARLOCK_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_ARID_INDEX bound to: 50 - type: integer 
+	Parameter G_AXI_ARID_WIDTH bound to: 12 - type: integer 
+	Parameter G_AXI_ARQOS_INDEX bound to: 62 - type: integer 
+	Parameter G_AXI_ARQOS_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_ARREGION_INDEX bound to: 66 - type: integer 
+	Parameter G_AXI_ARREGION_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARUSER_INDEX bound to: 66 - type: integer 
+	Parameter G_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARPAYLOAD_WIDTH bound to: 66 - type: integer 
+	Parameter G_AXI_WDATA_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_WDATA_WIDTH bound to: 32 - type: integer 
+	Parameter G_AXI_WSTRB_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_WLAST_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_WLAST_WIDTH bound to: 1 - type: integer 
+	Parameter G_AXI_WID_INDEX bound to: 37 - type: integer 
+	Parameter G_AXI_WID_WIDTH bound to: 12 - type: integer 
+	Parameter G_AXI_WUSER_INDEX bound to: 49 - type: integer 
+	Parameter G_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_WPAYLOAD_WIDTH bound to: 49 - type: integer 
+	Parameter G_AXI_BRESP_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_BRESP_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_BID_INDEX bound to: 2 - type: integer 
+	Parameter G_AXI_BID_WIDTH bound to: 12 - type: integer 
+	Parameter G_AXI_BUSER_INDEX bound to: 14 - type: integer 
+	Parameter G_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_BPAYLOAD_WIDTH bound to: 14 - type: integer 
+	Parameter G_AXI_RDATA_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_RDATA_WIDTH bound to: 32 - type: integer 
+	Parameter G_AXI_RRESP_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_RRESP_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_RLAST_INDEX bound to: 34 - type: integer 
+	Parameter G_AXI_RLAST_WIDTH bound to: 1 - type: integer 
+	Parameter G_AXI_RID_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_RID_WIDTH bound to: 12 - type: integer 
+	Parameter G_AXI_RUSER_INDEX bound to: 47 - type: integer 
+	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 47 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v:60]
+	Parameter C_AXI_PROTOCOL bound to: 1 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_SUPPORTS_REGION_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AWPAYLOAD_WIDTH bound to: 66 - type: integer 
+	Parameter C_WPAYLOAD_WIDTH bound to: 49 - type: integer 
+	Parameter C_BPAYLOAD_WIDTH bound to: 14 - type: integer 
+	Parameter C_ARPAYLOAD_WIDTH bound to: 66 - type: integer 
+	Parameter C_RPAYLOAD_WIDTH bound to: 47 - type: integer 
+	Parameter G_AXI_AWADDR_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_AWADDR_WIDTH bound to: 32 - type: integer 
+	Parameter G_AXI_AWPROT_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_AWPROT_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_AWSIZE_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_AWSIZE_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_AWBURST_INDEX bound to: 38 - type: integer 
+	Parameter G_AXI_AWBURST_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_AWCACHE_INDEX bound to: 40 - type: integer 
+	Parameter G_AXI_AWCACHE_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_AWLEN_INDEX bound to: 44 - type: integer 
+	Parameter G_AXI_AWLEN_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_AWLOCK_INDEX bound to: 48 - type: integer 
+	Parameter G_AXI_AWLOCK_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_AWID_INDEX bound to: 50 - type: integer 
+	Parameter G_AXI_AWID_WIDTH bound to: 12 - type: integer 
+	Parameter G_AXI_AWQOS_INDEX bound to: 62 - type: integer 
+	Parameter G_AXI_AWQOS_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_AWREGION_INDEX bound to: 66 - type: integer 
+	Parameter G_AXI_AWREGION_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWUSER_INDEX bound to: 66 - type: integer 
+	Parameter G_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWPAYLOAD_WIDTH bound to: 66 - type: integer 
+	Parameter G_AXI_ARADDR_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_ARADDR_WIDTH bound to: 32 - type: integer 
+	Parameter G_AXI_ARPROT_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_ARPROT_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_ARSIZE_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_ARSIZE_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_ARBURST_INDEX bound to: 38 - type: integer 
+	Parameter G_AXI_ARBURST_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_ARCACHE_INDEX bound to: 40 - type: integer 
+	Parameter G_AXI_ARCACHE_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_ARLEN_INDEX bound to: 44 - type: integer 
+	Parameter G_AXI_ARLEN_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_ARLOCK_INDEX bound to: 48 - type: integer 
+	Parameter G_AXI_ARLOCK_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_ARID_INDEX bound to: 50 - type: integer 
+	Parameter G_AXI_ARID_WIDTH bound to: 12 - type: integer 
+	Parameter G_AXI_ARQOS_INDEX bound to: 62 - type: integer 
+	Parameter G_AXI_ARQOS_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_ARREGION_INDEX bound to: 66 - type: integer 
+	Parameter G_AXI_ARREGION_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARUSER_INDEX bound to: 66 - type: integer 
+	Parameter G_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARPAYLOAD_WIDTH bound to: 66 - type: integer 
+	Parameter G_AXI_WDATA_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_WDATA_WIDTH bound to: 32 - type: integer 
+	Parameter G_AXI_WSTRB_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_WLAST_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_WLAST_WIDTH bound to: 1 - type: integer 
+	Parameter G_AXI_WID_INDEX bound to: 37 - type: integer 
+	Parameter G_AXI_WID_WIDTH bound to: 12 - type: integer 
+	Parameter G_AXI_WUSER_INDEX bound to: 49 - type: integer 
+	Parameter G_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_WPAYLOAD_WIDTH bound to: 49 - type: integer 
+	Parameter G_AXI_BRESP_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_BRESP_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_BID_INDEX bound to: 2 - type: integer 
+	Parameter G_AXI_BID_WIDTH bound to: 12 - type: integer 
+	Parameter G_AXI_BUSER_INDEX bound to: 14 - type: integer 
+	Parameter G_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_BPAYLOAD_WIDTH bound to: 14 - type: integer 
+	Parameter G_AXI_RDATA_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_RDATA_WIDTH bound to: 32 - type: integer 
+	Parameter G_AXI_RRESP_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_RRESP_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_RLAST_INDEX bound to: 34 - type: integer 
+	Parameter G_AXI_RLAST_WIDTH bound to: 1 - type: integer 
+	Parameter G_AXI_RID_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_RID_WIDTH bound to: 12 - type: integer 
+	Parameter G_AXI_RUSER_INDEX bound to: 47 - type: integer 
+	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 47 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (23#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_8_axic_register_slice' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+	Parameter C_FAMILY bound to: virtex6 - type: string 
+	Parameter C_DATA_WIDTH bound to: 66 - type: integer 
+	Parameter C_REG_CONFIG bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_8_axic_register_slice' (24#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_8_axic_register_slice__parameterized0' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+	Parameter C_FAMILY bound to: virtex6 - type: string 
+	Parameter C_DATA_WIDTH bound to: 49 - type: integer 
+	Parameter C_REG_CONFIG bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_8_axic_register_slice__parameterized0' (24#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_8_axic_register_slice__parameterized1' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+	Parameter C_FAMILY bound to: virtex6 - type: string 
+	Parameter C_DATA_WIDTH bound to: 14 - type: integer 
+	Parameter C_REG_CONFIG bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_8_axic_register_slice__parameterized1' (24#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_8_axic_register_slice__parameterized2' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+	Parameter C_FAMILY bound to: virtex6 - type: string 
+	Parameter C_DATA_WIDTH bound to: 47 - type: integer 
+	Parameter C_REG_CONFIG bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_8_axic_register_slice__parameterized2' (24#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v:60]
+	Parameter C_AXI_PROTOCOL bound to: 1 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_SUPPORTS_REGION_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AWPAYLOAD_WIDTH bound to: 66 - type: integer 
+	Parameter C_WPAYLOAD_WIDTH bound to: 49 - type: integer 
+	Parameter C_BPAYLOAD_WIDTH bound to: 14 - type: integer 
+	Parameter C_ARPAYLOAD_WIDTH bound to: 66 - type: integer 
+	Parameter C_RPAYLOAD_WIDTH bound to: 47 - type: integer 
+	Parameter G_AXI_AWADDR_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_AWADDR_WIDTH bound to: 32 - type: integer 
+	Parameter G_AXI_AWPROT_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_AWPROT_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_AWSIZE_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_AWSIZE_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_AWBURST_INDEX bound to: 38 - type: integer 
+	Parameter G_AXI_AWBURST_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_AWCACHE_INDEX bound to: 40 - type: integer 
+	Parameter G_AXI_AWCACHE_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_AWLEN_INDEX bound to: 44 - type: integer 
+	Parameter G_AXI_AWLEN_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_AWLOCK_INDEX bound to: 48 - type: integer 
+	Parameter G_AXI_AWLOCK_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_AWID_INDEX bound to: 50 - type: integer 
+	Parameter G_AXI_AWID_WIDTH bound to: 12 - type: integer 
+	Parameter G_AXI_AWQOS_INDEX bound to: 62 - type: integer 
+	Parameter G_AXI_AWQOS_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_AWREGION_INDEX bound to: 66 - type: integer 
+	Parameter G_AXI_AWREGION_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWUSER_INDEX bound to: 66 - type: integer 
+	Parameter G_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWPAYLOAD_WIDTH bound to: 66 - type: integer 
+	Parameter G_AXI_ARADDR_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_ARADDR_WIDTH bound to: 32 - type: integer 
+	Parameter G_AXI_ARPROT_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_ARPROT_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_ARSIZE_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_ARSIZE_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_ARBURST_INDEX bound to: 38 - type: integer 
+	Parameter G_AXI_ARBURST_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_ARCACHE_INDEX bound to: 40 - type: integer 
+	Parameter G_AXI_ARCACHE_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_ARLEN_INDEX bound to: 44 - type: integer 
+	Parameter G_AXI_ARLEN_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_ARLOCK_INDEX bound to: 48 - type: integer 
+	Parameter G_AXI_ARLOCK_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_ARID_INDEX bound to: 50 - type: integer 
+	Parameter G_AXI_ARID_WIDTH bound to: 12 - type: integer 
+	Parameter G_AXI_ARQOS_INDEX bound to: 62 - type: integer 
+	Parameter G_AXI_ARQOS_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_ARREGION_INDEX bound to: 66 - type: integer 
+	Parameter G_AXI_ARREGION_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARUSER_INDEX bound to: 66 - type: integer 
+	Parameter G_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARPAYLOAD_WIDTH bound to: 66 - type: integer 
+	Parameter G_AXI_WDATA_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_WDATA_WIDTH bound to: 32 - type: integer 
+	Parameter G_AXI_WSTRB_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_WLAST_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_WLAST_WIDTH bound to: 1 - type: integer 
+	Parameter G_AXI_WID_INDEX bound to: 37 - type: integer 
+	Parameter G_AXI_WID_WIDTH bound to: 12 - type: integer 
+	Parameter G_AXI_WUSER_INDEX bound to: 49 - type: integer 
+	Parameter G_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_WPAYLOAD_WIDTH bound to: 49 - type: integer 
+	Parameter G_AXI_BRESP_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_BRESP_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_BID_INDEX bound to: 2 - type: integer 
+	Parameter G_AXI_BID_WIDTH bound to: 12 - type: integer 
+	Parameter G_AXI_BUSER_INDEX bound to: 14 - type: integer 
+	Parameter G_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_BPAYLOAD_WIDTH bound to: 14 - type: integer 
+	Parameter G_AXI_RDATA_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_RDATA_WIDTH bound to: 32 - type: integer 
+	Parameter G_AXI_RRESP_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_RRESP_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_RLAST_INDEX bound to: 34 - type: integer 
+	Parameter G_AXI_RLAST_WIDTH bound to: 1 - type: integer 
+	Parameter G_AXI_RID_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_RID_WIDTH bound to: 12 - type: integer 
+	Parameter G_AXI_RUSER_INDEX bound to: 47 - type: integer 
+	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 47 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (25#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_8_axi_register_slice' (26#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v:64]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_8_axi_register_slice__parameterized0' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v:64]
+	Parameter C_FAMILY bound to: virtex6 - type: string 
+	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_REG_CONFIG_AW bound to: 0 - type: integer 
+	Parameter C_REG_CONFIG_W bound to: 0 - type: integer 
+	Parameter C_REG_CONFIG_B bound to: 0 - type: integer 
+	Parameter C_REG_CONFIG_AR bound to: 0 - type: integer 
+	Parameter C_REG_CONFIG_R bound to: 0 - type: integer 
+	Parameter C_AXI_SUPPORTS_REGION_SIGNALS bound to: 0 - type: integer 
+	Parameter G_AXI_AWADDR_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_AWADDR_WIDTH bound to: 32 - type: integer 
+	Parameter G_AXI_AWPROT_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_AWPROT_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_AWSIZE_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_AWSIZE_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWBURST_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_AWBURST_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWCACHE_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_AWCACHE_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWLEN_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_AWLEN_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWLOCK_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_AWLOCK_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWID_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_AWID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWQOS_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_AWQOS_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWREGION_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_AWREGION_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWUSER_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWPAYLOAD_WIDTH bound to: 35 - type: integer 
+	Parameter G_AXI_ARADDR_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_ARADDR_WIDTH bound to: 32 - type: integer 
+	Parameter G_AXI_ARPROT_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_ARPROT_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_ARSIZE_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_ARSIZE_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARBURST_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_ARBURST_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARCACHE_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_ARCACHE_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARLEN_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_ARLEN_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARLOCK_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_ARLOCK_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARID_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_ARID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARQOS_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_ARQOS_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARREGION_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_ARREGION_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARUSER_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARPAYLOAD_WIDTH bound to: 35 - type: integer 
+	Parameter G_AXI_WDATA_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_WDATA_WIDTH bound to: 32 - type: integer 
+	Parameter G_AXI_WSTRB_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_WLAST_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_WLAST_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_WID_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_WID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_WUSER_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_WPAYLOAD_WIDTH bound to: 36 - type: integer 
+	Parameter G_AXI_BRESP_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_BRESP_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_BID_INDEX bound to: 2 - type: integer 
+	Parameter G_AXI_BID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_BUSER_INDEX bound to: 2 - type: integer 
+	Parameter G_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_BPAYLOAD_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_RDATA_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_RDATA_WIDTH bound to: 32 - type: integer 
+	Parameter G_AXI_RRESP_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_RRESP_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_RLAST_INDEX bound to: 34 - type: integer 
+	Parameter G_AXI_RLAST_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_RID_INDEX bound to: 34 - type: integer 
+	Parameter G_AXI_RID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_RUSER_INDEX bound to: 34 - type: integer 
+	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 34 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v:60]
+	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_SUPPORTS_REGION_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AWPAYLOAD_WIDTH bound to: 35 - type: integer 
+	Parameter C_WPAYLOAD_WIDTH bound to: 36 - type: integer 
+	Parameter C_BPAYLOAD_WIDTH bound to: 2 - type: integer 
+	Parameter C_ARPAYLOAD_WIDTH bound to: 35 - type: integer 
+	Parameter C_RPAYLOAD_WIDTH bound to: 34 - type: integer 
+	Parameter G_AXI_AWADDR_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_AWADDR_WIDTH bound to: 32 - type: integer 
+	Parameter G_AXI_AWPROT_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_AWPROT_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_AWSIZE_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_AWSIZE_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWBURST_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_AWBURST_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWCACHE_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_AWCACHE_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWLEN_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_AWLEN_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWLOCK_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_AWLOCK_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWID_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_AWID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWQOS_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_AWQOS_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWREGION_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_AWREGION_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWUSER_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWPAYLOAD_WIDTH bound to: 35 - type: integer 
+	Parameter G_AXI_ARADDR_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_ARADDR_WIDTH bound to: 32 - type: integer 
+	Parameter G_AXI_ARPROT_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_ARPROT_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_ARSIZE_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_ARSIZE_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARBURST_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_ARBURST_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARCACHE_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_ARCACHE_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARLEN_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_ARLEN_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARLOCK_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_ARLOCK_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARID_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_ARID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARQOS_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_ARQOS_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARREGION_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_ARREGION_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARUSER_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARPAYLOAD_WIDTH bound to: 35 - type: integer 
+	Parameter G_AXI_WDATA_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_WDATA_WIDTH bound to: 32 - type: integer 
+	Parameter G_AXI_WSTRB_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_WLAST_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_WLAST_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_WID_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_WID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_WUSER_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_WPAYLOAD_WIDTH bound to: 36 - type: integer 
+	Parameter G_AXI_BRESP_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_BRESP_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_BID_INDEX bound to: 2 - type: integer 
+	Parameter G_AXI_BID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_BUSER_INDEX bound to: 2 - type: integer 
+	Parameter G_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_BPAYLOAD_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_RDATA_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_RDATA_WIDTH bound to: 32 - type: integer 
+	Parameter G_AXI_RRESP_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_RRESP_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_RLAST_INDEX bound to: 34 - type: integer 
+	Parameter G_AXI_RLAST_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_RID_INDEX bound to: 34 - type: integer 
+	Parameter G_AXI_RID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_RUSER_INDEX bound to: 34 - type: integer 
+	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 34 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (26#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_8_axic_register_slice__parameterized3' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+	Parameter C_FAMILY bound to: virtex6 - type: string 
+	Parameter C_DATA_WIDTH bound to: 35 - type: integer 
+	Parameter C_REG_CONFIG bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_8_axic_register_slice__parameterized3' (26#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_8_axic_register_slice__parameterized4' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+	Parameter C_FAMILY bound to: virtex6 - type: string 
+	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
+	Parameter C_REG_CONFIG bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_8_axic_register_slice__parameterized4' (26#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_8_axic_register_slice__parameterized5' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+	Parameter C_FAMILY bound to: virtex6 - type: string 
+	Parameter C_DATA_WIDTH bound to: 2 - type: integer 
+	Parameter C_REG_CONFIG bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_8_axic_register_slice__parameterized5' (26#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_8_axic_register_slice__parameterized6' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+	Parameter C_FAMILY bound to: virtex6 - type: string 
+	Parameter C_DATA_WIDTH bound to: 35 - type: integer 
+	Parameter C_REG_CONFIG bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_8_axic_register_slice__parameterized6' (26#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_8_axic_register_slice__parameterized7' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+	Parameter C_FAMILY bound to: virtex6 - type: string 
+	Parameter C_DATA_WIDTH bound to: 34 - type: integer 
+	Parameter C_REG_CONFIG bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_8_axic_register_slice__parameterized7' (26#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v:60]
+	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_SUPPORTS_REGION_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AWPAYLOAD_WIDTH bound to: 35 - type: integer 
+	Parameter C_WPAYLOAD_WIDTH bound to: 36 - type: integer 
+	Parameter C_BPAYLOAD_WIDTH bound to: 2 - type: integer 
+	Parameter C_ARPAYLOAD_WIDTH bound to: 35 - type: integer 
+	Parameter C_RPAYLOAD_WIDTH bound to: 34 - type: integer 
+	Parameter G_AXI_AWADDR_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_AWADDR_WIDTH bound to: 32 - type: integer 
+	Parameter G_AXI_AWPROT_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_AWPROT_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_AWSIZE_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_AWSIZE_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWBURST_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_AWBURST_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWCACHE_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_AWCACHE_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWLEN_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_AWLEN_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWLOCK_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_AWLOCK_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWID_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_AWID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWQOS_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_AWQOS_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWREGION_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_AWREGION_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWUSER_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWPAYLOAD_WIDTH bound to: 35 - type: integer 
+	Parameter G_AXI_ARADDR_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_ARADDR_WIDTH bound to: 32 - type: integer 
+	Parameter G_AXI_ARPROT_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_ARPROT_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_ARSIZE_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_ARSIZE_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARBURST_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_ARBURST_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARCACHE_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_ARCACHE_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARLEN_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_ARLEN_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARLOCK_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_ARLOCK_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARID_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_ARID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARQOS_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_ARQOS_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARREGION_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_ARREGION_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARUSER_INDEX bound to: 35 - type: integer 
+	Parameter G_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARPAYLOAD_WIDTH bound to: 35 - type: integer 
+	Parameter G_AXI_WDATA_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_WDATA_WIDTH bound to: 32 - type: integer 
+	Parameter G_AXI_WSTRB_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_WLAST_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_WLAST_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_WID_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_WID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_WUSER_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_WPAYLOAD_WIDTH bound to: 36 - type: integer 
+	Parameter G_AXI_BRESP_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_BRESP_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_BID_INDEX bound to: 2 - type: integer 
+	Parameter G_AXI_BID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_BUSER_INDEX bound to: 2 - type: integer 
+	Parameter G_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_BPAYLOAD_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_RDATA_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_RDATA_WIDTH bound to: 32 - type: integer 
+	Parameter G_AXI_RRESP_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_RRESP_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_RLAST_INDEX bound to: 34 - type: integer 
+	Parameter G_AXI_RLAST_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_RID_INDEX bound to: 34 - type: integer 
+	Parameter G_AXI_RID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_RUSER_INDEX bound to: 34 - type: integer 
+	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 34 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (26#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_8_axi_register_slice__parameterized0' (26#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v:64]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_8_b2s' (27#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s.v:39]
+INFO: [Synth 8-256] done synthesizing module 'axi_protocol_converter_v2_1_8_axi_protocol_converter' (28#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v:62]
+INFO: [Synth 8-256] done synthesizing module 'block_design1_auto_pc_0' (29#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ip/block_design1_auto_pc_0/synth/block_design1_auto_pc_0.v:58]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'block_design1_auto_pc_0' requires 59 connections, but only 57 given [C:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/hdl/block_design1.v:834]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_11LMRE3' (30#1) [C:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/hdl/block_design1.v:599]
+INFO: [Synth 8-256] done synthesizing module 'block_design1_processing_system7_0_axi_periph_0' (31#1) [C:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/hdl/block_design1.v:294]
+INFO: [Synth 8-638] synthesizing module 'block_design1_rst_processing_system7_0_100M_0' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ip/block_design1_rst_processing_system7_0_100M_0/synth/block_design1_rst_processing_system7_0_100M_0.vhd:71]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/proc_sys_reset.vhd:140' bound to instance 'U0' of component 'proc_sys_reset' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ip/block_design1_rst_processing_system7_0_100M_0/synth/block_design1_rst_processing_system7_0_100M_0.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/proc_sys_reset.vhd:199]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'lpf' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/lpf.vhd:138]
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/Vivado/2016.1/scripts/rt/data/unisim_comp.v:43294' bound to instance 'POR_SRL_I' of component 'SRL16' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/lpf.vhd:190]
+INFO: [Synth 8-638] synthesizing module 'SRL16' [C:/Xilinx/Vivado/2016.1/scripts/rt/data/unisim_comp.v:43294]
+	Parameter INIT bound to: 16'b0000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'SRL16' (32#1) [C:/Xilinx/Vivado/2016.1/scripts/rt/data/unisim_comp.v:43294]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:106]
+	Parameter C_CDC_TYPE bound to: 1 - type: integer 
+	Parameter C_RESET_STATE bound to: 0 - type: integer 
+	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
+	Parameter C_FLOP_INPUT bound to: 0 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 2 - type: integer 
+	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (33#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (34#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/lpf.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/sequence_psr.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/upcnt_n.vhd:125]
+	Parameter C_SIZE bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (35#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/upcnt_n.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (36#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/sequence_psr.vhd:146]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (37#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/proc_sys_reset.vhd:199]
+INFO: [Synth 8-256] done synthesizing module 'block_design1_rst_processing_system7_0_100M_0' (38#1) [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ip/block_design1_rst_processing_system7_0_100M_0/synth/block_design1_rst_processing_system7_0_100M_0.vhd:71]
+WARNING: [Synth 8-350] instance 'rst_processing_system7_0_100M' of module 'block_design1_rst_processing_system7_0_100M_0' requires 10 connections, but only 7 given [C:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/hdl/block_design1.v:284]
+INFO: [Synth 8-256] done synthesizing module 'block_design1' (39#1) [C:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/hdl/block_design1.v:13]
+INFO: [Synth 8-256] done synthesizing module 'block_design1_wrapper' (40#1) [C:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/hdl/block_design1_wrapper.v:12]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_aclk
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_resetn
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[1]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[0]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port scndry_resetn
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_vector2axi__parameterized0 has unconnected port m_axi_bid[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_vector2axi__parameterized0 has unconnected port m_axi_buser[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_vector2axi__parameterized0 has unconnected port m_axi_rid[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_vector2axi__parameterized0 has unconnected port m_axi_rlast
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_vector2axi__parameterized0 has unconnected port m_axi_ruser[0]
+WARNING: [Synth 8-3331] design axi_register_slice_v2_1_8_axic_register_slice__parameterized7 has unconnected port ACLK
+WARNING: [Synth 8-3331] design axi_register_slice_v2_1_8_axic_register_slice__parameterized7 has unconnected port ARESET
+WARNING: [Synth 8-3331] design axi_register_slice_v2_1_8_axic_register_slice__parameterized6 has unconnected port ACLK
+WARNING: [Synth 8-3331] design axi_register_slice_v2_1_8_axic_register_slice__parameterized6 has unconnected port ARESET
+WARNING: [Synth 8-3331] design axi_register_slice_v2_1_8_axic_register_slice__parameterized5 has unconnected port ACLK
+WARNING: [Synth 8-3331] design axi_register_slice_v2_1_8_axic_register_slice__parameterized5 has unconnected port ARESET
+WARNING: [Synth 8-3331] design axi_register_slice_v2_1_8_axic_register_slice__parameterized4 has unconnected port ACLK
+WARNING: [Synth 8-3331] design axi_register_slice_v2_1_8_axic_register_slice__parameterized4 has unconnected port ARESET
+WARNING: [Synth 8-3331] design axi_register_slice_v2_1_8_axic_register_slice__parameterized3 has unconnected port ACLK
+WARNING: [Synth 8-3331] design axi_register_slice_v2_1_8_axic_register_slice__parameterized3 has unconnected port ARESET
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_awid[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_awlen[7]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_awlen[6]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_awlen[5]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_awlen[4]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_awlen[3]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_awlen[2]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_awlen[1]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_awlen[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_awsize[2]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_awsize[1]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_awsize[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_awburst[1]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_awburst[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_awlock[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_awcache[3]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_awcache[2]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_awcache[1]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_awcache[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_awregion[3]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_awregion[2]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_awregion[1]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_awregion[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_awqos[3]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_awqos[2]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_awqos[1]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_awqos[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_awuser[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_wid[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_wlast
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_wuser[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_arid[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_arlen[7]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_arlen[6]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_arlen[5]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_arlen[4]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_arlen[3]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_arlen[2]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_arlen[1]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_arlen[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_arsize[2]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_arsize[1]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_arsize[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_arburst[1]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_arburst[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_arlock[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_arcache[3]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_arcache[2]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_arcache[1]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_arcache[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_arregion[3]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_arregion[2]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_arregion[1]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_arregion[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_arqos[3]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_arqos[2]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_arqos[1]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_arqos[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_aruser[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_vector2axi has unconnected port m_axi_buser[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_vector2axi has unconnected port m_axi_ruser[0]
+WARNING: [Synth 8-3331] design axi_register_slice_v2_1_8_axic_register_slice__parameterized0 has unconnected port ACLK
+WARNING: [Synth 8-3331] design axi_register_slice_v2_1_8_axic_register_slice__parameterized0 has unconnected port ARESET
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awregion[3]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awregion[2]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awregion[1]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awregion[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awuser[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_wuser[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arregion[3]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arregion[2]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arregion[1]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arregion[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_aruser[0]
+WARNING: [Synth 8-3331] design axi_protocol_converter_v2_1_8_b2s_rd_cmd_fsm has unconnected port s_arlen[7]
+WARNING: [Synth 8-3331] design axi_protocol_converter_v2_1_8_b2s_rd_cmd_fsm has unconnected port s_arlen[6]
+WARNING: [Synth 8-3331] design axi_protocol_converter_v2_1_8_b2s_rd_cmd_fsm has unconnected port s_arlen[5]
+WARNING: [Synth 8-3331] design axi_protocol_converter_v2_1_8_b2s_rd_cmd_fsm has unconnected port s_arlen[4]
+WARNING: [Synth 8-3331] design axi_protocol_converter_v2_1_8_b2s_rd_cmd_fsm has unconnected port s_arlen[3]
+WARNING: [Synth 8-3331] design axi_protocol_converter_v2_1_8_b2s_rd_cmd_fsm has unconnected port s_arlen[2]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 516.223 ; gain = 309.813
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 516.223 ; gain = 309.813
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ip/block_design1_processing_system7_0_0/block_design1_processing_system7_0_0.xdc] for cell 'block_design1_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ip/block_design1_processing_system7_0_0/block_design1_processing_system7_0_0.xdc] for cell 'block_design1_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ip/block_design1_processing_system7_0_0/block_design1_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/block_design1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/block_design1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ip/block_design1_rst_processing_system7_0_100M_0/block_design1_rst_processing_system7_0_100M_0_board.xdc] for cell 'block_design1_i/rst_processing_system7_0_100M/U0'
+Finished Parsing XDC File [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ip/block_design1_rst_processing_system7_0_100M_0/block_design1_rst_processing_system7_0_100M_0_board.xdc] for cell 'block_design1_i/rst_processing_system7_0_100M/U0'
+Parsing XDC File [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ip/block_design1_rst_processing_system7_0_100M_0/block_design1_rst_processing_system7_0_100M_0.xdc] for cell 'block_design1_i/rst_processing_system7_0_100M/U0'
+Finished Parsing XDC File [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ip/block_design1_rst_processing_system7_0_100M_0/block_design1_rst_processing_system7_0_100M_0.xdc] for cell 'block_design1_i/rst_processing_system7_0_100M/U0'
+Parsing XDC File [C:/FYP_160611/FYP/FYP.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/FYP_160611/FYP/FYP.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/FYP_160611/FYP/FYP.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/block_design1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/block_design1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 13 instances were transformed.
+  FDR => FDRE: 12 instances
+  SRL16 => SRL16E: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 781.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 781.676 ; gain = 575.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 781.676 ; gain = 575.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for block_design1_i/processing_system7_0/inst. (constraint file  C:/FYP_160611/FYP/FYP.runs/synth_1/dont_touch.xdc, line 23).
+Applied set_property DONT_TOUCH = true for block_design1_i/rst_processing_system7_0_100M/U0. (constraint file  C:/FYP_160611/FYP/FYP.runs/synth_1/dont_touch.xdc, line 26).
+Applied set_property DONT_TOUCH = true for block_design1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for block_design1_i/freq_serial_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for block_design1_i/processing_system7_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for block_design1_i/processing_system7_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for block_design1_i/processing_system7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for block_design1_i/rst_processing_system7_0_100M. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 781.676 ; gain = 575.266
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'tmp_67_reg_6943_reg[0:0]' into 'tmp_6_reg_6936_reg[0:0]' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial.v:1879]
+INFO: [Synth 8-4471] merging register 'tmp_72_reg_6950_reg[0:0]' into 'tmp_6_reg_6936_reg[0:0]' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial.v:1881]
+INFO: [Synth 8-4471] merging register 'tmp_77_reg_6957_reg[0:0]' into 'tmp_6_reg_6936_reg[0:0]' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial.v:1882]
+INFO: [Synth 8-4471] merging register 'tmp_169_reg_6964_reg[0:0]' into 'tmp_6_reg_6936_reg[0:0]' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial.v:1867]
+INFO: [Synth 8-4471] merging register 'tmp_170_reg_6971_reg[0:0]' into 'tmp_6_reg_6936_reg[0:0]' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial.v:1868]
+INFO: [Synth 8-4471] merging register 'tmp_175_reg_6978_reg[0:0]' into 'tmp_6_reg_6936_reg[0:0]' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial.v:1869]
+INFO: [Synth 8-4471] merging register 'tmp_176_reg_6985_reg[0:0]' into 'tmp_6_reg_6936_reg[0:0]' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial.v:1870]
+INFO: [Synth 8-4471] merging register 'tmp_179_reg_6992_reg[0:0]' into 'tmp_6_reg_6936_reg[0:0]' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial.v:1871]
+INFO: [Synth 8-4471] merging register 'tmp_180_reg_6999_reg[0:0]' into 'tmp_6_reg_6936_reg[0:0]' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial.v:1872]
+INFO: [Synth 8-4471] merging register 'tmp_181_reg_7006_reg[0:0]' into 'tmp_6_reg_6936_reg[0:0]' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial.v:1873]
+INFO: [Synth 8-4471] merging register 'tmp_182_reg_7013_reg[0:0]' into 'tmp_6_reg_6936_reg[0:0]' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial.v:1874]
+INFO: [Synth 8-4471] merging register 'tmp_183_reg_7020_reg[0:0]' into 'tmp_6_reg_6936_reg[0:0]' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial.v:1875]
+INFO: [Synth 8-4471] merging register 'tmp_184_reg_7027_reg[0:0]' into 'tmp_6_reg_6936_reg[0:0]' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial.v:1876]
+INFO: [Synth 8-4471] merging register 'tmp_193_reg_7034_reg[0:0]' into 'tmp_6_reg_6936_reg[0:0]' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/freq_serial_v1_0/hdl/verilog/freq_serial.v:1877]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_fu_6648_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond1_fu_6320_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond2_fu_6422_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "tmp_172_fu_4537_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_174_fu_4548_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_178_fu_4559_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/sequence_psr.vhd:222]
+INFO: [Synth 8-3971] The signal gen_write[1].mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_write[1].mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_write[1].mem_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 781.676 ; gain = 575.266
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |freq_serial__GB0   |           1|     17975|
+|2     |freq_serial__GB1   |           1|      3967|
+|3     |freq_serial__GB2   |           1|      6992|
+|4     |freq_serial__GB3   |           1|      8679|
+|5     |freq_serial__GB4   |           1|     17436|
+|6     |freq_serial__GB5   |           1|      3867|
+|7     |block_design1__GC0 |           1|      2858|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 6     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               66 Bit    Registers := 4     
+	               47 Bit    Registers := 2     
+	               44 Bit    Registers := 1     
+	               32 Bit    Registers := 14    
+	               31 Bit    Registers := 15    
+	               14 Bit    Registers := 2     
+	               12 Bit    Registers := 8     
+	               11 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 12    
+	                1 Bit    Registers := 57    
++---RAMs : 
+	               3K Bit         RAMs := 2     
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     66 Bit        Muxes := 4     
+	   2 Input     47 Bit        Muxes := 2     
+	   2 Input     44 Bit        Muxes := 31    
+	   2 Input     43 Bit        Muxes := 206   
+	   2 Input     32 Bit        Muxes := 13    
+	   9 Input     32 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 4     
+	   2 Input      9 Bit        Muxes := 4     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 7     
+	   2 Input      4 Bit        Muxes := 19    
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 9     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 40    
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module freq_serial_mux_112to1_sel7_43_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     43 Bit        Muxes := 111   
+Module freq_serial_mux_32to1_sel5_44_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     44 Bit        Muxes := 31    
+Module freq_serial_FREQ_PERIPH_BUS_s_axi_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module freq_serial_FREQ_PERIPH_BUS_s_axi_ram__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	               3K Bit         RAMs := 1     
+Module freq_serial_FREQ_PERIPH_BUS_s_axi_ram__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	               3K Bit         RAMs := 1     
+Module freq_serial_FREQ_PERIPH_BUS_s_axi 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   9 Input     32 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   5 Input      1 Bit        Muxes := 1     
+Module freq_serial_mux_96to1_sel7_43_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     43 Bit        Muxes := 95    
+Module freq_serial 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               44 Bit    Registers := 1     
+	               32 Bit    Registers := 5     
+	               31 Bit    Registers := 15    
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+Module axi_protocol_converter_v2_1_8_b2s_incr_cmd 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module axi_protocol_converter_v2_1_8_b2s_wrap_cmd 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 4     
+Module axi_protocol_converter_v2_1_8_b2s_cmd_translator 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module axi_protocol_converter_v2_1_8_b2s_wr_cmd_fsm 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+Module axi_protocol_converter_v2_1_8_b2s_aw_channel 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+Module axi_protocol_converter_v2_1_8_b2s_simple_fifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module axi_protocol_converter_v2_1_8_b2s_simple_fifo__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module axi_protocol_converter_v2_1_8_b2s_b_channel 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module axi_protocol_converter_v2_1_8_b2s_incr_cmd__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module axi_protocol_converter_v2_1_8_b2s_wrap_cmd__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 4     
+Module axi_protocol_converter_v2_1_8_b2s_cmd_translator__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module axi_protocol_converter_v2_1_8_b2s_rd_cmd_fsm 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+Module axi_protocol_converter_v2_1_8_b2s_ar_channel 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+Module axi_protocol_converter_v2_1_8_b2s_simple_fifo__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module axi_protocol_converter_v2_1_8_b2s_simple_fifo__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module axi_protocol_converter_v2_1_8_b2s_r_channel 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module axi_register_slice_v2_1_8_axic_register_slice__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               66 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     66 Bit        Muxes := 2     
+Module axi_register_slice_v2_1_8_axic_register_slice__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               14 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 2     
+Module axi_register_slice_v2_1_8_axic_register_slice 
+Detailed RTL Component Info : 
++---Registers : 
+	               66 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     66 Bit        Muxes := 2     
+Module axi_register_slice_v2_1_8_axic_register_slice__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               47 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     47 Bit        Muxes := 2     
+Module axi_protocol_converter_v2_1_8_b2s 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module lpf 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module upcnt_n 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module sequence_psr 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
+Module proc_sys_reset 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 781.676 ; gain = 575.266
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "exitcond2_fu_6422_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:121]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [c:/FYP_160611/FYP/FYP.srcs/sources_1/bd/block_design1/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:121]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 781.676 ; gain = 575.266
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 781.676 ; gain = 575.266
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |freq_serial__GB0   |           1|     18748|
+|2     |freq_serial__GB1   |           1|      3967|
+|3     |freq_serial__GB2   |           1|      7054|
+|4     |freq_serial__GB3   |           1|      8915|
+|5     |freq_serial__GB4   |           1|     18123|
+|6     |freq_serial__GB5   |           1|      3867|
+|7     |block_design1__GC0 |           1|      2979|
++------+-------------------+------------+----------+
+INFO: [Synth 8-3971] The signal freq_serial_FREQ_PERIPH_BUS_s_axi_U/int_freqStream_V/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal freq_serial_FREQ_PERIPH_BUS_s_axi_U/int_serialTwoStream_V/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal freq_serial_FREQ_PERIPH_BUS_s_axi_U/int_serialThreeStream_V/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++--------------------------------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                           | RTL Object           | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------------------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|freq_serial_FREQ_PERIPH_BUS_s_axi_ram | gen_write[1].mem_reg | 32 x 32(READ_FIRST)    | W | R | 32 x 32(READ_FIRST)    | W | R | Port A and B     | 0      | 1      | 
+|freq_serial_FREQ_PERIPH_BUS_s_axi_ram | gen_write[1].mem_reg | 128 x 32(READ_FIRST)   | W | R | 128 x 32(READ_FIRST)   | W | R | Port A and B     | 0      | 1      | 
+|freq_serial_FREQ_PERIPH_BUS_s_axi_ram | gen_write[1].mem_reg | 128 x 32(READ_FIRST)   | W | R | 128 x 32(READ_FIRST)   | W | R | Port A and B     | 0      | 1      | 
++--------------------------------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[31]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[30]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[29]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[28]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[27]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[26]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[25]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[24]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[23]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[22]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[21]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[20]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[19]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[18]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[17]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[16]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[15]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[14]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[13]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[12]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[11]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[10]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[9]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[8]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[7]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[6]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[5]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[4]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[3]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[2]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[2]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_169_reg_6964_reg[1]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[2]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[31]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[30]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[29]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[28]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[27]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[26]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[25]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[24]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[23]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[22]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[21]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[20]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[19]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[18]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[17]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[16]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[15]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[14]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[13]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[12]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[11]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[10]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[9]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[8]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[7]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[6]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[5]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[4]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[2]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[3]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[2]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[2]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[2]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_193_reg_7034_reg[1]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[2]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[31]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[30]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[30]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[29]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[29]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[28]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[28]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[27]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[27]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[26]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[26]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[25]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[25]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[24]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[24]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[23]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[23]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[22]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[22]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[21]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[21]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[20]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[20]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[19]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[19]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[18]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[18]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[17]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[17]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[16]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[16]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[15]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[15]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[14]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[14]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[13]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[13]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[12]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[12]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[11]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[11]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[10]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[10]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[9]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[9]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[8]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[8]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[7]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[7]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[6]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[6]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[5]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[5]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[4]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[4]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[3]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[3]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_6_reg_6936_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[2]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[1]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_72_reg_6950_reg[1]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_6_reg_6936_reg[1]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_170_reg_6971_reg[31]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_6_reg_6936_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_170_reg_6971_reg[30]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_6_reg_6936_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_170_reg_6971_reg[29]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_6_reg_6936_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_170_reg_6971_reg[28]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_6_reg_6936_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_170_reg_6971_reg[27]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_6_reg_6936_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_170_reg_6971_reg[26]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_6_reg_6936_reg[31]'
+INFO: [Synth 8-3886] merging instance 'block_design1_i/freq_serial_0/insti_5_2/tmp_170_reg_6971_reg[25]' (FD) to 'block_design1_i/freq_serial_0/insti_5_2/tmp_6_reg_6936_reg[31]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (block_design1_i/freq_serial_0/insti_5_2/\tmp_181_reg_7006_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (block_design1_i/freq_serial_0/insti_5_2/\tmp_181_reg_7006_reg[1] )
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[65]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[64]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[63]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[62]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[49]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[48]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[43]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[42]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[41]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[40]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/skid_buffer_reg[37]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[49]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[48]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[43]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[42]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[41]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[40]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/m_payload_i_reg[37]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg[65]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg[64]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg[63]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg[62]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg[49]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg[48]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg[43]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg[42]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg[41]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg[40]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/skid_buffer_reg[37]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i_reg[49]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i_reg[48]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i_reg[43]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i_reg[42]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i_reg[41]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i_reg[40]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/m_payload_i_reg[37]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/aresetn_d_reg[0]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/r_pipe/aresetn_d_reg[0]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b_pipe/aresetn_d_reg[1]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw_pipe/aresetn_d_reg[1]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/r_pipe/aresetn_d_reg[1]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/aresetn_d_reg[0]) is unused and will be removed from module block_design1_auto_pc_0.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (SEQ/bsr_dec_reg[1]) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (SEQ/pr_dec_reg[1]) is unused and will be removed from module proc_sys_reset.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:01:14 . Memory (MB): peak = 781.676 ; gain = 575.266
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:10 ; elapsed = 00:01:14 . Memory (MB): peak = 781.676 ; gain = 575.266
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |freq_serial__GB0   |           1|      8426|
+|2     |freq_serial__GB1   |           1|      1388|
+|3     |freq_serial__GB2   |           1|      1751|
+|4     |freq_serial__GB3   |           1|      3926|
+|5     |freq_serial__GB4   |           1|      7999|
+|6     |freq_serial__GB5   |           1|      1287|
+|7     |block_design1__GC0 |           1|      1985|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:20 ; elapsed = 00:01:24 . Memory (MB): peak = 957.863 ; gain = 751.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:38 ; elapsed = 00:01:42 . Memory (MB): peak = 1004.594 ; gain = 798.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------------------+------------+----------+
+|      |RTL Partition                     |Replication |Instances |
++------+----------------------------------+------------+----------+
+|1     |block_design1__GC0                |           1|      1985|
+|2     |block_design1_freq_serial_0_0_GT0 |           1|     24777|
++------+----------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axlen_cnt_reg[8]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/wrap_cmd_0/axlen_cnt_reg[4]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/cmd_translator_0/incr_cmd_0/axlen_cnt_reg[8]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-3332] Sequential element (inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/cmd_translator_0/wrap_cmd_0/axlen_cnt_reg[4]) is unused and will be removed from module block_design1_auto_pc_0.
+INFO: [Synth 8-4480] The timing for the instance inst/freq_serial_FREQ_PERIPH_BUS_s_axi_U/int_freqStream_V/gen_write[1].mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/freq_serial_FREQ_PERIPH_BUS_s_axi_U/int_serialTwoStream_V/gen_write[1].mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/freq_serial_FREQ_PERIPH_BUS_s_axi_U/int_serialThreeStream_V/gen_write[1].mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:48 ; elapsed = 00:01:52 . Memory (MB): peak = 1043.332 ; gain = 836.922
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:48 ; elapsed = 00:01:52 . Memory (MB): peak = 1043.332 ; gain = 836.922
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:48 ; elapsed = 00:01:52 . Memory (MB): peak = 1043.332 ; gain = 836.922
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/aresetn_d_reg[1] is being inverted and renamed to inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar_pipe/aresetn_d_reg[1]_inv.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 10 on net \inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/cnt_read [0]. Fanout reduced from 20 to 7 by creating 2 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 10 on net \inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/cnt_read [1]. Fanout reduced from 19 to 7 by creating 2 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 10 on net \inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/cnt_read [2]. Fanout reduced from 19 to 7 by creating 2 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 10 on net \inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/cnt_read [3]. Fanout reduced from 17 to 7 by creating 2 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 10 on net \inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/cnt_read [4]. Fanout reduced from 16 to 7 by creating 2 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 10 on net \inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/cnt_read [1]. Fanout reduced from 27 to 7 by creating 3 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 10 on net \inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/cnt_read [0]. Fanout reduced from 28 to 10 by creating 2 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 10 on net \inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/cnt_read [0]. Fanout reduced from 43 to 9 by creating 4 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 10 on net \inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/cnt_read [2]. Fanout reduced from 42 to 9 by creating 4 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 10 on net \inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/cnt_read [1]. Fanout reduced from 42 to 9 by creating 4 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 10 on net \inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/cnt_read [3]. Fanout reduced from 40 to 9 by creating 4 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 10 on net \inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/cnt_read [4]. Fanout reduced from 39 to 9 by creating 4 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 20 on net \inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/state [1]. Fanout reduced from 25 to 13 by creating 1 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 20 on net \inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/state [0]. Fanout reduced from 25 to 13 by creating 1 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 20 on net \inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state [1]. Fanout reduced from 24 to 12 by creating 1 replicas.
+INFO: [Synth 8-4618] Found max_fanout attribute set to 20 on net \inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/state [0]. Fanout reduced from 24 to 12 by creating 1 replicas.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:50 ; elapsed = 00:01:54 . Memory (MB): peak = 1043.332 ; gain = 836.922
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:51 ; elapsed = 00:01:55 . Memory (MB): peak = 1043.332 ; gain = 836.922
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:54 ; elapsed = 00:01:58 . Memory (MB): peak = 1043.332 ; gain = 836.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:54 ; elapsed = 00:01:58 . Memory (MB): peak = 1043.332 ; gain = 836.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:54 ; elapsed = 00:01:58 . Memory (MB): peak = 1043.332 ; gain = 836.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:54 ; elapsed = 00:01:58 . Memory (MB): peak = 1043.332 ; gain = 836.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | memory_reg[3]  | 4      | 20         | 20     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | memory_reg[3]  | 4      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__2     | memory_reg[31] | 32     | 34         | 0      | 34      | 0      | 0      | 0      | 
+|dsrl__3     | memory_reg[31] | 32     | 13         | 0      | 13      | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BIBUF    |   130|
+|2     |BUFG     |     1|
+|3     |CARRY4   |  2689|
+|4     |LUT1     | 10596|
+|5     |LUT2     |    94|
+|6     |LUT3     |   490|
+|7     |LUT4     |   218|
+|8     |LUT5     |   127|
+|9     |LUT6     |  2738|
+|10    |MUXF7    |   705|
+|11    |MUXF8    |    64|
+|12    |PS7      |     1|
+|13    |RAMB36E1 |     3|
+|14    |SRL16    |     1|
+|15    |SRL16E   |    22|
+|16    |SRLC32E  |    47|
+|17    |FDR      |     8|
+|18    |FDRE     | 11500|
+|19    |FDSE     |    54|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------------------------------------------------+--------------------------------------------------------------+------+
+|      |Instance                                           |Module                                                        |Cells |
++------+---------------------------------------------------+--------------------------------------------------------------+------+
+|1     |top                                                |                                                              | 29488|
+|2     |  block_design1_i                                  |block_design1                                                 | 29488|
+|3     |    freq_serial_0                                  |block_design1_freq_serial_0_0                                 | 27989|
+|4     |      inst                                         |freq_serial                                                   | 27890|
+|5     |        freq_serial_FREQ_PERIPH_BUS_s_axi_U        |freq_serial_FREQ_PERIPH_BUS_s_axi                             |   925|
+|6     |          int_freqStream_V                         |freq_serial_FREQ_PERIPH_BUS_s_axi_ram                         |   487|
+|7     |          int_serialThreeStream_V                  |freq_serial_FREQ_PERIPH_BUS_s_axi_ram__parameterized1         |    47|
+|8     |          int_serialTwoStream_V                    |freq_serial_FREQ_PERIPH_BUS_s_axi_ram__parameterized0         |    40|
+|9     |    processing_system7_0                           |block_design1_processing_system7_0_0                          |   244|
+|10    |      inst                                         |processing_system7_v5_5_processing_system7                    |   244|
+|11    |    processing_system7_0_axi_periph                |block_design1_processing_system7_0_axi_periph_0               |  1189|
+|12    |      s00_couplers                                 |s00_couplers_imp_11LMRE3                                      |  1189|
+|13    |        auto_pc                                    |block_design1_auto_pc_0                                       |  1189|
+|14    |          inst                                     |axi_protocol_converter_v2_1_8_axi_protocol_converter          |  1189|
+|15    |            \gen_axilite.gen_b2s_conv.axilite_b2s  |axi_protocol_converter_v2_1_8_b2s                             |  1189|
+|16    |              \RD.ar_channel_0                     |axi_protocol_converter_v2_1_8_b2s_ar_channel                  |   181|
+|17    |                ar_cmd_fsm_0                       |axi_protocol_converter_v2_1_8_b2s_rd_cmd_fsm                  |    27|
+|18    |                cmd_translator_0                   |axi_protocol_converter_v2_1_8_b2s_cmd_translator_2            |   142|
+|19    |                  incr_cmd_0                       |axi_protocol_converter_v2_1_8_b2s_incr_cmd_3                  |    48|
+|20    |                  wrap_cmd_0                       |axi_protocol_converter_v2_1_8_b2s_wrap_cmd_4                  |    89|
+|21    |              \RD.r_channel_0                      |axi_protocol_converter_v2_1_8_b2s_r_channel                   |   121|
+|22    |                rd_data_fifo_0                     |axi_protocol_converter_v2_1_8_b2s_simple_fifo__parameterized1 |    70|
+|23    |                transaction_fifo_0                 |axi_protocol_converter_v2_1_8_b2s_simple_fifo__parameterized2 |    37|
+|24    |              SI_REG                               |axi_register_slice_v2_1_8_axi_register_slice                  |   627|
+|25    |                ar_pipe                            |axi_register_slice_v2_1_8_axic_register_slice                 |   217|
+|26    |                aw_pipe                            |axi_register_slice_v2_1_8_axic_register_slice_1               |   216|
+|27    |                b_pipe                             |axi_register_slice_v2_1_8_axic_register_slice__parameterized1 |    48|
+|28    |                r_pipe                             |axi_register_slice_v2_1_8_axic_register_slice__parameterized2 |   146|
+|29    |              \WR.aw_channel_0                     |axi_protocol_converter_v2_1_8_b2s_aw_channel                  |   188|
+|30    |                aw_cmd_fsm_0                       |axi_protocol_converter_v2_1_8_b2s_wr_cmd_fsm                  |    34|
+|31    |                cmd_translator_0                   |axi_protocol_converter_v2_1_8_b2s_cmd_translator              |   138|
+|32    |                  incr_cmd_0                       |axi_protocol_converter_v2_1_8_b2s_incr_cmd                    |    46|
+|33    |                  wrap_cmd_0                       |axi_protocol_converter_v2_1_8_b2s_wrap_cmd                    |    88|
+|34    |              \WR.b_channel_0                      |axi_protocol_converter_v2_1_8_b2s_b_channel                   |    70|
+|35    |                bid_fifo_0                         |axi_protocol_converter_v2_1_8_b2s_simple_fifo                 |    38|
+|36    |                bresp_fifo_0                       |axi_protocol_converter_v2_1_8_b2s_simple_fifo__parameterized0 |     8|
+|37    |    rst_processing_system7_0_100M                  |block_design1_rst_processing_system7_0_100M_0                 |    66|
+|38    |      U0                                           |proc_sys_reset                                                |    66|
+|39    |        EXT_LPF                                    |lpf                                                           |    23|
+|40    |          \ACTIVE_LOW_AUX.ACT_LO_AUX               |cdc_sync                                                      |     6|
+|41    |          \ACTIVE_LOW_EXT.ACT_LO_EXT               |cdc_sync_0                                                    |     6|
+|42    |        SEQ                                        |sequence_psr                                                  |    38|
+|43    |          SEQ_COUNTER                              |upcnt_n                                                       |    13|
++------+---------------------------------------------------+--------------------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:54 ; elapsed = 00:01:58 . Memory (MB): peak = 1043.332 ; gain = 836.922
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:09 ; elapsed = 00:01:44 . Memory (MB): peak = 1043.332 ; gain = 500.152
+Synthesis Optimization Complete : Time (s): cpu = 00:01:54 ; elapsed = 00:01:58 . Memory (MB): peak = 1043.332 ; gain = 836.922
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2701 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'block_design1_wrapper' is not ideal for floorplanning, since the cellview 'freq_serial' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  FDR => FDRE: 8 instances
+  SRL16 => SRL16E: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+346 Infos, 112 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:59 ; elapsed = 00:02:02 . Memory (MB): peak = 1043.332 ; gain = 767.688
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.096 . Memory (MB): peak = 1043.332 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 14 04:46:38 2016...
