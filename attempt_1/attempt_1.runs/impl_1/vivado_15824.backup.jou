@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Fri Jun 10 01:39:13 2016
+# Process ID: 15824
+# Current directory: C:/Users/s02so/05062016_FYP/attempt_1/attempt_1.runs/impl_1
+# Command line: vivado.exe -log freq_serial.vdi -applog -messageDb vivado.pb -mode batch -source freq_serial.tcl -notrace
+# Log file: C:/Users/s02so/05062016_FYP/attempt_1/attempt_1.runs/impl_1/freq_serial.vdi
+# Journal file: C:/Users/s02so/05062016_FYP/attempt_1/attempt_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source freq_serial.tcl -notrace

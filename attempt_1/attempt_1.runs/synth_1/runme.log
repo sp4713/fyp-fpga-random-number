@@ -1,0 +1,1200 @@
+
+*** Running vivado
+    with args -log freq_serial.vds -m64 -mode batch -messageDb vivado.pb -notrace -source freq_serial.tcl
+
+
+****** Vivado v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source freq_serial.tcl -notrace
+Command: synth_design -top freq_serial -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14084 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 306.168 ; gain = 99.527
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'freq_serial' [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:12]
+	Parameter ap_ST_st1_fsm_0 bound to: 5'b00001 
+	Parameter ap_ST_st2_fsm_1 bound to: 5'b00010 
+	Parameter ap_ST_st3_fsm_2 bound to: 5'b00100 
+	Parameter ap_ST_st4_fsm_3 bound to: 5'b01000 
+	Parameter ap_ST_st5_fsm_4 bound to: 5'b10000 
+	Parameter ap_const_lv32_0 bound to: 0 - type: integer 
+	Parameter C_S_AXI_FREQ_PERIPH_BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ap_const_int64_8 bound to: 8 - type: integer 
+	Parameter C_S_AXI_FREQ_PERIPH_BUS_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ap_const_lv32_1 bound to: 1 - type: integer 
+	Parameter ap_const_lv32_3 bound to: 3 - type: integer 
+	Parameter ap_const_lv32_4 bound to: 4 - type: integer 
+	Parameter ap_const_lv8_0 bound to: 8'b00000000 
+	Parameter ap_const_lv32_2 bound to: 2 - type: integer 
+	Parameter ap_const_lv44_0 bound to: 44'b00000000000000000000000000000000000000000000 
+	Parameter ap_const_lv37_0 bound to: 37'b0000000000000000000000000000000000000 
+	Parameter ap_const_lv8_1 bound to: 8'b00000001 
+	Parameter ap_const_lv8_2 bound to: 8'b00000010 
+	Parameter ap_const_lv8_3 bound to: 8'b00000011 
+	Parameter ap_const_lv8_4 bound to: 8'b00000100 
+	Parameter ap_const_lv8_5 bound to: 8'b00000101 
+	Parameter ap_const_lv8_6 bound to: 8'b00000110 
+	Parameter ap_const_lv8_7 bound to: 8'b00000111 
+	Parameter ap_const_lv8_8 bound to: 8'b00001000 
+	Parameter ap_const_lv8_9 bound to: 8'b00001001 
+	Parameter ap_const_lv8_A bound to: 8'b00001010 
+	Parameter ap_const_lv8_B bound to: 8'b00001011 
+	Parameter ap_const_lv8_C bound to: 8'b00001100 
+	Parameter ap_const_lv8_D bound to: 8'b00001101 
+	Parameter ap_const_lv8_E bound to: 8'b00001110 
+	Parameter ap_const_lv8_F bound to: 8'b00001111 
+	Parameter ap_const_lv8_10 bound to: 8'b00010000 
+	Parameter ap_const_lv8_11 bound to: 8'b00010001 
+	Parameter ap_const_lv8_12 bound to: 8'b00010010 
+	Parameter ap_const_lv8_13 bound to: 8'b00010011 
+	Parameter ap_const_lv8_14 bound to: 8'b00010100 
+	Parameter ap_const_lv8_15 bound to: 8'b00010101 
+	Parameter ap_const_lv8_16 bound to: 8'b00010110 
+	Parameter ap_const_lv8_17 bound to: 8'b00010111 
+	Parameter ap_const_lv8_18 bound to: 8'b00011000 
+	Parameter ap_const_lv8_19 bound to: 8'b00011001 
+	Parameter ap_const_lv8_1A bound to: 8'b00011010 
+	Parameter ap_const_lv8_1B bound to: 8'b00011011 
+	Parameter ap_const_lv8_1C bound to: 8'b00011100 
+	Parameter ap_const_lv8_1D bound to: 8'b00011101 
+	Parameter ap_const_lv8_1E bound to: 8'b00011110 
+	Parameter ap_const_lv8_1F bound to: 8'b00011111 
+	Parameter ap_const_lv8_20 bound to: 8'b00100000 
+	Parameter ap_const_lv8_21 bound to: 8'b00100001 
+	Parameter ap_const_lv8_22 bound to: 8'b00100010 
+	Parameter ap_const_lv8_23 bound to: 8'b00100011 
+	Parameter ap_const_lv8_24 bound to: 8'b00100100 
+	Parameter ap_const_lv8_25 bound to: 8'b00100101 
+	Parameter ap_const_lv8_26 bound to: 8'b00100110 
+	Parameter ap_const_lv8_27 bound to: 8'b00100111 
+	Parameter ap_const_lv8_28 bound to: 8'b00101000 
+	Parameter ap_const_lv8_29 bound to: 8'b00101001 
+	Parameter ap_const_lv8_2A bound to: 8'b00101010 
+	Parameter ap_const_lv8_2B bound to: 8'b00101011 
+	Parameter ap_const_lv8_2C bound to: 8'b00101100 
+	Parameter ap_const_lv8_2D bound to: 8'b00101101 
+	Parameter ap_const_lv8_2E bound to: 8'b00101110 
+	Parameter ap_const_lv8_2F bound to: 8'b00101111 
+	Parameter ap_const_lv8_30 bound to: 8'b00110000 
+	Parameter ap_const_lv8_31 bound to: 8'b00110001 
+	Parameter ap_const_lv8_32 bound to: 8'b00110010 
+	Parameter ap_const_lv8_33 bound to: 8'b00110011 
+	Parameter ap_const_lv8_34 bound to: 8'b00110100 
+	Parameter ap_const_lv8_35 bound to: 8'b00110101 
+	Parameter ap_const_lv8_36 bound to: 8'b00110110 
+	Parameter ap_const_lv8_37 bound to: 8'b00110111 
+	Parameter ap_const_lv8_38 bound to: 8'b00111000 
+	Parameter ap_const_lv8_39 bound to: 8'b00111001 
+	Parameter ap_const_lv8_3A bound to: 8'b00111010 
+	Parameter ap_const_lv8_3B bound to: 8'b00111011 
+	Parameter ap_const_lv8_3C bound to: 8'b00111100 
+	Parameter ap_const_lv8_3D bound to: 8'b00111101 
+	Parameter ap_const_lv8_3E bound to: 8'b00111110 
+	Parameter ap_const_lv8_3F bound to: 8'b00111111 
+	Parameter ap_const_lv8_40 bound to: 8'b01000000 
+	Parameter ap_const_lv8_41 bound to: 8'b01000001 
+	Parameter ap_const_lv8_42 bound to: 8'b01000010 
+	Parameter ap_const_lv8_43 bound to: 8'b01000011 
+	Parameter ap_const_lv8_44 bound to: 8'b01000100 
+	Parameter ap_const_lv8_45 bound to: 8'b01000101 
+	Parameter ap_const_lv8_46 bound to: 8'b01000110 
+	Parameter ap_const_lv8_47 bound to: 8'b01000111 
+	Parameter ap_const_lv8_48 bound to: 8'b01001000 
+	Parameter ap_const_lv8_49 bound to: 8'b01001001 
+	Parameter ap_const_lv8_4A bound to: 8'b01001010 
+	Parameter ap_const_lv8_4B bound to: 8'b01001011 
+	Parameter ap_const_lv8_4C bound to: 8'b01001100 
+	Parameter ap_const_lv8_4D bound to: 8'b01001101 
+	Parameter ap_const_lv8_4E bound to: 8'b01001110 
+	Parameter ap_const_lv8_4F bound to: 8'b01001111 
+	Parameter ap_const_lv8_50 bound to: 8'b01010000 
+	Parameter ap_const_lv8_51 bound to: 8'b01010001 
+	Parameter ap_const_lv8_52 bound to: 8'b01010010 
+	Parameter ap_const_lv8_53 bound to: 8'b01010011 
+	Parameter ap_const_lv8_54 bound to: 8'b01010100 
+	Parameter ap_const_lv8_55 bound to: 8'b01010101 
+	Parameter ap_const_lv8_56 bound to: 8'b01010110 
+	Parameter ap_const_lv8_57 bound to: 8'b01010111 
+	Parameter ap_const_lv8_58 bound to: 8'b01011000 
+	Parameter ap_const_lv8_59 bound to: 8'b01011001 
+	Parameter ap_const_lv8_5A bound to: 8'b01011010 
+	Parameter ap_const_lv8_5B bound to: 8'b01011011 
+	Parameter ap_const_lv8_5C bound to: 8'b01011100 
+	Parameter ap_const_lv8_5D bound to: 8'b01011101 
+	Parameter ap_const_lv8_5E bound to: 8'b01011110 
+	Parameter ap_const_lv8_5F bound to: 8'b01011111 
+	Parameter ap_const_lv8_60 bound to: 8'b01100000 
+	Parameter ap_const_lv8_61 bound to: 8'b01100001 
+	Parameter ap_const_lv8_62 bound to: 8'b01100010 
+	Parameter ap_const_lv8_63 bound to: 8'b01100011 
+	Parameter ap_const_lv8_64 bound to: 8'b01100100 
+	Parameter ap_const_lv8_65 bound to: 8'b01100101 
+	Parameter ap_const_lv8_66 bound to: 8'b01100110 
+	Parameter ap_const_lv8_67 bound to: 8'b01100111 
+	Parameter ap_const_lv8_68 bound to: 8'b01101000 
+	Parameter ap_const_lv8_69 bound to: 8'b01101001 
+	Parameter ap_const_lv8_6A bound to: 8'b01101010 
+	Parameter ap_const_lv8_6B bound to: 8'b01101011 
+	Parameter ap_const_lv8_6C bound to: 8'b01101100 
+	Parameter ap_const_lv8_6D bound to: 8'b01101101 
+	Parameter ap_const_lv8_6E bound to: 8'b01101110 
+	Parameter ap_const_lv8_6F bound to: 8'b01101111 
+	Parameter ap_const_lv8_70 bound to: 8'b01110000 
+	Parameter ap_const_lv8_71 bound to: 8'b01110001 
+	Parameter ap_const_lv8_72 bound to: 8'b01110010 
+	Parameter ap_const_lv8_73 bound to: 8'b01110011 
+	Parameter ap_const_lv8_74 bound to: 8'b01110100 
+	Parameter ap_const_lv8_75 bound to: 8'b01110101 
+	Parameter ap_const_lv8_76 bound to: 8'b01110110 
+	Parameter ap_const_lv8_77 bound to: 8'b01110111 
+	Parameter ap_const_lv8_78 bound to: 8'b01111000 
+	Parameter ap_const_lv8_79 bound to: 8'b01111001 
+	Parameter ap_const_lv8_7A bound to: 8'b01111010 
+	Parameter ap_const_lv8_7B bound to: 8'b01111011 
+	Parameter ap_const_lv8_7C bound to: 8'b01111100 
+	Parameter ap_const_lv8_7D bound to: 8'b01111101 
+	Parameter ap_const_lv8_7E bound to: 8'b01111110 
+	Parameter ap_const_lv8_7F bound to: 8'b01111111 
+	Parameter ap_const_lv8_80 bound to: 8'b10000000 
+	Parameter ap_const_lv8_81 bound to: 8'b10000001 
+	Parameter ap_const_lv8_82 bound to: 8'b10000010 
+	Parameter ap_const_lv8_83 bound to: 8'b10000011 
+	Parameter ap_const_lv8_84 bound to: 8'b10000100 
+	Parameter ap_const_lv8_85 bound to: 8'b10000101 
+	Parameter ap_const_lv8_86 bound to: 8'b10000110 
+	Parameter ap_const_lv8_87 bound to: 8'b10000111 
+	Parameter ap_const_lv8_88 bound to: 8'b10001000 
+	Parameter ap_const_lv8_89 bound to: 8'b10001001 
+	Parameter ap_const_lv8_8A bound to: 8'b10001010 
+	Parameter ap_const_lv8_8B bound to: 8'b10001011 
+	Parameter ap_const_lv8_8C bound to: 8'b10001100 
+	Parameter ap_const_lv8_8D bound to: 8'b10001101 
+	Parameter ap_const_lv8_8E bound to: 8'b10001110 
+	Parameter ap_const_lv8_8F bound to: 8'b10001111 
+	Parameter ap_const_lv8_90 bound to: 8'b10010000 
+	Parameter ap_const_lv8_91 bound to: 8'b10010001 
+	Parameter ap_const_lv8_92 bound to: 8'b10010010 
+	Parameter ap_const_lv8_93 bound to: 8'b10010011 
+	Parameter ap_const_lv8_94 bound to: 8'b10010100 
+	Parameter ap_const_lv8_95 bound to: 8'b10010101 
+	Parameter ap_const_lv8_96 bound to: 8'b10010110 
+	Parameter ap_const_lv8_97 bound to: 8'b10010111 
+	Parameter ap_const_lv8_98 bound to: 8'b10011000 
+	Parameter ap_const_lv8_99 bound to: 8'b10011001 
+	Parameter ap_const_lv8_9A bound to: 8'b10011010 
+	Parameter ap_const_lv8_9B bound to: 8'b10011011 
+	Parameter ap_const_lv8_9C bound to: 8'b10011100 
+	Parameter ap_const_lv8_9D bound to: 8'b10011101 
+	Parameter ap_const_lv8_9E bound to: 8'b10011110 
+	Parameter ap_const_lv8_9F bound to: 8'b10011111 
+	Parameter ap_const_lv8_A0 bound to: 8'b10100000 
+	Parameter ap_const_lv8_A1 bound to: 8'b10100001 
+	Parameter ap_const_lv8_A2 bound to: 8'b10100010 
+	Parameter ap_const_lv8_A3 bound to: 8'b10100011 
+	Parameter ap_const_lv8_A4 bound to: 8'b10100100 
+	Parameter ap_const_lv8_A5 bound to: 8'b10100101 
+	Parameter ap_const_lv8_A6 bound to: 8'b10100110 
+	Parameter ap_const_lv8_A7 bound to: 8'b10100111 
+	Parameter ap_const_lv8_A8 bound to: 8'b10101000 
+	Parameter ap_const_lv8_A9 bound to: 8'b10101001 
+	Parameter ap_const_lv8_AA bound to: 8'b10101010 
+	Parameter ap_const_lv8_AB bound to: 8'b10101011 
+	Parameter ap_const_lv8_AC bound to: 8'b10101100 
+	Parameter ap_const_lv8_AD bound to: 8'b10101101 
+	Parameter ap_const_lv8_AE bound to: 8'b10101110 
+	Parameter ap_const_lv8_AF bound to: 8'b10101111 
+	Parameter ap_const_lv8_B0 bound to: 8'b10110000 
+	Parameter ap_const_lv8_B1 bound to: 8'b10110001 
+	Parameter ap_const_lv8_B2 bound to: 8'b10110010 
+	Parameter ap_const_lv8_B3 bound to: 8'b10110011 
+	Parameter ap_const_lv8_B4 bound to: 8'b10110100 
+	Parameter ap_const_lv8_B5 bound to: 8'b10110101 
+	Parameter ap_const_lv8_B6 bound to: 8'b10110110 
+	Parameter ap_const_lv8_B7 bound to: 8'b10110111 
+	Parameter ap_const_lv8_B8 bound to: 8'b10111000 
+	Parameter ap_const_lv8_B9 bound to: 8'b10111001 
+	Parameter ap_const_lv8_BA bound to: 8'b10111010 
+	Parameter ap_const_lv8_BB bound to: 8'b10111011 
+	Parameter ap_const_lv8_BC bound to: 8'b10111100 
+	Parameter ap_const_lv8_BD bound to: 8'b10111101 
+	Parameter ap_const_lv8_BE bound to: 8'b10111110 
+	Parameter ap_const_lv8_BF bound to: 8'b10111111 
+	Parameter ap_const_lv8_C0 bound to: 8'b11000000 
+	Parameter ap_const_lv8_C1 bound to: 8'b11000001 
+	Parameter ap_const_lv8_C2 bound to: 8'b11000010 
+	Parameter ap_const_lv8_C3 bound to: 8'b11000011 
+	Parameter ap_const_lv8_C4 bound to: 8'b11000100 
+	Parameter ap_const_lv8_C5 bound to: 8'b11000101 
+	Parameter ap_const_lv8_C6 bound to: 8'b11000110 
+	Parameter ap_const_lv8_C7 bound to: 8'b11000111 
+	Parameter ap_const_lv8_C8 bound to: 8'b11001000 
+	Parameter ap_const_lv8_C9 bound to: 8'b11001001 
+	Parameter ap_const_lv8_CA bound to: 8'b11001010 
+	Parameter ap_const_lv8_CB bound to: 8'b11001011 
+	Parameter ap_const_lv8_CC bound to: 8'b11001100 
+	Parameter ap_const_lv8_CD bound to: 8'b11001101 
+	Parameter ap_const_lv8_CE bound to: 8'b11001110 
+	Parameter ap_const_lv8_CF bound to: 8'b11001111 
+	Parameter ap_const_lv8_D0 bound to: 8'b11010000 
+	Parameter ap_const_lv8_D1 bound to: 8'b11010001 
+	Parameter ap_const_lv8_D2 bound to: 8'b11010010 
+	Parameter ap_const_lv8_D3 bound to: 8'b11010011 
+	Parameter ap_const_lv8_D4 bound to: 8'b11010100 
+	Parameter ap_const_lv8_D5 bound to: 8'b11010101 
+	Parameter ap_const_lv8_D6 bound to: 8'b11010110 
+	Parameter ap_const_lv8_D7 bound to: 8'b11010111 
+	Parameter ap_const_lv8_D8 bound to: 8'b11011000 
+	Parameter ap_const_lv8_D9 bound to: 8'b11011001 
+	Parameter ap_const_lv8_DA bound to: 8'b11011010 
+	Parameter ap_const_lv8_DB bound to: 8'b11011011 
+	Parameter ap_const_lv8_DC bound to: 8'b11011100 
+	Parameter ap_const_lv8_DD bound to: 8'b11011101 
+	Parameter ap_const_lv8_DE bound to: 8'b11011110 
+	Parameter ap_const_lv8_DF bound to: 8'b11011111 
+	Parameter ap_const_lv8_E0 bound to: 8'b11100000 
+	Parameter ap_const_lv8_E1 bound to: 8'b11100001 
+	Parameter ap_const_lv8_E2 bound to: 8'b11100010 
+	Parameter ap_const_lv8_E3 bound to: 8'b11100011 
+	Parameter ap_const_lv8_E4 bound to: 8'b11100100 
+	Parameter ap_const_lv8_E5 bound to: 8'b11100101 
+	Parameter ap_const_lv8_E6 bound to: 8'b11100110 
+	Parameter ap_const_lv8_E7 bound to: 8'b11100111 
+	Parameter ap_const_lv8_E8 bound to: 8'b11101000 
+	Parameter ap_const_lv8_E9 bound to: 8'b11101001 
+	Parameter ap_const_lv8_EA bound to: 8'b11101010 
+	Parameter ap_const_lv8_EB bound to: 8'b11101011 
+	Parameter ap_const_lv8_EC bound to: 8'b11101100 
+	Parameter ap_const_lv8_ED bound to: 8'b11101101 
+	Parameter ap_const_lv8_EE bound to: 8'b11101110 
+	Parameter ap_const_lv8_EF bound to: 8'b11101111 
+	Parameter ap_const_lv8_F0 bound to: 8'b11110000 
+	Parameter ap_const_lv8_F1 bound to: 8'b11110001 
+	Parameter ap_const_lv8_F2 bound to: 8'b11110010 
+	Parameter ap_const_lv8_F3 bound to: 8'b11110011 
+	Parameter ap_const_lv8_F4 bound to: 8'b11110100 
+	Parameter ap_const_lv8_F5 bound to: 8'b11110101 
+	Parameter ap_const_lv8_F6 bound to: 8'b11110110 
+	Parameter ap_const_lv8_F7 bound to: 8'b11110111 
+	Parameter ap_const_lv8_F8 bound to: 8'b11111000 
+	Parameter ap_const_lv8_F9 bound to: 8'b11111001 
+	Parameter ap_const_lv8_FA bound to: 8'b11111010 
+	Parameter ap_const_lv8_FB bound to: 8'b11111011 
+	Parameter ap_const_lv8_FC bound to: 8'b11111100 
+	Parameter ap_const_lv8_FD bound to: 8'b11111101 
+	Parameter ap_const_lv8_FE bound to: 8'b11111110 
+	Parameter ap_const_lv8_FF bound to: 8'b11111111 
+	Parameter ap_const_lv44_1 bound to: 44'b00000000000000000000000000000000000000000001 
+	Parameter ap_const_lv37_1 bound to: 37'b0000000000000000000000000000000000001 
+	Parameter ap_const_lv37_2 bound to: 37'b0000000000000000000000000000000000010 
+	Parameter ap_const_lv32_5 bound to: 5 - type: integer 
+	Parameter ap_const_lv32_6 bound to: 6 - type: integer 
+	Parameter ap_const_lv32_7 bound to: 7 - type: integer 
+	Parameter ap_const_lv32_8 bound to: 8 - type: integer 
+	Parameter ap_const_lv32_9 bound to: 9 - type: integer 
+	Parameter ap_const_lv32_A bound to: 10 - type: integer 
+	Parameter ap_const_lv32_B bound to: 11 - type: integer 
+	Parameter ap_const_lv32_C bound to: 12 - type: integer 
+	Parameter ap_const_lv32_D bound to: 13 - type: integer 
+	Parameter ap_const_lv32_E bound to: 14 - type: integer 
+	Parameter ap_const_lv32_F bound to: 15 - type: integer 
+	Parameter ap_const_lv32_10 bound to: 16 - type: integer 
+	Parameter ap_const_lv32_11 bound to: 17 - type: integer 
+	Parameter ap_const_lv32_12 bound to: 18 - type: integer 
+	Parameter ap_const_lv32_13 bound to: 19 - type: integer 
+	Parameter ap_const_lv32_14 bound to: 20 - type: integer 
+	Parameter ap_const_lv32_15 bound to: 21 - type: integer 
+	Parameter ap_const_lv32_16 bound to: 22 - type: integer 
+	Parameter ap_const_lv32_17 bound to: 23 - type: integer 
+	Parameter ap_const_lv32_18 bound to: 24 - type: integer 
+	Parameter ap_const_lv32_19 bound to: 25 - type: integer 
+	Parameter ap_const_lv32_1A bound to: 26 - type: integer 
+	Parameter ap_const_lv32_1B bound to: 27 - type: integer 
+	Parameter ap_const_lv32_1C bound to: 28 - type: integer 
+	Parameter ap_const_lv32_1D bound to: 29 - type: integer 
+	Parameter ap_const_lv32_1E bound to: 30 - type: integer 
+	Parameter ap_const_lv32_1F bound to: 31 - type: integer 
+	Parameter ap_const_lv32_24 bound to: 36 - type: integer 
+	Parameter C_S_AXI_FREQ_PERIPH_BUS_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:367]
+INFO: [Synth 8-638] synthesizing module 'freq_serial_FREQ_PERIPH_BUS_s_axi' [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial_FREQ_PERIPH_BUS_s_axi.v:9]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 12'b000000000000 
+	Parameter ADDR_GIE bound to: 12'b000000000100 
+	Parameter ADDR_IER bound to: 12'b000000001000 
+	Parameter ADDR_ISR bound to: 12'b000000001100 
+	Parameter ADDR_SEED_V_DATA_0 bound to: 12'b100000000000 
+	Parameter ADDR_SEED_V_CTRL bound to: 12'b100000000100 
+	Parameter ADDR_N_V_DATA_0 bound to: 12'b100000001000 
+	Parameter ADDR_N_V_DATA_1 bound to: 12'b100000001100 
+	Parameter ADDR_N_V_CTRL bound to: 12'b100000010000 
+	Parameter ADDR_SERIALBIGSTREAM_V_BASE bound to: 12'b010000000000 
+	Parameter ADDR_SERIALBIGSTREAM_V_HIGH bound to: 12'b011111111111 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter ADDR_BITS bound to: 12 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'freq_serial_FREQ_PERIPH_BUS_s_axi_ram' [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial_FREQ_PERIPH_BUS_s_axi.v:442]
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 224 - type: integer 
+	Parameter AWIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'freq_serial_FREQ_PERIPH_BUS_s_axi_ram' (1#1) [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial_FREQ_PERIPH_BUS_s_axi.v:442]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial_FREQ_PERIPH_BUS_s_axi.v:249]
+INFO: [Synth 8-256] done synthesizing module 'freq_serial_FREQ_PERIPH_BUS_s_axi' (2#1) [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial_FREQ_PERIPH_BUS_s_axi.v:9]
+INFO: [Synth 8-638] synthesizing module 'freq_serial_mux_224to1_sel8_37_1' [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial_mux_224to1_sel8_37_1.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din1_WIDTH bound to: 37 - type: integer 
+	Parameter din2_WIDTH bound to: 37 - type: integer 
+	Parameter din3_WIDTH bound to: 37 - type: integer 
+	Parameter din4_WIDTH bound to: 37 - type: integer 
+	Parameter din5_WIDTH bound to: 37 - type: integer 
+	Parameter din6_WIDTH bound to: 37 - type: integer 
+	Parameter din7_WIDTH bound to: 37 - type: integer 
+	Parameter din8_WIDTH bound to: 37 - type: integer 
+	Parameter din9_WIDTH bound to: 37 - type: integer 
+	Parameter din10_WIDTH bound to: 37 - type: integer 
+	Parameter din11_WIDTH bound to: 37 - type: integer 
+	Parameter din12_WIDTH bound to: 37 - type: integer 
+	Parameter din13_WIDTH bound to: 37 - type: integer 
+	Parameter din14_WIDTH bound to: 37 - type: integer 
+	Parameter din15_WIDTH bound to: 37 - type: integer 
+	Parameter din16_WIDTH bound to: 37 - type: integer 
+	Parameter din17_WIDTH bound to: 37 - type: integer 
+	Parameter din18_WIDTH bound to: 37 - type: integer 
+	Parameter din19_WIDTH bound to: 37 - type: integer 
+	Parameter din20_WIDTH bound to: 37 - type: integer 
+	Parameter din21_WIDTH bound to: 37 - type: integer 
+	Parameter din22_WIDTH bound to: 37 - type: integer 
+	Parameter din23_WIDTH bound to: 37 - type: integer 
+	Parameter din24_WIDTH bound to: 37 - type: integer 
+	Parameter din25_WIDTH bound to: 37 - type: integer 
+	Parameter din26_WIDTH bound to: 37 - type: integer 
+	Parameter din27_WIDTH bound to: 37 - type: integer 
+	Parameter din28_WIDTH bound to: 37 - type: integer 
+	Parameter din29_WIDTH bound to: 37 - type: integer 
+	Parameter din30_WIDTH bound to: 37 - type: integer 
+	Parameter din31_WIDTH bound to: 37 - type: integer 
+	Parameter din32_WIDTH bound to: 37 - type: integer 
+	Parameter din33_WIDTH bound to: 37 - type: integer 
+	Parameter din34_WIDTH bound to: 37 - type: integer 
+	Parameter din35_WIDTH bound to: 37 - type: integer 
+	Parameter din36_WIDTH bound to: 37 - type: integer 
+	Parameter din37_WIDTH bound to: 37 - type: integer 
+	Parameter din38_WIDTH bound to: 37 - type: integer 
+	Parameter din39_WIDTH bound to: 37 - type: integer 
+	Parameter din40_WIDTH bound to: 37 - type: integer 
+	Parameter din41_WIDTH bound to: 37 - type: integer 
+	Parameter din42_WIDTH bound to: 37 - type: integer 
+	Parameter din43_WIDTH bound to: 37 - type: integer 
+	Parameter din44_WIDTH bound to: 37 - type: integer 
+	Parameter din45_WIDTH bound to: 37 - type: integer 
+	Parameter din46_WIDTH bound to: 37 - type: integer 
+	Parameter din47_WIDTH bound to: 37 - type: integer 
+	Parameter din48_WIDTH bound to: 37 - type: integer 
+	Parameter din49_WIDTH bound to: 37 - type: integer 
+	Parameter din50_WIDTH bound to: 37 - type: integer 
+	Parameter din51_WIDTH bound to: 37 - type: integer 
+	Parameter din52_WIDTH bound to: 37 - type: integer 
+	Parameter din53_WIDTH bound to: 37 - type: integer 
+	Parameter din54_WIDTH bound to: 37 - type: integer 
+	Parameter din55_WIDTH bound to: 37 - type: integer 
+	Parameter din56_WIDTH bound to: 37 - type: integer 
+	Parameter din57_WIDTH bound to: 37 - type: integer 
+	Parameter din58_WIDTH bound to: 37 - type: integer 
+	Parameter din59_WIDTH bound to: 37 - type: integer 
+	Parameter din60_WIDTH bound to: 37 - type: integer 
+	Parameter din61_WIDTH bound to: 37 - type: integer 
+	Parameter din62_WIDTH bound to: 37 - type: integer 
+	Parameter din63_WIDTH bound to: 37 - type: integer 
+	Parameter din64_WIDTH bound to: 37 - type: integer 
+	Parameter din65_WIDTH bound to: 37 - type: integer 
+	Parameter din66_WIDTH bound to: 37 - type: integer 
+	Parameter din67_WIDTH bound to: 37 - type: integer 
+	Parameter din68_WIDTH bound to: 37 - type: integer 
+	Parameter din69_WIDTH bound to: 37 - type: integer 
+	Parameter din70_WIDTH bound to: 37 - type: integer 
+	Parameter din71_WIDTH bound to: 37 - type: integer 
+	Parameter din72_WIDTH bound to: 37 - type: integer 
+	Parameter din73_WIDTH bound to: 37 - type: integer 
+	Parameter din74_WIDTH bound to: 37 - type: integer 
+	Parameter din75_WIDTH bound to: 37 - type: integer 
+	Parameter din76_WIDTH bound to: 37 - type: integer 
+	Parameter din77_WIDTH bound to: 37 - type: integer 
+	Parameter din78_WIDTH bound to: 37 - type: integer 
+	Parameter din79_WIDTH bound to: 37 - type: integer 
+	Parameter din80_WIDTH bound to: 37 - type: integer 
+	Parameter din81_WIDTH bound to: 37 - type: integer 
+	Parameter din82_WIDTH bound to: 37 - type: integer 
+	Parameter din83_WIDTH bound to: 37 - type: integer 
+	Parameter din84_WIDTH bound to: 37 - type: integer 
+	Parameter din85_WIDTH bound to: 37 - type: integer 
+	Parameter din86_WIDTH bound to: 37 - type: integer 
+	Parameter din87_WIDTH bound to: 37 - type: integer 
+	Parameter din88_WIDTH bound to: 37 - type: integer 
+	Parameter din89_WIDTH bound to: 37 - type: integer 
+	Parameter din90_WIDTH bound to: 37 - type: integer 
+	Parameter din91_WIDTH bound to: 37 - type: integer 
+	Parameter din92_WIDTH bound to: 37 - type: integer 
+	Parameter din93_WIDTH bound to: 37 - type: integer 
+	Parameter din94_WIDTH bound to: 37 - type: integer 
+	Parameter din95_WIDTH bound to: 37 - type: integer 
+	Parameter din96_WIDTH bound to: 37 - type: integer 
+	Parameter din97_WIDTH bound to: 37 - type: integer 
+	Parameter din98_WIDTH bound to: 37 - type: integer 
+	Parameter din99_WIDTH bound to: 37 - type: integer 
+	Parameter din100_WIDTH bound to: 37 - type: integer 
+	Parameter din101_WIDTH bound to: 37 - type: integer 
+	Parameter din102_WIDTH bound to: 37 - type: integer 
+	Parameter din103_WIDTH bound to: 37 - type: integer 
+	Parameter din104_WIDTH bound to: 37 - type: integer 
+	Parameter din105_WIDTH bound to: 37 - type: integer 
+	Parameter din106_WIDTH bound to: 37 - type: integer 
+	Parameter din107_WIDTH bound to: 37 - type: integer 
+	Parameter din108_WIDTH bound to: 37 - type: integer 
+	Parameter din109_WIDTH bound to: 37 - type: integer 
+	Parameter din110_WIDTH bound to: 37 - type: integer 
+	Parameter din111_WIDTH bound to: 37 - type: integer 
+	Parameter din112_WIDTH bound to: 37 - type: integer 
+	Parameter din113_WIDTH bound to: 37 - type: integer 
+	Parameter din114_WIDTH bound to: 37 - type: integer 
+	Parameter din115_WIDTH bound to: 37 - type: integer 
+	Parameter din116_WIDTH bound to: 37 - type: integer 
+	Parameter din117_WIDTH bound to: 37 - type: integer 
+	Parameter din118_WIDTH bound to: 37 - type: integer 
+	Parameter din119_WIDTH bound to: 37 - type: integer 
+	Parameter din120_WIDTH bound to: 37 - type: integer 
+	Parameter din121_WIDTH bound to: 37 - type: integer 
+	Parameter din122_WIDTH bound to: 37 - type: integer 
+	Parameter din123_WIDTH bound to: 37 - type: integer 
+	Parameter din124_WIDTH bound to: 37 - type: integer 
+	Parameter din125_WIDTH bound to: 37 - type: integer 
+	Parameter din126_WIDTH bound to: 37 - type: integer 
+	Parameter din127_WIDTH bound to: 37 - type: integer 
+	Parameter din128_WIDTH bound to: 37 - type: integer 
+	Parameter din129_WIDTH bound to: 37 - type: integer 
+	Parameter din130_WIDTH bound to: 37 - type: integer 
+	Parameter din131_WIDTH bound to: 37 - type: integer 
+	Parameter din132_WIDTH bound to: 37 - type: integer 
+	Parameter din133_WIDTH bound to: 37 - type: integer 
+	Parameter din134_WIDTH bound to: 37 - type: integer 
+	Parameter din135_WIDTH bound to: 37 - type: integer 
+	Parameter din136_WIDTH bound to: 37 - type: integer 
+	Parameter din137_WIDTH bound to: 37 - type: integer 
+	Parameter din138_WIDTH bound to: 37 - type: integer 
+	Parameter din139_WIDTH bound to: 37 - type: integer 
+	Parameter din140_WIDTH bound to: 37 - type: integer 
+	Parameter din141_WIDTH bound to: 37 - type: integer 
+	Parameter din142_WIDTH bound to: 37 - type: integer 
+	Parameter din143_WIDTH bound to: 37 - type: integer 
+	Parameter din144_WIDTH bound to: 37 - type: integer 
+	Parameter din145_WIDTH bound to: 37 - type: integer 
+	Parameter din146_WIDTH bound to: 37 - type: integer 
+	Parameter din147_WIDTH bound to: 37 - type: integer 
+	Parameter din148_WIDTH bound to: 37 - type: integer 
+	Parameter din149_WIDTH bound to: 37 - type: integer 
+	Parameter din150_WIDTH bound to: 37 - type: integer 
+	Parameter din151_WIDTH bound to: 37 - type: integer 
+	Parameter din152_WIDTH bound to: 37 - type: integer 
+	Parameter din153_WIDTH bound to: 37 - type: integer 
+	Parameter din154_WIDTH bound to: 37 - type: integer 
+	Parameter din155_WIDTH bound to: 37 - type: integer 
+	Parameter din156_WIDTH bound to: 37 - type: integer 
+	Parameter din157_WIDTH bound to: 37 - type: integer 
+	Parameter din158_WIDTH bound to: 37 - type: integer 
+	Parameter din159_WIDTH bound to: 37 - type: integer 
+	Parameter din160_WIDTH bound to: 37 - type: integer 
+	Parameter din161_WIDTH bound to: 37 - type: integer 
+	Parameter din162_WIDTH bound to: 37 - type: integer 
+	Parameter din163_WIDTH bound to: 37 - type: integer 
+	Parameter din164_WIDTH bound to: 37 - type: integer 
+	Parameter din165_WIDTH bound to: 37 - type: integer 
+	Parameter din166_WIDTH bound to: 37 - type: integer 
+	Parameter din167_WIDTH bound to: 37 - type: integer 
+	Parameter din168_WIDTH bound to: 37 - type: integer 
+	Parameter din169_WIDTH bound to: 37 - type: integer 
+	Parameter din170_WIDTH bound to: 37 - type: integer 
+	Parameter din171_WIDTH bound to: 37 - type: integer 
+	Parameter din172_WIDTH bound to: 37 - type: integer 
+	Parameter din173_WIDTH bound to: 37 - type: integer 
+	Parameter din174_WIDTH bound to: 37 - type: integer 
+	Parameter din175_WIDTH bound to: 37 - type: integer 
+	Parameter din176_WIDTH bound to: 37 - type: integer 
+	Parameter din177_WIDTH bound to: 37 - type: integer 
+	Parameter din178_WIDTH bound to: 37 - type: integer 
+	Parameter din179_WIDTH bound to: 37 - type: integer 
+	Parameter din180_WIDTH bound to: 37 - type: integer 
+	Parameter din181_WIDTH bound to: 37 - type: integer 
+	Parameter din182_WIDTH bound to: 37 - type: integer 
+	Parameter din183_WIDTH bound to: 37 - type: integer 
+	Parameter din184_WIDTH bound to: 37 - type: integer 
+	Parameter din185_WIDTH bound to: 37 - type: integer 
+	Parameter din186_WIDTH bound to: 37 - type: integer 
+	Parameter din187_WIDTH bound to: 37 - type: integer 
+	Parameter din188_WIDTH bound to: 37 - type: integer 
+	Parameter din189_WIDTH bound to: 37 - type: integer 
+	Parameter din190_WIDTH bound to: 37 - type: integer 
+	Parameter din191_WIDTH bound to: 37 - type: integer 
+	Parameter din192_WIDTH bound to: 37 - type: integer 
+	Parameter din193_WIDTH bound to: 37 - type: integer 
+	Parameter din194_WIDTH bound to: 37 - type: integer 
+	Parameter din195_WIDTH bound to: 37 - type: integer 
+	Parameter din196_WIDTH bound to: 37 - type: integer 
+	Parameter din197_WIDTH bound to: 37 - type: integer 
+	Parameter din198_WIDTH bound to: 37 - type: integer 
+	Parameter din199_WIDTH bound to: 37 - type: integer 
+	Parameter din200_WIDTH bound to: 37 - type: integer 
+	Parameter din201_WIDTH bound to: 37 - type: integer 
+	Parameter din202_WIDTH bound to: 37 - type: integer 
+	Parameter din203_WIDTH bound to: 37 - type: integer 
+	Parameter din204_WIDTH bound to: 37 - type: integer 
+	Parameter din205_WIDTH bound to: 37 - type: integer 
+	Parameter din206_WIDTH bound to: 37 - type: integer 
+	Parameter din207_WIDTH bound to: 37 - type: integer 
+	Parameter din208_WIDTH bound to: 37 - type: integer 
+	Parameter din209_WIDTH bound to: 37 - type: integer 
+	Parameter din210_WIDTH bound to: 37 - type: integer 
+	Parameter din211_WIDTH bound to: 37 - type: integer 
+	Parameter din212_WIDTH bound to: 37 - type: integer 
+	Parameter din213_WIDTH bound to: 37 - type: integer 
+	Parameter din214_WIDTH bound to: 37 - type: integer 
+	Parameter din215_WIDTH bound to: 37 - type: integer 
+	Parameter din216_WIDTH bound to: 37 - type: integer 
+	Parameter din217_WIDTH bound to: 37 - type: integer 
+	Parameter din218_WIDTH bound to: 37 - type: integer 
+	Parameter din219_WIDTH bound to: 37 - type: integer 
+	Parameter din220_WIDTH bound to: 37 - type: integer 
+	Parameter din221_WIDTH bound to: 37 - type: integer 
+	Parameter din222_WIDTH bound to: 37 - type: integer 
+	Parameter din223_WIDTH bound to: 37 - type: integer 
+	Parameter din224_WIDTH bound to: 37 - type: integer 
+	Parameter din225_WIDTH bound to: 8 - type: integer 
+	Parameter dout_WIDTH bound to: 37 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'freq_serial_mux_224to1_sel8_37_1' (3#1) [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial_mux_224to1_sel8_37_1.v:11]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4577]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4597]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4599]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4601]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4603]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4609]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4611]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4613]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4615]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4621]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4623]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4625]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4627]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4633]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4635]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4637]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4639]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4645]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4647]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4649]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4651]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4657]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4659]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4661]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4663]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4669]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4671]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4673]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4675]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4681]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4683]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4685]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4687]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4693]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4695]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4697]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4699]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4705]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4707]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4709]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4711]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4717]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4719]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4721]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4723]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4729]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4731]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4733]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4735]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4741]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4743]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4745]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4747]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4753]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4755]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4757]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4759]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4765]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4767]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4769]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4771]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4777]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4779]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4781]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4783]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4789]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4791]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4793]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4795]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4801]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4803]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4805]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4807]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4813]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4815]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4817]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4819]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4825]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4827]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4829]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4831]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4837]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4839]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4841]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4843]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4849]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4851]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4853]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4855]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4861]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4863]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4865]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4867]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4873]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4875]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4877]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4879]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4885]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4887]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:4889]
+INFO: [Common 17-14] Message 'Synth 8-589' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'freq_serial' (4#1) [C:/Users/s02so/05062016_FYP/ip/hdl/verilog/freq_serial.v:12]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 390.105 ; gain = 183.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 390.105 ; gain = 183.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 390.105 ; gain = 183.465
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_fu_14917_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond1_fu_4480_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3971] The signal gen_write[1].mem_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 444.164 ; gain = 237.523
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               44 Bit    Registers := 1     
+	               32 Bit    Registers := 7     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 9     
++---RAMs : 
+	               7K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     37 Bit        Muxes := 223   
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module freq_serial 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               44 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module freq_serial_FREQ_PERIPH_BUS_s_axi_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	               7K Bit         RAMs := 1     
+Module freq_serial_FREQ_PERIPH_BUS_s_axi 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               12 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 1     
+Module freq_serial_mux_224to1_sel8_37_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     37 Bit        Muxes := 223   
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 503.418 ; gain = 296.777
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "exitcond1_fu_4480_p2" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 541.770 ; gain = 335.129
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 541.770 ; gain = 335.129
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+INFO: [Synth 8-3971] The signal freq_serial_FREQ_PERIPH_BUS_s_axi_U/int_serialBigStream_V/gen_write[1].mem_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++--------------------------------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                           | RTL Object           | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------------------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|freq_serial_FREQ_PERIPH_BUS_s_axi_ram | gen_write[1].mem_reg | 256 x 32(READ_FIRST)   | W | R | 256 x 32(READ_FIRST)   | W | R | Port A and B     | 0      | 1      | 
++--------------------------------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (i_4_0) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_2) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_4) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_6) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_8) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_10) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_12) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_14) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_16) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_18) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_20) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_22) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_24) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_26) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_28) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_30) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_32) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_34) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_36) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_38) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_40) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_42) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_44) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_46) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_48) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_50) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_52) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_54) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_56) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_58) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_60) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_62) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (i_4_64) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_1_V_2_reg_3733_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_4_V_2_reg_3703_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_8_V_2_reg_3663_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_11_V_2_reg_3633_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_15_V_2_reg_3593_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_18_V_2_reg_3563_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_22_V_2_reg_3523_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_25_V_2_reg_3493_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_29_V_2_reg_3453_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_32_V_2_reg_3423_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_36_V_2_reg_3383_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_39_V_2_reg_3353_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_43_V_2_reg_3313_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_46_V_2_reg_3283_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_50_V_2_reg_3243_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_53_V_2_reg_3213_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_57_V_2_reg_3173_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_60_V_2_reg_3143_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_64_V_2_reg_3103_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_67_V_2_reg_3073_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_71_V_2_reg_3033_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_74_V_2_reg_3003_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_78_V_2_reg_2963_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_81_V_2_reg_2933_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_85_V_2_reg_2893_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_88_V_2_reg_2863_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_92_V_2_reg_2823_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_95_V_2_reg_2793_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_99_V_2_reg_2753_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_102_V_2_reg_2723_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_106_V_2_reg_2683_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_109_V_2_reg_2653_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_113_V_2_reg_2613_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_116_V_2_reg_2583_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_120_V_2_reg_2543_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_123_V_2_reg_2513_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_127_V_2_reg_2473_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_130_V_2_reg_2443_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_134_V_2_reg_2403_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_137_V_2_reg_2373_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_141_V_2_reg_2333_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_144_V_2_reg_2303_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_148_V_2_reg_2263_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_151_V_2_reg_2233_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_155_V_2_reg_2193_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_158_V_2_reg_2163_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_162_V_2_reg_2123_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_165_V_2_reg_2093_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_169_V_2_reg_2053_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_172_V_2_reg_2023_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_176_V_2_reg_1983_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_179_V_2_reg_1953_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_183_V_2_reg_1913_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_186_V_2_reg_1883_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_190_V_2_reg_1843_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_193_V_2_reg_1813_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_197_V_2_reg_1773_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_200_V_2_reg_1743_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_204_V_2_reg_1703_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_207_V_2_reg_1673_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_211_V_2_reg_1633_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_214_V_2_reg_1603_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_218_V_2_reg_1563_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_221_V_2_reg_1533_reg[0]) is unused and will be removed from module freq_serial.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[33] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[33] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_4_V_2_reg_3703_reg[36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_0_V_2_reg_3743_reg[36] )
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_0_V_2_reg_3743_reg[0]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_0_V_2_reg_3743_reg[1]) is unused and will be removed from module freq_serial.
+WARNING: [Synth 8-3332] Sequential element (serialBigCount_0_V_2_reg_3743_reg[2]) is unused and will be removed from module freq_serial.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_3_V_2_reg_3713_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_3_V_2_reg_3713_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_3_V_2_reg_3713_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_3_V_2_reg_3713_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_3_V_2_reg_3713_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_3_V_2_reg_3713_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_3_V_2_reg_3713_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_3_V_2_reg_3713_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_3_V_2_reg_3713_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_3_V_2_reg_3713_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_3_V_2_reg_3713_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_3_V_2_reg_3713_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_3_V_2_reg_3713_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_3_V_2_reg_3713_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_3_V_2_reg_3713_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_3_V_2_reg_3713_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_3_V_2_reg_3713_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_3_V_2_reg_3713_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_3_V_2_reg_3713_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_3_V_2_reg_3713_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_3_V_2_reg_3713_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_3_V_2_reg_3713_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_3_V_2_reg_3713_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_3_V_2_reg_3713_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_3_V_2_reg_3713_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_3_V_2_reg_3713_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4_12/\serialBigCount_3_V_2_reg_3713_reg[26] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:07 . Memory (MB): peak = 663.156 ; gain = 456.516
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:06 ; elapsed = 00:01:07 . Memory (MB): peak = 663.156 ; gain = 456.516
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:07 . Memory (MB): peak = 663.156 ; gain = 456.516
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance freq_serial_FREQ_PERIPH_BUS_s_axi_U/int_serialBigStream_V/gen_write[1].mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:11 ; elapsed = 00:01:12 . Memory (MB): peak = 663.156 ; gain = 456.516
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:11 ; elapsed = 00:01:12 . Memory (MB): peak = 663.156 ; gain = 456.516
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:11 ; elapsed = 00:01:12 . Memory (MB): peak = 663.156 ; gain = 456.516
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:13 ; elapsed = 00:01:14 . Memory (MB): peak = 663.156 ; gain = 456.516
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:13 ; elapsed = 00:01:14 . Memory (MB): peak = 663.156 ; gain = 456.516
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:14 ; elapsed = 00:01:15 . Memory (MB): peak = 663.156 ; gain = 456.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:14 ; elapsed = 00:01:15 . Memory (MB): peak = 663.156 ; gain = 456.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:14 ; elapsed = 00:01:15 . Memory (MB): peak = 663.156 ; gain = 456.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:14 ; elapsed = 00:01:15 . Memory (MB): peak = 663.156 ; gain = 456.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |  2194|
+|3     |LUT1     |  8272|
+|4     |LUT2     |    29|
+|5     |LUT3     |   165|
+|6     |LUT4     |    36|
+|7     |LUT5     |   334|
+|8     |LUT6     |  2309|
+|9     |MUXF7    |   544|
+|10    |MUXF8    |    64|
+|11    |RAMB36E1 |     1|
+|12    |FDRE     |  8563|
+|13    |FDSE     |     1|
+|14    |IBUF     |    67|
+|15    |OBUF     |    42|
++------+---------+------+
+
+Report Instance Areas: 
++------+--------------------------------------+--------------------------------------+------+
+|      |Instance                              |Module                                |Cells |
++------+--------------------------------------+--------------------------------------+------+
+|1     |top                                   |                                      | 22622|
+|2     |  freq_serial_FREQ_PERIPH_BUS_s_axi_U |freq_serial_FREQ_PERIPH_BUS_s_axi     |  3257|
+|3     |    int_serialBigStream_V             |freq_serial_FREQ_PERIPH_BUS_s_axi_ram |  2964|
++------+--------------------------------------+--------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:14 ; elapsed = 00:01:15 . Memory (MB): peak = 663.156 ; gain = 456.516
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1104 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:12 ; elapsed = 00:01:12 . Memory (MB): peak = 663.156 ; gain = 436.957
+Synthesis Optimization Complete : Time (s): cpu = 00:01:14 ; elapsed = 00:01:15 . Memory (MB): peak = 663.156 ; gain = 456.516
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2262 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'freq_serial' is not ideal for floorplanning, since the cellview 'freq_serial' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+129 Infos, 201 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:21 ; elapsed = 00:01:23 . Memory (MB): peak = 675.363 ; gain = 452.434
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.100 . Memory (MB): peak = 675.363 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 10 01:38:52 2016...

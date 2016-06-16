@@ -1,0 +1,292 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
+| Date         : Fri Jun 10 01:40:19 2016
+| Host         : DESKTOP-8D0P93F running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file freq_serial_control_sets_placed.rpt
+| Design       : freq_serial
+| Device       : xc7z020
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   239 |
+| Unused register locations in slices containing registers |   772 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               1 |            1 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              14 |            8 |
+| Yes          | No                    | No                     |             192 |           63 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            8357 |         2258 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------+------------------------------------------------------------------+----------------------------------------------------------+------------------+----------------+
+|    Clock Signal   |                           Enable Signal                          |                     Set/Reset Signal                     | Slice Load Count | Bel Load Count |
++-------------------+------------------------------------------------------------------+----------------------------------------------------------+------------------+----------------+
+|  ap_clk_IBUF_BUFG |                                                                  |                                                          |                1 |              1 |
+|  ap_clk_IBUF_BUFG | freq_serial_FREQ_PERIPH_BUS_s_axi_U/int_ap_start1                | freq_serial_FREQ_PERIPH_BUS_s_axi_U/SR[0]                |                1 |              1 |
+|  ap_clk_IBUF_BUFG | freq_serial_FREQ_PERIPH_BUS_s_axi_U/int_gie                      | freq_serial_FREQ_PERIPH_BUS_s_axi_U/SR[0]                |                1 |              1 |
+|  ap_clk_IBUF_BUFG | freq_serial_FREQ_PERIPH_BUS_s_axi_U/int_ier9_out                 | freq_serial_FREQ_PERIPH_BUS_s_axi_U/SR[0]                |                1 |              2 |
+|  ap_clk_IBUF_BUFG | ap_sig_87                                                        |                                                          |                2 |              8 |
+|  ap_clk_IBUF_BUFG | ap_sig_1021                                                      | freq_serial_FREQ_PERIPH_BUS_s_axi_U/i_reg_1502_reg[0][0] |                2 |              8 |
+|  ap_clk_IBUF_BUFG | freq_serial_FREQ_PERIPH_BUS_s_axi_U/aw_hs                        |                                                          |                4 |             12 |
+|  ap_clk_IBUF_BUFG | freq_serial_FREQ_PERIPH_BUS_s_axi_U/int_n_V[43]_i_1_n_4          | freq_serial_FREQ_PERIPH_BUS_s_axi_U/SR[0]                |                4 |             12 |
+|  ap_clk_IBUF_BUFG |                                                                  | freq_serial_FREQ_PERIPH_BUS_s_axi_U/SR[0]                |                8 |             14 |
+|  ap_clk_IBUF_BUFG | freq_serial_FREQ_PERIPH_BUS_s_axi_U/int_n_V[31]_i_1_n_4          | freq_serial_FREQ_PERIPH_BUS_s_axi_U/SR[0]                |                9 |             32 |
+|  ap_clk_IBUF_BUFG | freq_serial_FREQ_PERIPH_BUS_s_axi_U/int_seed_V[31]_i_1_n_4       | freq_serial_FREQ_PERIPH_BUS_s_axi_U/SR[0]                |                8 |             32 |
+|  ap_clk_IBUF_BUFG | freq_serial_FREQ_PERIPH_BUS_s_axi_U/rdata[31]_i_1_n_4            |                                                          |               18 |             32 |
+|  ap_clk_IBUF_BUFG | ap_CS_fsm[3]_i_1_n_4                                             |                                                          |                8 |             32 |
+|  ap_clk_IBUF_BUFG | enableBigSerial_reg_37750                                        | enableBigSerial_reg_3775[0]_i_1_n_4                      |                8 |             32 |
+|  ap_clk_IBUF_BUFG | rdata_reg[31]_i_3_n_4                                            |                                                          |               13 |             32 |
+|  ap_clk_IBUF_BUFG | serialBigCount_25_V_2_reg_3493                                   | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_50_V_2_reg_3243[1]_i_1_n_4                        | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_134_V_2_reg_2403[1]_i_1_n_4                       | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_11_V_2_reg_3633                                   | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_29_V_2_reg_3453[1]_i_1_n_4                        | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_53_V_2_reg_3213                                   | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_106_V_2_reg_2683[1]_i_1_n_4                       | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_211_V_2_reg_1633[1]_i_1_n_4                       | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_32_V_2_reg_3423                                   | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_116_V_2_reg_2583                                  | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_109_V_2_reg_2653                                  | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_130_V_2_reg_2443                                  | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_36_V_2_reg_3383[1]_i_1_n_4                        | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_214_V_2_reg_1603                                  | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_120_V_2_reg_2543[1]_i_1_n_4                       | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_39_V_2_reg_3353                                   | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_123_V_2_reg_2513                                  | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_92_V_2_reg_2823[1]_i_1_n_4                        | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_113_V_2_reg_2613[1]_i_1_n_4                       | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_43_V_2_reg_3313[1]_i_1_n_4                        | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_1_V_2_reg_3733[1]_i_1_n_4                         | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_85_V_2_reg_2893[1]_i_1_n_4                        | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_200_V_2_reg_1743                                  | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_88_V_2_reg_2863                                   | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_141_V_2_reg_2333[1]_i_1_n_4                       | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_8_V_2_reg_3663[1]_i_1_n_4                         | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_148_V_2_reg_2263[1]_i_1_n_4                       | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_204_V_2_reg_1703[1]_i_1_n_4                       | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_144_V_2_reg_2303                                  | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_127_V_2_reg_2473[1]_i_1_n_4                       | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_46_V_2_reg_3283                                   | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_207_V_2_reg_1673                                  | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_137_V_2_reg_2373                                  | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_102_V_2_reg_2723                                  | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_151_V_2_reg_2233                                  | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_155_V_2_reg_2193[1]_i_1_n_4                       | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_158_V_2_reg_2163                                  | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_15_V_2_reg_3593[1]_i_1_n_4                        | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_162_V_2_reg_2123[1]_i_1_n_4                       | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_165_V_2_reg_2093                                  | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_169_V_2_reg_2053[1]_i_1_n_4                       | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_18_V_2_reg_3563                                   | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_190_V_2_reg_1843[1]_i_1_n_4                       | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_193_V_2_reg_1813                                  | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_197_V_2_reg_1773[1]_i_1_n_4                       | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_218_V_2_reg_1563[1]_i_1_n_4                       | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_221_V_2_reg_1533                                  | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_22_V_2_reg_3523[1]_i_1_n_4                        | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_172_V_2_reg_2023                                  | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_176_V_2_reg_1983[1]_i_1_n_4                       | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_179_V_2_reg_1953                                  | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_64_V_2_reg_3103[1]_i_1_n_4                        | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_67_V_2_reg_3073                                   | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_71_V_2_reg_3033[1]_i_1_n_4                        | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_74_V_2_reg_3003                                   | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_78_V_2_reg_2963[1]_i_1_n_4                        | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_81_V_2_reg_2933                                   | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_95_V_2_reg_2793                                   | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_99_V_2_reg_2753[1]_i_1_n_4                        | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_183_V_2_reg_1913[1]_i_1_n_4                       | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_186_V_2_reg_1883                                  | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_57_V_2_reg_3173[1]_i_1_n_4                        | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_60_V_2_reg_3143                                   | enableBigSerial_reg_37751                                |                9 |             36 |
+|  ap_clk_IBUF_BUFG | serialBigCount_108_V_2_reg_2663                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_10_V_2_reg_3643                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_110_V_2_reg_2643                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_111_V_2_reg_2633                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_112_V_2_reg_2623[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_114_V_2_reg_2603[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_19_V_2_reg_3553                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_201_V_2_reg_1733                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_202_V_2_reg_1723                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_203_V_2_reg_1713[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_205_V_2_reg_1693[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_206_V_2_reg_1683                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_208_V_2_reg_1663                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_209_V_2_reg_1653                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_20_V_2_reg_3543                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_210_V_2_reg_1643[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_212_V_2_reg_1623[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_213_V_2_reg_1613                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_215_V_2_reg_1593                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_216_V_2_reg_1583                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_100_V_2_reg_2743[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_103_V_2_reg_2713                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_104_V_2_reg_2703                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_105_V_2_reg_2693[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_124_V_2_reg_2503                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_125_V_2_reg_2493                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_126_V_2_reg_2483[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_128_V_2_reg_2463[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_129_V_2_reg_2453                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_12_V_2_reg_3623                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_131_V_2_reg_2433                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_132_V_2_reg_2423                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_133_V_2_reg_2413[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_115_V_2_reg_2593                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_117_V_2_reg_2573                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_118_V_2_reg_2563                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_119_V_2_reg_2553[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_121_V_2_reg_2533[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_122_V_2_reg_2523                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_135_V_2_reg_2393[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_136_V_2_reg_2383                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_41_V_2_reg_3333                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_138_V_2_reg_2363                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_139_V_2_reg_2353                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_13_V_2_reg_3613                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_140_V_2_reg_2343[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_142_V_2_reg_2323[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_143_V_2_reg_2313                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_145_V_2_reg_2293                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_146_V_2_reg_2283                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_147_V_2_reg_2273[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_149_V_2_reg_2253[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_14_V_2_reg_3603[0]_i_1_n_4                        | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_150_V_2_reg_2243                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_26_V_2_reg_3483                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_152_V_2_reg_2223                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_153_V_2_reg_2213                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_154_V_2_reg_2203[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_27_V_2_reg_3473                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_156_V_2_reg_2183[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_157_V_2_reg_2173                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_28_V_2_reg_3463[0]_i_1_n_4                        | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_159_V_2_reg_2153                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_2_V_2_reg_3723[0]_i_1_n_4                         | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_160_V_2_reg_2143                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_161_V_2_reg_2133[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_30_V_2_reg_3443[0]_i_1_n_4                        | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_163_V_2_reg_2113[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_164_V_2_reg_2103                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_31_V_2_reg_3433                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_166_V_2_reg_2083                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_167_V_2_reg_2073                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_168_V_2_reg_2063[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_33_V_2_reg_3413                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_16_V_2_reg_3583[0]_i_1_n_4                        | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_170_V_2_reg_2043[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_34_V_2_reg_3403                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_35_V_2_reg_3393[0]_i_1_n_4                        | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_191_V_2_reg_1833[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_192_V_2_reg_1823                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_37_V_2_reg_3373[0]_i_1_n_4                        | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_194_V_2_reg_1803                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_195_V_2_reg_1793                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_196_V_2_reg_1783[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_38_V_2_reg_3363                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_198_V_2_reg_1763[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_199_V_2_reg_1753                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_217_V_2_reg_1573[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_40_V_2_reg_3343                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_219_V_2_reg_1553[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_21_V_2_reg_3533[0]_i_1_n_4                        | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_220_V_2_reg_1543                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_42_V_2_reg_3323[0]_i_1_n_4                        | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_222_V_2_reg_1523                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_223_V_2_reg_1513                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_82_V_2_reg_2923                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_23_V_2_reg_3513[0]_i_1_n_4                        | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_24_V_2_reg_3503                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_171_V_2_reg_2033                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_83_V_2_reg_2913                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_173_V_2_reg_2013                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_174_V_2_reg_2003                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_175_V_2_reg_1993[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_84_V_2_reg_2903[0]_i_1_n_4                        | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_177_V_2_reg_1973[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_178_V_2_reg_1963                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_86_V_2_reg_2883[0]_i_1_n_4                        | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_17_V_2_reg_3573                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_87_V_2_reg_2873                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_65_V_2_reg_3093[0]_i_1_n_4                        | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_66_V_2_reg_3083                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_89_V_2_reg_2853                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_68_V_2_reg_3063                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_69_V_2_reg_3053                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_6_V_2_reg_3683                                    | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_70_V_2_reg_3043[0]_i_1_n_4                        | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_90_V_2_reg_2843                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_72_V_2_reg_3023[0]_i_1_n_4                        | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_73_V_2_reg_3013                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_91_V_2_reg_2833[0]_i_1_n_4                        | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_75_V_2_reg_2993                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_76_V_2_reg_2983                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_77_V_2_reg_2973[0]_i_1_n_4                        | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_44_V_2_reg_3303[0]_i_1_n_4                        | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_79_V_2_reg_2953[0]_i_1_n_4                        | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_7_V_2_reg_3673[0]_i_1_n_4                         | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_80_V_2_reg_2943                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_45_V_2_reg_3293                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_101_V_2_reg_2733                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_93_V_2_reg_2813[0]_i_1_n_4                        | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_94_V_2_reg_2803                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_47_V_2_reg_3273                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_96_V_2_reg_2783                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_97_V_2_reg_2773                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_98_V_2_reg_2763[0]_i_1_n_4                        | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_48_V_2_reg_3263                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_9_V_2_reg_3653[0]_i_1_n_4                         | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_180_V_2_reg_1943                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_181_V_2_reg_1933                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_182_V_2_reg_1923[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_49_V_2_reg_3253[0]_i_1_n_4                        | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_184_V_2_reg_1903[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_185_V_2_reg_1893                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_51_V_2_reg_3233[0]_i_1_n_4                        | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_187_V_2_reg_1873                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_188_V_2_reg_1863                                  | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_189_V_2_reg_1853[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_54_V_2_reg_3203                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_55_V_2_reg_3193                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_56_V_2_reg_3183[0]_i_1_n_4                        | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_52_V_2_reg_3223                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_58_V_2_reg_3163[0]_i_1_n_4                        | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_59_V_2_reg_3153                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_5_V_2_reg_3693                                    | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_107_V_2_reg_2673[0]_i_1_n_4                       | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_61_V_2_reg_3133                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_62_V_2_reg_3123                                   | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | serialBigCount_63_V_2_reg_3113[0]_i_1_n_4                        | enableBigSerial_reg_37751                                |               10 |             37 |
+|  ap_clk_IBUF_BUFG | freq_serial_FREQ_PERIPH_BUS_s_axi_U/int_serialBigStream_V/WEA[0] | i2_reg_37970                                             |               36 |             47 |
+|  ap_clk_IBUF_BUFG | freq_serial_FREQ_PERIPH_BUS_s_axi_U/E[0]                         |                                                          |               18 |             76 |
+|  ap_clk_IBUF_BUFG | enableBigSerial_reg_37750                                        | enableBigSerial_reg_37751                                |               41 |             76 |
++-------------------+------------------------------------------------------------------+----------------------------------------------------------+------------------+----------------+
+
+
