@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=C:/Xilinx/SDK/2016.1/bin;C:/Xilinx/Vivado/2016.1/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2016.1/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2016.1/bin
+  PATH=C:/Xilinx/SDK/2016.2/bin;C:/Xilinx/Vivado/2016.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2016.2/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2016.2/bin
 else
-  PATH=C:/Xilinx/SDK/2016.1/bin;C:/Xilinx/Vivado/2016.1/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2016.1/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2016.1/bin:$PATH
+  PATH=C:/Xilinx/SDK/2016.2/bin;C:/Xilinx/Vivado/2016.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2016.2/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2016.2/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/FYP_160611/FYP/FYP.runs/impl_1'
+HD_PWD='C:/FYP_160611/FYP_IP_Integrator_files/FYP.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
+/bin/touch .write_bitstream.begin.rst
 EAStep vivado -log block_design1_wrapper.vdi -applog -m64 -messageDb vivado.pb -mode batch -source block_design1_wrapper.tcl -notrace
 
 

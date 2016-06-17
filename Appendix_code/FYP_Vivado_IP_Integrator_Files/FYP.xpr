@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Product Version: Vivado v2016.1 (64-bit)              -->
+<!-- Product Version: Vivado v2016.2 (64-bit)              -->
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="12" Path="C:/FYP_160611/FYP/FYP.xpr">
+<Project Version="7" Minor="14" Path="C:/FYP_160611/FYP_IP_Integrator_files/FYP.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="1ce295f0a7ef474bb551755b4dc040c4"/>
@@ -19,7 +19,7 @@
     <Option Name="BoardPart" Val="em.avnet.com:zed:part0:1.3"/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../Users/s02so/Desktop/Code Generations/IP Folders/xorshift"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../Users/s02so/Desktop/Code Generations/IP Folders/simpleCounter"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>
     <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>
     <Option Name="IPUserFilesDir" Val="$PPRDIR/FYP.ip_user_files"/>
@@ -33,13 +33,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="0"/>
-    <Option Name="WTModelSimExportSim" Val="0"/>
-    <Option Name="WTQuestaExportSim" Val="0"/>
-    <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="0"/>
-    <Option Name="WTRivieraExportSim" Val="0"/>
-    <Option Name="WTActivehdlExportSim" Val="0"/>
+    <Option Name="WTXSimExportSim" Val="1"/>
+    <Option Name="WTModelSimExportSim" Val="1"/>
+    <Option Name="WTQuestaExportSim" Val="1"/>
+    <Option Name="WTIesExportSim" Val="1"/>
+    <Option Name="WTVcsExportSim" Val="1"/>
+    <Option Name="WTRivieraExportSim" Val="1"/>
+    <Option Name="WTActivehdlExportSim" Val="1"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
   </Configuration>
   <FileSets Version="1" Minor="31">
@@ -51,6 +51,16 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="block_design1.bd" FileRelPathName="ip/block_design1_processing_system7_0_0/block_design1_processing_system7_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="block_design1.bd" FileRelPathName="hdl/block_design1.v"/>
+        <CompFileExtendedInfo CompFileName="block_design1.bd" FileRelPathName="ip/block_design1_rst_processing_system7_0_100M_0/block_design1_rst_processing_system7_0_100M_0.xci"/>
+        <CompFileExtendedInfo CompFileName="block_design1.bd" FileRelPathName="ip/block_design1_processing_system7_0_axi_periph_1/block_design1_processing_system7_0_axi_periph_1.xci"/>
+        <CompFileExtendedInfo CompFileName="block_design1.bd" FileRelPathName="hdl/block_design1.hwdef"/>
+        <CompFileExtendedInfo CompFileName="block_design1.bd" FileRelPathName="hw_handoff/block_design1_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="block_design1.bd" FileRelPathName="hw_handoff/block_design1.hwh"/>
+        <CompFileExtendedInfo CompFileName="block_design1.bd" FileRelPathName="ip/block_design1_auto_pc_1/block_design1_auto_pc_1.xci"/>
+        <CompFileExtendedInfo CompFileName="block_design1.bd" FileRelPathName="ip/block_design1_freq_serial_0_3/block_design1_freq_serial_0_3.xci"/>
+        <CompFileExtendedInfo CompFileName="block_design1.bd" FileRelPathName="block_design1_ooc.xdc"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/block_design1/hdl/block_design1_wrapper.v">
         <FileInfo>

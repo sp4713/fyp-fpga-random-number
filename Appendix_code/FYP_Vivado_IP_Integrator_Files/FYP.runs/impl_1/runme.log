@@ -553,3 +553,171 @@ INFO: [Common 17-186] 'C:/FYP_160611/FYP/FYP.runs/impl_1/usage_statistics_webtal
 INFO: [Common 17-83] Releasing license: Implementation
 write_bitstream: Time (s): cpu = 00:00:38 ; elapsed = 00:02:04 . Memory (MB): peak = 1649.027 ; gain = 375.723
 INFO: [Common 17-206] Exiting Vivado at Tue Jun 14 04:51:23 2016...
+
+*** Running vivado
+    with args -log block_design1_wrapper.vdi -applog -m64 -messageDb vivado.pb -mode batch -source block_design1_wrapper.tcl -notrace
+
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source block_design1_wrapper.tcl -notrace
+Command: open_checkpoint block_design1_wrapper_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 206.227 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2689 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'block_design1_wrapper' is not ideal for floorplanning, since the cellview 'freq_serial' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2016.1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/FYP_160611/FYP_IP_Integrator_files/FYP.runs/impl_1/.Xil/Vivado-8244-DESKTOP-8D0P93F/dcp/block_design1_wrapper_early.xdc]
+Finished Parsing XDC File [C:/FYP_160611/FYP_IP_Integrator_files/FYP.runs/impl_1/.Xil/Vivado-8244-DESKTOP-8D0P93F/dcp/block_design1_wrapper_early.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 566.234 ; gain = 25.387
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 566.234 ; gain = 25.387
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.1 (64-bit) build 1538259
+open_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 566.234 ; gain = 360.008
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./block_design1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] 'C:/FYP_160611/FYP_IP_Integrator_files/FYP.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Thu Jun 16 06:36:11 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.2/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:30 ; elapsed = 00:00:26 . Memory (MB): peak = 966.773 ; gain = 400.539
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 16 06:36:11 2016...
+
+*** Running vivado
+    with args -log block_design1_wrapper.vdi -applog -m64 -messageDb vivado.pb -mode batch -source block_design1_wrapper.tcl -notrace
+
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source block_design1_wrapper.tcl -notrace
+Command: open_checkpoint block_design1_wrapper_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 206.852 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2689 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'block_design1_wrapper' is not ideal for floorplanning, since the cellview 'freq_serial' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2016.1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/FYP_160611/FYP_IP_Integrator_files/FYP.runs/impl_1/.Xil/Vivado-6936-DESKTOP-8D0P93F/dcp/block_design1_wrapper_early.xdc]
+Finished Parsing XDC File [C:/FYP_160611/FYP_IP_Integrator_files/FYP.runs/impl_1/.Xil/Vivado-6936-DESKTOP-8D0P93F/dcp/block_design1_wrapper_early.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 566.539 ; gain = 25.387
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 566.539 ; gain = 25.387
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.1 (64-bit) build 1538259
+open_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 566.539 ; gain = 359.688
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./block_design1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] 'C:/FYP_160611/FYP_IP_Integrator_files/FYP.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Thu Jun 16 12:45:01 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.2/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:31 ; elapsed = 00:00:27 . Memory (MB): peak = 966.602 ; gain = 400.063
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 16 12:45:02 2016...
+
+*** Running vivado
+    with args -log block_design1_wrapper.vdi -applog -m64 -messageDb vivado.pb -mode batch -source block_design1_wrapper.tcl -notrace
+
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source block_design1_wrapper.tcl -notrace
+Command: open_checkpoint block_design1_wrapper_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 206.160 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2689 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'block_design1_wrapper' is not ideal for floorplanning, since the cellview 'freq_serial' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2016.1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/FYP_160611/FYP_IP_Integrator_files/FYP.runs/impl_1/.Xil/Vivado-13184-DESKTOP-8D0P93F/dcp/block_design1_wrapper_early.xdc]
+Finished Parsing XDC File [C:/FYP_160611/FYP_IP_Integrator_files/FYP.runs/impl_1/.Xil/Vivado-13184-DESKTOP-8D0P93F/dcp/block_design1_wrapper_early.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 566.695 ; gain = 25.352
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 566.695 ; gain = 25.352
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.1 (64-bit) build 1538259
+open_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 566.695 ; gain = 360.535
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./block_design1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] 'C:/FYP_160611/FYP_IP_Integrator_files/FYP.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Thu Jun 16 14:28:49 2016. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.2/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:32 ; elapsed = 00:00:27 . Memory (MB): peak = 966.801 ; gain = 400.105
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 16 14:28:49 2016...

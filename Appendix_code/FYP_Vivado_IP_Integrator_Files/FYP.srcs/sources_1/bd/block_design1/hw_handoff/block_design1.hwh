@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Jun 14 04:44:22 2016" VIVADOVERSION="2016.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Jun 16 16:32:32 2016" VIVADOVERSION="2016.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="em.avnet.com:zed:part0:1.3" DEVICE="7z020" NAME="block_design1" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
@@ -83,6 +83,7 @@
               <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
               <PROPERTY NAME="SIZE" VALUE="32"/>
               <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
               <PROPERTY NAME="RESET_VALUE" VALUE="0"/>
               <FIELDS>
                 <FIELD NAME="AP_START">
@@ -162,6 +163,7 @@
               <PROPERTY NAME="ADDRESS_OFFSET" VALUE="4"/>
               <PROPERTY NAME="SIZE" VALUE="32"/>
               <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
               <PROPERTY NAME="RESET_VALUE" VALUE="0"/>
               <FIELDS>
                 <FIELD NAME="Enable">
@@ -191,6 +193,7 @@
               <PROPERTY NAME="ADDRESS_OFFSET" VALUE="8"/>
               <PROPERTY NAME="SIZE" VALUE="32"/>
               <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
               <PROPERTY NAME="RESET_VALUE" VALUE="0"/>
               <FIELDS>
                 <FIELD NAME="CHAN0_INT_EN">
@@ -230,6 +233,7 @@
               <PROPERTY NAME="ADDRESS_OFFSET" VALUE="12"/>
               <PROPERTY NAME="SIZE" VALUE="32"/>
               <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
               <PROPERTY NAME="RESET_VALUE" VALUE="0"/>
               <FIELDS>
                 <FIELD NAME="CHAN0_INT_ST">
@@ -269,6 +273,7 @@
               <PROPERTY NAME="ADDRESS_OFFSET" VALUE="1536"/>
               <PROPERTY NAME="SIZE" VALUE="32"/>
               <PROPERTY NAME="ACCESS" VALUE="write-only"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
               <PROPERTY NAME="RESET_VALUE" VALUE="0"/>
               <FIELDS>
                 <FIELD NAME="seed_V">
@@ -288,6 +293,7 @@
               <PROPERTY NAME="ADDRESS_OFFSET" VALUE="1544"/>
               <PROPERTY NAME="SIZE" VALUE="32"/>
               <PROPERTY NAME="ACCESS" VALUE="write-only"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
               <PROPERTY NAME="RESET_VALUE" VALUE="0"/>
               <FIELDS>
                 <FIELD NAME="n_V">
@@ -307,6 +313,7 @@
               <PROPERTY NAME="ADDRESS_OFFSET" VALUE="1548"/>
               <PROPERTY NAME="SIZE" VALUE="32"/>
               <PROPERTY NAME="ACCESS" VALUE="write-only"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
               <PROPERTY NAME="RESET_VALUE" VALUE="0"/>
               <FIELDS>
                 <FIELD NAME="n_V">
@@ -336,6 +343,7 @@
               <PROPERTY NAME="ADDRESS_OFFSET" VALUE="1556"/>
               <PROPERTY NAME="SIZE" VALUE="32"/>
               <PROPERTY NAME="ACCESS" VALUE="write-only"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
               <PROPERTY NAME="RESET_VALUE" VALUE="0"/>
               <FIELDS>
                 <FIELD NAME="offset_V">
@@ -365,6 +373,7 @@
               <PROPERTY NAME="ADDRESS_OFFSET" VALUE="128"/>
               <PROPERTY NAME="SIZE" VALUE="128"/>
               <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
               <PROPERTY NAME="RESET_VALUE" VALUE="0"/>
             </REGISTER>
             <REGISTER NAME="Memory_serialTwoStream_V">
@@ -372,6 +381,7 @@
               <PROPERTY NAME="ADDRESS_OFFSET" VALUE="512"/>
               <PROPERTY NAME="SIZE" VALUE="512"/>
               <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
               <PROPERTY NAME="RESET_VALUE" VALUE="0"/>
             </REGISTER>
             <REGISTER NAME="Memory_serialThreeStream_V">
@@ -379,6 +389,7 @@
               <PROPERTY NAME="ADDRESS_OFFSET" VALUE="1024"/>
               <PROPERTY NAME="SIZE" VALUE="512"/>
               <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
               <PROPERTY NAME="RESET_VALUE" VALUE="0"/>
             </REGISTER>
           </REGISTERS>
@@ -387,7 +398,7 @@
       <PARAMETERS>
         <PARAMETER NAME="C_S_AXI_FREQ_PERIPH_BUS_ADDR_WIDTH" VALUE="11"/>
         <PARAMETER NAME="C_S_AXI_FREQ_PERIPH_BUS_DATA_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="Component_Name" VALUE="block_design1_freq_serial_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="block_design1_freq_serial_0_3"/>
         <PARAMETER NAME="clk_period" VALUE="10.000000"/>
         <PARAMETER NAME="machine" VALUE="64"/>
         <PARAMETER NAME="combinational" VALUE="0"/>
@@ -1680,8 +1691,8 @@
         <PORT CLKFREQUENCY="100000000" DIR="O" NAME="FCLK_CLK0" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0" PORT="M_AXI_GP0_ACLK"/>
-            <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="S00_ACLK"/>
             <CONNECTION INSTANCE="rst_processing_system7_0_100M" PORT="slowest_sync_clk"/>
+            <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="S00_ACLK"/>
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="ACLK"/>
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="M00_ACLK"/>
             <CONNECTION INSTANCE="freq_serial_0" PORT="ap_clk"/>
@@ -2159,7 +2170,7 @@
         <PARAMETER NAME="S13_ARB_PRIORITY" VALUE="0"/>
         <PARAMETER NAME="S14_ARB_PRIORITY" VALUE="0"/>
         <PARAMETER NAME="S15_ARB_PRIORITY" VALUE="0"/>
-        <PARAMETER NAME="Component_Name" VALUE="block_design1_processing_system7_0_axi_periph_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="block_design1_processing_system7_0_axi_periph_1"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
       </PARAMETERS>
       <PORTS>

@@ -3,7 +3,7 @@
 	//--please specify parameters here--//
 	//----------------------------------//
 
-#define n_input 17592186044415//sample size 					- maximum: 17592186044415 (2^44-1)
+#define n_input 20000000000//sample size 					- maximum: 17592186044415 (2^44-1)
 
 #define seed_input 1		//RNG seed (initial) value 		- maximum: 4294967295 (2^32-1)
 
