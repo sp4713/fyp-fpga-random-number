@@ -1,0 +1,5 @@
+freq_serial_mux_32to1_sel5_44_1
+freq_serial_mux_96to1_sel7_43_1
+freq_serial_mux_112to1_sel7_43_1
+freq_serial_FREQ_PERIPH_BUS_s_axi
+freq_serial
