@@ -35,7 +35,7 @@ void freq_serial(ap_uint<32> freqStream[32], ap_uint<32> serialTwoStream[96],
 #pragma HLS ARRAY_PARTITION variable=serialThreeCount complete dim=1
 
 	ap_uint<32> seed_prev_prev, seed_prev;
-	bool enableTwoSerial = 0;
+	bool enableTwoSerial = 1;
 	int enableThreeSerial = 0;
 
 /*	Computations below will be done in software
